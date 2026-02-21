@@ -1,0 +1,21 @@
+---
+interface Props {
+  faqs: Array<{ q: string; a: string }>;
+  title?: string;
+}
+
+const { faqs, title = "FAQs" } = Astro.props as Props;
+---
+{faqs.length > 0 && (
+  <section class="section">
+    <div class="container">
+      <h2>{title}</h2>
+      {faqs.map((faq) => (
+        <details class="faq-item">
+          <summary>{faq.q}</summary>
+          <p>{faq.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+)}

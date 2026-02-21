@@ -1,0 +1,104 @@
+<div class="consent-banner" id="consent-banner" hidden>
+  <strong>Cookie preferences</strong>
+  <p class="meta">
+    We use necessary cookies and optional analytics/marketing tools. Choose how your data is used.
+  </p>
+  <div class="consent-actions">
+    <button class="btn btn--primary" type="button" data-consent-action="accept-all">Accept all</button>
+    <button class="btn btn--secondary" type="button" data-consent-action="reject-all">Reject optional</button>
+    <button class="btn btn--secondary" type="button" data-consent-action="open-preferences">
+      Preferences
+    </button>
+  </div>
+  <form class="consent-prefs" id="consent-preferences" hidden>
+    <label style="display:block;margin-bottom:0.6rem;">
+      <input type="checkbox" checked disabled /> Necessary cookies
+    </label>
+    <label style="display:block;margin-bottom:0.6rem;">
+      <input type="checkbox" name="analytics" /> Analytics cookies
+    </label>
+    <label style="display:block;margin-bottom:0.8rem;">
+      <input type="checkbox" name="marketing" /> Marketing cookies
+    </label>
+    <button class="btn btn--primary" type="submit">Save preferences</button>
+  </form>
+</div>
+
+<script is:inline>
+  const KEY = "msh_consent_v1";
+  const defaultState = { necessary: true, analytics: false, marketing: false, updatedAt: "" };
+
+  const parseState = () => {
+    try {
+      return { ...defaultState, ...(JSON.parse(localStorage.getItem(KEY) || "{}") || {}) };
+    } catch {
+      return defaultState;
+    }
+  };
+
+  const writeState = (state) => {
+    localStorage.setItem(KEY, JSON.stringify({ ...state, necessary: true, updatedAt: new Date().toISOString() }));
+    window.dispatchEvent(new CustomEvent("msh:consent-updated", { detail: state }));
+  };
+
+  const banner = document.getElementById("consent-banner");
+  const prefsForm = document.getElementById("consent-preferences");
+  const analyticsInput = prefsForm?.querySelector('input[name="analytics"]');
+  const marketingInput = prefsForm?.querySelector('input[name="marketing"]');
+
+  const showBanner = () => {
+    if (banner) banner.hidden = false;
+  };
+
+  const hideBanner = () => {
+    if (banner) banner.hidden = true;
+    if (prefsForm) prefsForm.hidden = true;
+  };
+
+  const state = parseState();
+  const hasSaved = Boolean(state.updatedAt);
+
+  if (!hasSaved) {
+    showBanner();
+  }
+
+  if (analyticsInput) analyticsInput.checked = Boolean(state.analytics);
+  if (marketingInput) marketingInput.checked = Boolean(state.marketing);
+
+  banner?.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return;
+    const action = target.dataset.consentAction;
+    if (!action) return;
+
+    if (action === "accept-all") {
+      writeState({ necessary: true, analytics: true, marketing: true });
+      hideBanner();
+      return;
+    }
+
+    if (action === "reject-all") {
+      writeState({ necessary: true, analytics: false, marketing: false });
+      hideBanner();
+      return;
+    }
+
+    if (action === "open-preferences") {
+      if (prefsForm) prefsForm.hidden = !prefsForm.hidden;
+    }
+  });
+
+  prefsForm?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    writeState({
+      necessary: true,
+      analytics: Boolean(analyticsInput?.checked),
+      marketing: Boolean(marketingInput?.checked)
+    });
+    hideBanner();
+  });
+
+  document.querySelectorAll("[data-open-consent]").forEach((button) => {
+    button.addEventListener("click", () => showBanner());
+  });
+</script>

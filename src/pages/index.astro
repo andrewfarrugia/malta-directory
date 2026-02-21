@@ -1,0 +1,101 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import HubCard from "@/components/HubCard.astro";
+import GuideCard from "@/components/GuideCard.astro";
+import { getTopCategories, getTopLocations, getGuides } from "@/lib/data";
+import { buildSeo, clampMeta } from "@/lib/seo";
+
+const topCategories = getTopCategories(12);
+const topLocations = getTopLocations(12);
+const guides = (await getGuides()).slice(0, 10);
+
+const seo = buildSeo({
+  path: "/",
+  title: "Malta Service Hub - Local directory and guides for Malta",
+  description: clampMeta(
+    "Find trusted services and practical local guides for Malta. Browse top categories, localities, and curated provider listings."
+  )
+});
+---
+<BaseLayout seo={seo}>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Find trusted services and local guides across Malta</h1>
+        <p class="lead">
+          Malta Service Hub helps people compare service categories, local providers, and practical guides with transparent pricing context and useful local advice.
+        </p>
+        <div class="consent-actions" style="margin-top:1rem;">
+          <a class="btn btn--primary" href="/categories/">Browse categories</a>
+          <a class="btn btn--secondary" href="/locations/">Explore locations</a>
+        </div>
+        <div class="kpi-list" style="margin-top:1.5rem;">
+          <div class="kpi-item"><strong>12</strong><br />Service categories</div>
+          <div class="kpi-item"><strong>12</strong><br />Malta localities</div>
+          <div class="kpi-item"><strong>10+</strong><br />Evergreen guides</div>
+          <div class="kpi-item"><strong>90+</strong><br />Seed listings</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Top categories</h2>
+        <div class="grid grid--cards">
+          {topCategories.map((category) => (
+            <HubCard
+              title={`${category.pluralName} in Malta`}
+              description={category.intro}
+              href={`/categories/${category.slug}/`}
+              chips={category.synonyms.slice(0, 3)}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container">
+        <h2>Top locations</h2>
+        <div class="grid grid--cards">
+          {topLocations.map((location) => (
+            <HubCard
+              title={`Services in ${location.name}`}
+              description={location.intro}
+              href={`/locations/${location.slug}/`}
+              chips={location.region ? [location.region] : []}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Latest guides</h2>
+        <div class="grid grid--cards">
+          {guides.map((guide) => (
+            <GuideCard
+              title={guide.data.title}
+              description={guide.data.description}
+              href={`/guides/${guide.slug}/`}
+              dateUpdated={guide.data.dateUpdated.toISOString()}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container">
+        <h2>How we rank and curate</h2>
+        <p class="prose">
+          We prioritize useful pages with local context, practical guidance, and transparent provider information. Combined locality pages are only published when they pass quality criteria for editorial depth and utility. Listings include source notes and verification timestamps.
+        </p>
+        <div class="notice">
+          Suggest a business or request an update via <a href="/contact/">our contact page</a>.
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

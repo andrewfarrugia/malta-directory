@@ -1,0 +1,93 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { buildSeo } from "@/lib/seo";
+
+const seo = buildSeo({
+  path: "/search/",
+  title: "Search",
+  description: "Search Malta Service Hub categories, locations, guides, and listings.",
+  noindex: true
+});
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Search", url: "/search/" }
+];
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>Search</h1>
+      <p class="meta">This utility page is excluded from search indexing.</p>
+
+      <form id="search-form" class="card" style="margin-top:1rem;">
+        <label for="query">Search term</label>
+        <input id="query" name="query" type="search" style="width:100%;padding:0.7rem;margin-top:0.4rem;" />
+        <label for="type" style="display:block;margin-top:0.8rem;">Type</label>
+        <select id="type" name="type" style="padding:0.6rem;margin-top:0.4rem;">
+          <option value="all">All</option>
+          <option value="category">Category</option>
+          <option value="location">Location</option>
+          <option value="combo">Combo</option>
+          <option value="guide">Guide</option>
+          <option value="listing">Listing</option>
+        </select>
+        <button class="btn btn--primary" type="submit" style="margin-top:0.8rem;">Search</button>
+      </form>
+
+      <div id="results" class="search-results"></div>
+    </div>
+  </main>
+
+  <script is:inline>
+    const form = document.getElementById("search-form");
+    const results = document.getElementById("results");
+
+    const render = (items) => {
+      if (!results) return;
+      if (items.length === 0) {
+        results.innerHTML = "<p class='meta'>No results found.</p>";
+        return;
+      }
+
+      results.innerHTML = items
+        .map(
+          (item) =>
+            `<article class=\"card\"><h3><a href=\"${item.url}\">${item.title}</a></h3><p>${item.description || ""}</p><p class=\"meta\">${item.type}</p></article>`
+        )
+        .join("");
+    };
+
+    form?.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const formData = new FormData(form);
+      const query = String(formData.get("query") || "").trim().toLowerCase();
+      const type = String(formData.get("type") || "all");
+
+      if (!query) {
+        render([]);
+        return;
+      }
+
+      const response = await fetch("/search-index.json");
+      const docs = await response.json();
+
+      const matches = docs
+        .filter((doc) => (type === "all" ? true : doc.type === type))
+        .map((doc) => {
+          const haystack = `${doc.title} ${(doc.tags || []).join(" ")} ${doc.description || ""}`.toLowerCase();
+          return {
+            doc,
+            score: haystack.includes(query) ? 1 : 0
+          };
+        })
+        .filter((entry) => entry.score > 0)
+        .map((entry) => entry.doc)
+        .slice(0, 50);
+
+      render(matches);
+    });
+  </script>
+</BaseLayout>

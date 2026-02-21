@@ -1,0 +1,113 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ListingCard from "@/components/ListingCard.astro";
+import { getListings, getListingBySlug, getCategoryBySlug, getLocationBySlug } from "@/lib/data";
+import { buildSeo, clampMeta } from "@/lib/seo";
+import { localBusinessSchema } from "@/lib/schema";
+
+export const getStaticPaths = () => getListings().map((listing) => ({ params: { listingSlug: listing.slug } }));
+
+const { listingSlug } = Astro.params;
+const listing = getListingBySlug(listingSlug!);
+
+if (!listing) {
+  throw new Error(`Listing not found: ${listingSlug}`);
+}
+
+const location = getLocationBySlug(listing.locationSlug);
+const categories = listing.categorySlugs.map((slug) => getCategoryBySlug(slug)).filter(Boolean);
+const similarListings = getListings()
+  .filter(
+    (candidate) =>
+      candidate.slug !== listing.slug &&
+      candidate.locationSlug === listing.locationSlug &&
+      candidate.categorySlugs.some((slug) => listing.categorySlugs.includes(slug))
+  )
+  .slice(0, 6);
+
+const seo = buildSeo({
+  path: `/listings/${listing.slug}/`,
+  title: `${listing.name} in ${location?.name || "Malta"}`,
+  description: clampMeta(listing.shortDescription)
+});
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Listings", url: "/listings/" },
+  { name: listing.name, url: `/listings/${listing.slug}/` }
+];
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[localBusinessSchema(listing)]}>
+  <main>
+    <section class="section">
+      <div class="container prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <h1>{listing.name}</h1>
+        <p>{listing.shortDescription}</p>
+        <p class="meta">Last verified: {new Date(listing.lastVerifiedDate).toLocaleDateString("en-MT")}</p>
+
+        <div>
+          {categories.map((category) => (
+            <a class="chip" href={`/categories/${category!.slug}/`}>{category!.pluralName}</a>
+          ))}
+          {location && (
+            <a class="chip" href={`/locations/${location.slug}/`}>{location.name}</a>
+          )}
+        </div>
+
+        <h2>Contact and address</h2>
+        <p>{listing.address.line1}, {listing.address.locality} {listing.address.postalCode}, {listing.address.country}</p>
+        <ul>
+          {listing.phone && (
+            <li>
+              Phone: <a href={`tel:${listing.phone}`} data-track="phone-click" data-track-label={listing.slug}>{listing.phone}</a>
+            </li>
+          )}
+          {listing.email && (
+            <li>
+              Email: <a href={`mailto:${listing.email}`} data-track="email-click" data-track-label={listing.slug}>{listing.email}</a>
+            </li>
+          )}
+          {listing.website && (
+            <li>
+              Website: <a href={listing.website} rel="nofollow noopener" target="_blank" data-track="outbound-listing" data-track-label={listing.slug}>{listing.website}</a>
+            </li>
+          )}
+        </ul>
+
+        {listing.openingHours && listing.openingHours.length > 0 && (
+          <>
+            <h2>Opening hours</h2>
+            <ul>
+              {listing.openingHours.map((slot) => (
+                <li>{slot}</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        <h2>Gallery</h2>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
+          {listing.images.map((image, index) => (
+            <img src={image} alt={`${listing.name} image ${index + 1}`} loading="lazy" />
+          ))}
+        </div>
+
+        <h2>Data provenance</h2>
+        <p>{listing.sourceNotes}</p>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container">
+        <h2>Similar listings</h2>
+        <div class="grid grid--cards">
+          {similarListings.map((item) => (
+            <ListingCard listing={item} />
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

@@ -1,0 +1,218 @@
+[
+  {
+    "id": "cat-plumbers",
+    "slug": "plumbers",
+    "singularName": "Plumber",
+    "pluralName": "Plumbers",
+    "primaryKeyword": "plumbers malta",
+    "synonyms": ["plumbing services", "plumber near me malta", "emergency plumber"],
+    "intro": "Plumbers in Malta handle urgent leaks, full bathroom installations, blocked drains, and routine maintenance. Malta Service Hub highlights what to compare before you hire: response speed, warranty terms, call-out fees, and local coverage.",
+    "faq": [
+      { "q": "How fast can a plumber in Malta arrive?", "a": "Emergency response often ranges between 30 minutes and 2 hours depending on locality and time of day." },
+      { "q": "Do plumbers charge call-out fees?", "a": "Many providers apply a base call-out fee plus labor and parts. Always request an itemized quote." },
+      { "q": "Should I choose fixed-price or hourly plumbing?", "a": "Fixed price helps for defined jobs. Hourly can be better for diagnostics or uncertain repairs." },
+      { "q": "Are weekend rates different?", "a": "Yes. Evening, weekend, and holiday interventions usually include higher rates." }
+    ],
+    "relatedCategoryIds": ["cat-electricians", "cat-hvac", "cat-roofing"],
+    "topGuideSlugs": ["plumber-cost-malta", "how-to-choose-plumber-malta"],
+    "priority": 5
+  },
+  {
+    "id": "cat-electricians",
+    "slug": "electricians",
+    "singularName": "Electrician",
+    "pluralName": "Electricians",
+    "primaryKeyword": "electricians malta",
+    "synonyms": ["electrical services malta", "licensed electrician malta"],
+    "intro": "Electricians in Malta cover residential rewiring, fuse board upgrades, safety checks, and smart-home installations. Compare certification, response times, and transparent pricing before booking.",
+    "faq": [
+      { "q": "Do electricians issue safety certificates in Malta?", "a": "Many qualified electricians provide compliance documentation depending on job type." },
+      { "q": "How much does rewiring cost?", "a": "Costs vary by property size, access complexity, and the scope of upgrades." },
+      { "q": "Can electricians handle urgent power faults?", "a": "Yes, many teams offer emergency call-outs for outages and dangerous faults." },
+      { "q": "Should I provide materials myself?", "a": "Usually no. Most electricians source compliant materials and include them in quote options." }
+    ],
+    "relatedCategoryIds": ["cat-plumbers", "cat-it-support", "cat-hvac"],
+    "topGuideSlugs": ["electrician-cost-malta", "how-to-choose-electrician-malta"],
+    "priority": 5
+  },
+  {
+    "id": "cat-cleaning",
+    "slug": "cleaning-services",
+    "singularName": "Cleaning Service",
+    "pluralName": "Cleaning Services",
+    "primaryKeyword": "cleaning services malta",
+    "synonyms": ["home cleaning malta", "office cleaning malta"],
+    "intro": "Cleaning services in Malta range from weekly domestic cleaning to post-renovation and deep sanitation jobs. The best providers are clear on checklist scope, supplies, and cancellation terms.",
+    "faq": [
+      { "q": "Are cleaning products included?", "a": "Some providers include products while others charge separately or request customer supplies." },
+      { "q": "Can I book recurring cleaning?", "a": "Yes. Weekly and fortnightly plans are common across major localities." },
+      { "q": "What affects deep-clean pricing?", "a": "Property size, number of bathrooms, condition level, and appliance add-ons." },
+      { "q": "Do cleaners bring equipment?", "a": "Most teams bring basic equipment, but confirm vacuum and specialist machinery in advance." }
+    ],
+    "relatedCategoryIds": ["cat-pest-control", "cat-painters", "cat-movers"],
+    "topGuideSlugs": ["cleaning-service-cost-malta", "how-to-choose-cleaner-malta"],
+    "priority": 5
+  },
+  {
+    "id": "cat-painters",
+    "slug": "painters",
+    "singularName": "Painter",
+    "pluralName": "Painters",
+    "primaryKeyword": "painters malta",
+    "synonyms": ["painting contractors malta", "interior painters malta"],
+    "intro": "Painters in Malta handle interior refreshes, exterior facades, and rental turnover projects. Compare prep standards, paint system quality, and handover timelines before choosing.",
+    "faq": [
+      { "q": "How long does repainting take?", "a": "Small apartments can take 2-4 days, while larger homes and exterior jobs take longer." },
+      { "q": "Do painters include wall prep?", "a": "Professional quotes typically include patching, sanding, and protective masking." },
+      { "q": "Can painters work around occupied homes?", "a": "Yes, but phased room-by-room plans are recommended." },
+      { "q": "What paint finish is best for humidity?", "a": "Washable and moisture-resistant systems are preferred in kitchens and bathrooms." }
+    ],
+    "relatedCategoryIds": ["cat-cleaning", "cat-roofing", "cat-plumbers"],
+    "topGuideSlugs": ["how-to-choose-cleaner-malta"],
+    "priority": 4
+  },
+  {
+    "id": "cat-pest-control",
+    "slug": "pest-control",
+    "singularName": "Pest Control Specialist",
+    "pluralName": "Pest Control Services",
+    "primaryKeyword": "pest control malta",
+    "synonyms": ["rodent control malta", "insect treatment malta"],
+    "intro": "Pest control services in Malta support homes and businesses with inspection, treatment, and prevention plans. Effective providers document treatment methods and follow-up schedules.",
+    "faq": [
+      { "q": "How many visits are usually needed?", "a": "Simple cases may resolve in one visit, while recurring infestations require a treatment plan." },
+      { "q": "Is pest treatment safe for pets?", "a": "Most providers offer pet-aware protocols and post-treatment ventilation guidance." },
+      { "q": "Do services include prevention?", "a": "Good providers combine treatment with sealing and hygiene recommendations." },
+      { "q": "Can businesses get maintenance contracts?", "a": "Yes, scheduled contracts are common for food and hospitality sites." }
+    ],
+    "relatedCategoryIds": ["cat-cleaning", "cat-roofing", "cat-plumbers"],
+    "topGuideSlugs": ["how-to-choose-cleaner-malta"],
+    "priority": 4
+  },
+  {
+    "id": "cat-hvac",
+    "slug": "hvac-technicians",
+    "singularName": "HVAC Technician",
+    "pluralName": "HVAC Technicians",
+    "primaryKeyword": "air conditioning service malta",
+    "synonyms": ["ac repair malta", "hvac maintenance malta"],
+    "intro": "HVAC technicians in Malta provide AC installation, seasonal servicing, and fault repair for homes and commercial sites. Prioritize certified handling, clear warranty terms, and response windows.",
+    "faq": [
+      { "q": "How often should AC systems be serviced?", "a": "Twice per year is common in Malta, especially before and after peak summer." },
+      { "q": "What is included in a standard service?", "a": "Cleaning filters, checking gas pressure, inspecting electrical components, and system testing." },
+      { "q": "Can HVAC teams improve efficiency?", "a": "Yes. Correct sizing and maintenance significantly reduce running costs." },
+      { "q": "Are emergency repairs available?", "a": "Many technicians provide same-day call-outs during peak season." }
+    ],
+    "relatedCategoryIds": ["cat-electricians", "cat-plumbers", "cat-it-support"],
+    "topGuideSlugs": ["ac-servicing-cost-malta"],
+    "priority": 5
+  },
+  {
+    "id": "cat-roofing",
+    "slug": "roofing-contractors",
+    "singularName": "Roofing Contractor",
+    "pluralName": "Roofing Contractors",
+    "primaryKeyword": "roof repair malta",
+    "synonyms": ["roof waterproofing malta", "roof contractor malta"],
+    "intro": "Roofing contractors in Malta handle waterproofing, membrane replacement, structural repairs, and terrace maintenance. Compare materials, drainage planning, and warranty coverage.",
+    "faq": [
+      { "q": "What is the average roof repair timeline?", "a": "Many standard residential repairs are completed within 1-3 days, weather permitting." },
+      { "q": "Do roofing contractors provide waterproofing certificates?", "a": "Some providers issue workmanship warranties and product documentation." },
+      { "q": "Can contractors inspect leaks first?", "a": "Yes, inspection-first visits are recommended before committing to a full scope." },
+      { "q": "Do roof repairs need permits?", "a": "Permit needs vary based on building type and structural scope." }
+    ],
+    "relatedCategoryIds": ["cat-plumbers", "cat-painters", "cat-electricians"],
+    "topGuideSlugs": ["roof-repair-cost-malta"],
+    "priority": 4
+  },
+  {
+    "id": "cat-locksmiths",
+    "slug": "locksmiths",
+    "singularName": "Locksmith",
+    "pluralName": "Locksmiths",
+    "primaryKeyword": "locksmith malta",
+    "synonyms": ["emergency locksmith malta", "lock replacement malta"],
+    "intro": "Locksmiths in Malta offer emergency lockout support, lock replacement, smart lock setup, and security upgrades. Compare arrival times, call-out rates, and parts warranties.",
+    "faq": [
+      { "q": "Can locksmiths open doors without damage?", "a": "In many cases yes, depending on lock type and security level." },
+      { "q": "How much does an emergency locksmith cost?", "a": "Out-of-hours rates are usually higher than standard daytime call-outs." },
+      { "q": "Do locksmiths install smart locks?", "a": "Yes, many providers support modern keyless and app-enabled systems." },
+      { "q": "Is ID required for lock changes?", "a": "Reputable providers often request proof of occupancy or ownership." }
+    ],
+    "relatedCategoryIds": ["cat-electricians", "cat-it-support", "cat-movers"],
+    "topGuideSlugs": ["how-to-choose-locksmith-malta"],
+    "priority": 4
+  },
+  {
+    "id": "cat-movers",
+    "slug": "movers",
+    "singularName": "Mover",
+    "pluralName": "Movers",
+    "primaryKeyword": "movers malta",
+    "synonyms": ["removals malta", "moving company malta"],
+    "intro": "Movers in Malta support apartment relocations, office moves, packing services, and storage transitions. Compare insurance terms, manpower allocation, and transport constraints.",
+    "faq": [
+      { "q": "Do movers provide packing materials?", "a": "Most companies offer optional packing kits or full packing services." },
+      { "q": "Can movers handle stairs-only buildings?", "a": "Yes, but this usually affects labor time and quote pricing." },
+      { "q": "Is moving insurance included?", "a": "Coverage varies, so confirm liability limits and optional add-ons." },
+      { "q": "How early should I book?", "a": "Book 1-3 weeks ahead for best availability, especially at month-end." }
+    ],
+    "relatedCategoryIds": ["cat-cleaning", "cat-painters", "cat-locksmiths"],
+    "topGuideSlugs": ["how-to-choose-cleaner-malta"],
+    "priority": 3
+  },
+  {
+    "id": "cat-photographers",
+    "slug": "photographers",
+    "singularName": "Photographer",
+    "pluralName": "Photographers",
+    "primaryKeyword": "photographers malta",
+    "synonyms": ["event photographers malta", "wedding photographers malta"],
+    "intro": "Photographers in Malta cover weddings, events, corporate shoots, and lifestyle sessions. Review portfolio quality, turnaround times, and usage rights before booking.",
+    "faq": [
+      { "q": "How far in advance should I book a photographer?", "a": "For weddings and peak dates, booking several months ahead is recommended." },
+      { "q": "Are edited photos included?", "a": "Most packages include edited highlights, with optional full-gallery upgrades." },
+      { "q": "Do photographers offer video too?", "a": "Some teams provide bundled photo and video services." },
+      { "q": "What rights do I get over the photos?", "a": "Usage rights vary, so confirm personal and commercial usage terms." }
+    ],
+    "relatedCategoryIds": ["cat-wedding-planners", "cat-movers", "cat-cleaning"],
+    "topGuideSlugs": ["how-to-choose-wedding-planner-malta"],
+    "priority": 3
+  },
+  {
+    "id": "cat-wedding-planners",
+    "slug": "wedding-planners",
+    "singularName": "Wedding Planner",
+    "pluralName": "Wedding Planners",
+    "primaryKeyword": "wedding planner malta",
+    "synonyms": ["wedding coordination malta", "destination wedding malta planner"],
+    "intro": "Wedding planners in Malta coordinate venue logistics, suppliers, timelines, and on-the-day management. Compare planning scope, communication style, and preferred-vendor flexibility.",
+    "faq": [
+      { "q": "Do planners work with destination weddings?", "a": "Yes, Malta has many planners experienced in destination event logistics." },
+      { "q": "Can I hire only day-of coordination?", "a": "Many planners offer partial and day-of coordination packages." },
+      { "q": "How are planner fees structured?", "a": "Common models include flat fee, tiered package, or percentage-based budgeting." },
+      { "q": "Do planners manage vendor contracts?", "a": "Most full-service packages include contract support and timeline oversight." }
+    ],
+    "relatedCategoryIds": ["cat-photographers", "cat-cleaning", "cat-movers"],
+    "topGuideSlugs": ["how-to-choose-wedding-planner-malta"],
+    "priority": 3
+  },
+  {
+    "id": "cat-it-support",
+    "slug": "it-support",
+    "singularName": "IT Support Provider",
+    "pluralName": "IT Support Providers",
+    "primaryKeyword": "it support malta",
+    "synonyms": ["managed it services malta", "business it support malta"],
+    "intro": "IT support providers in Malta handle managed services, network reliability, endpoint security, and business continuity support. Prioritize SLA clarity and response channels.",
+    "faq": [
+      { "q": "Do IT support providers offer on-site help?", "a": "Yes, many combine remote support with scheduled or urgent on-site visits." },
+      { "q": "What should an SLA include?", "a": "Response targets, escalation paths, service windows, and reporting cadence." },
+      { "q": "Can small businesses outsource all IT operations?", "a": "Yes, managed plans commonly cover maintenance, security, and user support." },
+      { "q": "How is pricing usually set?", "a": "Pricing is often per user, per device, or fixed monthly package based on scope." }
+    ],
+    "relatedCategoryIds": ["cat-electricians", "cat-hvac", "cat-locksmiths"],
+    "topGuideSlugs": ["how-to-choose-electrician-malta"],
+    "priority": 3
+  }
+]

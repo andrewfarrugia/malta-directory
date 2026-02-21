@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  chips?: string[];
+}
+
+const { title, description, href, chips = [] } = Astro.props as Props;
+---
+<article class="card">
+  <h3><a href={href}>{title}</a></h3>
+  <p>{description}</p>
+  <div>
+    {chips.slice(0, 3).map((chip) => (
+      <span class="chip">{chip}</span>
+    ))}
+  </div>
+</article>

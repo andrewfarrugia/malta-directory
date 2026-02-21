@@ -1,0 +1,38 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import GuideCard from "@/components/GuideCard.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { getGuides } from "@/lib/data";
+import { buildSeo, clampMeta } from "@/lib/seo";
+
+const guides = await getGuides();
+const seo = buildSeo({
+  path: "/guides/",
+  title: "Service Guides for Malta",
+  description: clampMeta("Read pricing guides, checklists, and how-to-choose content for local services in Malta.")
+});
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Guides", url: "/guides/" }
+];
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>Guides</h1>
+      <p class="lead">Evergreen pricing and decision guides designed for local-intent service queries in Malta.</p>
+      <div class="grid grid--cards" style="margin-top:1.5rem;">
+        {guides.map((guide) => (
+          <GuideCard
+            title={guide.data.title}
+            description={guide.data.description}
+            href={`/guides/${guide.slug}/`}
+            dateUpdated={guide.data.dateUpdated.toISOString()}
+          />
+        ))}
+      </div>
+    </div>
+  </main>
+</BaseLayout>

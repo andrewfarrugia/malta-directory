@@ -1,0 +1,39 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { buildSeo, clampMeta } from "@/lib/seo";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Privacy Policy", url: "/privacy/" }
+];
+
+const seo = buildSeo({
+  path: "/privacy/",
+  title: "Privacy Policy",
+  description: clampMeta("Draft privacy policy for Malta Service Hub, including GDPR rights and processing categories.")
+});
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container prose">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>Privacy Policy (Draft)</h1>
+      <p class="notice">This draft policy is a template and must be reviewed by legal counsel before production use.</p>
+      <h2>1. Data controller</h2>
+      <p>Malta Service Hub, contact: privacy@maltaservicehub.com.</p>
+      <h2>2. Data we process</h2>
+      <p>We process contact details submitted through forms, event analytics subject to consent, and technical logs required for security and operations.</p>
+      <h2>3. Legal bases</h2>
+      <p>Contractual necessity, legitimate interests, legal obligations, and consent where required.</p>
+      <h2>4. Your rights under GDPR</h2>
+      <p>You can request access, correction, deletion, restriction, portability, and object to certain processing. You can withdraw consent at any time.</p>
+      <h2>5. Data retention</h2>
+      <p>Retention periods depend on processing purpose and legal obligations. We keep data no longer than necessary.</p>
+      <h2>6. International transfers</h2>
+      <p>Where transfers outside the EEA occur, appropriate safeguards will be applied.</p>
+      <h2>7. Contact and complaints</h2>
+      <p>Contact privacy@maltaservicehub.com for rights requests. You may also contact the relevant supervisory authority.</p>
+    </div>
+  </main>
+</BaseLayout>

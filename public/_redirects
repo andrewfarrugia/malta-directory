@@ -1,0 +1,9 @@
+/categories/:slug /categories/:slug/ 301
+/categories/:category/:location /categories/:category/:location/ 301
+/locations/:slug /locations/:slug/ 301
+/guides/:slug /guides/:slug/ 301
+/listings/:slug /listings/:slug/ 301
+
+/plumber-guide-malta /guides/plumber-cost-malta/ 301
+/electrician-guide-malta /guides/electrician-cost-malta/ 301
+/* /404.html 404

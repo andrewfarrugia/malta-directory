@@ -1,0 +1,32 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { buildSeo } from "@/lib/seo";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Legal Notice", url: "/legal/" }
+];
+
+const seo = buildSeo({
+  path: "/legal/",
+  title: "Legal Notice",
+  description: "Draft legal notice and company information for Malta Service Hub."
+});
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container prose">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>Legal Notice (Draft)</h1>
+      <p class="notice">Replace placeholders with official registered company details before launch.</p>
+      <h2>Company information</h2>
+      <p>Company name: Malta Service Hub Ltd (placeholder)</p>
+      <p>Registered address: [Insert registered office address]</p>
+      <p>Registration number: [Insert number]</p>
+      <p>VAT number: [Insert VAT]</p>
+      <h2>Contact</h2>
+      <p>Email: legal@maltaservicehub.com</p>
+    </div>
+  </main>
+</BaseLayout>

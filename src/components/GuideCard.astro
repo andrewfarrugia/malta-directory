@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  dateUpdated?: string;
+}
+
+const { title, description, href, dateUpdated } = Astro.props as Props;
+---
+<article class="card">
+  <h3><a href={href}>{title}</a></h3>
+  <p>{description}</p>
+  {dateUpdated && <p class="meta">Updated {new Date(dateUpdated).toLocaleDateString("en-MT")}</p>}
+</article>

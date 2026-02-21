@@ -1,0 +1,25 @@
+---
+interface LinkItem {
+  title: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  links: LinkItem[];
+}
+
+const { title, links } = Astro.props as Props;
+---
+{links.length > 0 && (
+  <section class="section section--muted">
+    <div class="container">
+      <h2>{title}</h2>
+      <ul class="inline-list">
+        {links.map((link) => (
+          <li><a href={link.href}>{link.title}</a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}

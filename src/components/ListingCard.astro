@@ -1,0 +1,19 @@
+---
+import type { Listing } from "@/lib/types";
+
+interface Props {
+  listing: Listing;
+}
+
+const { listing } = Astro.props as Props;
+---
+<article class="card">
+  <h3 style="margin-bottom:0.5rem;"><a href={`/listings/${listing.slug}/`}>{listing.name}</a></h3>
+  <p>{listing.shortDescription}</p>
+  <p class="meta">{listing.address.locality}</p>
+  <div>
+    {listing.categorySlugs.map((slug) => (
+      <span class="chip">{slug.replaceAll("-", " ")}</span>
+    ))}
+  </div>
+</article>

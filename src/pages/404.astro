@@ -1,0 +1,20 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { buildSeo } from "@/lib/seo";
+
+const seo = buildSeo({
+  path: "/404/",
+  title: "Page Not Found",
+  description: "The page you requested could not be found.",
+  noindex: true
+});
+---
+<BaseLayout seo={seo}>
+  <main class="section">
+    <div class="container">
+      <h1>Page not found</h1>
+      <p>The page you requested is not available.</p>
+      <a class="btn btn--primary" href="/">Back to home</a>
+    </div>
+  </main>
+</BaseLayout>

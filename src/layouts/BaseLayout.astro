@@ -1,0 +1,115 @@
+---
+import "@/styles/global.css";
+import type { BreadcrumbItem } from "@/lib/types";
+import { seoDefaults, siteConfig } from "@/config/site";
+import { organizationSchema, breadcrumbSchema } from "@/lib/schema";
+import SiteHeader from "@/components/SiteHeader.astro";
+import SiteFooter from "@/components/SiteFooter.astro";
+import ConsentBanner from "@/components/ConsentBanner.astro";
+
+interface Props {
+  seo: {
+    title: string;
+    description: string;
+    canonical: string;
+    image: string;
+    noindex?: boolean;
+  };
+  breadcrumbs?: BreadcrumbItem[];
+  extraSchemas?: Record<string, unknown>[];
+}
+
+const { seo, breadcrumbs = [], extraSchemas = [] } = Astro.props as Props;
+const organization = organizationSchema();
+const breadcrumb = breadcrumbs.length > 0 ? breadcrumbSchema(breadcrumbs) : null;
+const cfBeaconToken = siteConfig.analytics.cloudflareBeaconToken;
+const plausibleDomain = siteConfig.analytics.plausibleDomain;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
+    <link rel="canonical" href={seo.canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={seo.title} />
+    <meta property="og:description" content={seo.description} />
+    <meta property="og:url" content={seo.canonical} />
+    <meta property="og:image" content={seo.image} />
+    <meta name="twitter:card" content={seoDefaults.twitterCard} />
+    <meta name="twitter:title" content={seo.title} />
+    <meta name="twitter:description" content={seo.description} />
+    <meta name="twitter:image" content={seo.image} />
+    <meta name="robots" content={seo.noindex ? "noindex, nofollow" : "index, follow"} />
+    <meta name="msh-plausible-domain" content={plausibleDomain} />
+    <script type="application/ld+json" set:html={JSON.stringify(organization)}></script>
+    {breadcrumb && <script type="application/ld+json" set:html={JSON.stringify(breadcrumb)}></script>}
+    {extraSchemas.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+    ))}
+    {cfBeaconToken && (
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={JSON.stringify({ token: cfBeaconToken })}
+      ></script>
+    )}
+    <script is:inline>
+      const consentKey = "msh_consent_v1";
+      const hasAnalyticsConsent = () => {
+        try {
+          const parsed = JSON.parse(localStorage.getItem(consentKey) || "{}");
+          return Boolean(parsed.analytics);
+        } catch {
+          return false;
+        }
+      };
+
+      const loadPlausible = () => {
+        const domain = document
+          .querySelector('meta[name="msh-plausible-domain"]')
+          ?.getAttribute("content");
+        if (!domain || document.querySelector("script[data-plausible-loaded]")) return;
+        if (!hasAnalyticsConsent()) return;
+
+        const script = document.createElement("script");
+        script.defer = true;
+        script.dataset.domain = domain;
+        script.dataset.plausibleLoaded = "true";
+        script.src = "https://plausible.io/js/script.js";
+        document.head.appendChild(script);
+      };
+
+      const track = (name, props = {}) => {
+        if (!hasAnalyticsConsent()) return;
+        if (typeof window.plausible === "function") {
+          window.plausible(name, { props });
+        }
+      };
+
+      loadPlausible();
+
+      window.addEventListener("msh:consent-updated", loadPlausible);
+
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
+        const el = target.closest("[data-track]");
+        if (!(el instanceof HTMLElement)) return;
+        track(el.dataset.track || "click", {
+          label: el.dataset.trackLabel || ""
+        });
+      });
+
+      window.mshTrackEvent = track;
+    </script>
+  </head>
+  <body>
+    <SiteHeader />
+    <slot />
+    <SiteFooter />
+    <ConsentBanner />
+  </body>
+</html>

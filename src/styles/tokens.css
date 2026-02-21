@@ -1,0 +1,45 @@
+:root {
+  --color-orange: #fa9819;
+  --color-deep-orange: #f45f00;
+  --color-navy: #1e3d59;
+  --color-blue: #48749e;
+  --color-blue-tint: #b6c9cf;
+  --color-baby-blue: #c6ebf7;
+  --color-sky-blue: #deeefe;
+  --color-off-blue: #e8ebef;
+  --color-black: #040404;
+  --color-gray-700: #575757;
+  --color-gray-500: #a3a3a3;
+  --color-gray-300: #e5e5e5;
+  --color-white: #ffffff;
+
+  --gradient-hero: radial-gradient(circle at 10% 20%, #fa9819 0%, #f45f00 35%, #48749e 100%);
+  --gradient-soft: linear-gradient(135deg, #fa9819 0%, #c6ebf7 60%, #1e3d59 100%);
+
+  --font-sans: "Rethink Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Hedvig Letters Serif", Georgia, serif;
+
+  --step--1: clamp(0.84rem, 0.81rem + 0.15vw, 0.92rem);
+  --step-0: clamp(1rem, 0.94rem + 0.3vw, 1.15rem);
+  --step-1: clamp(1.2rem, 1.08rem + 0.55vw, 1.45rem);
+  --step-2: clamp(1.45rem, 1.26rem + 0.95vw, 1.9rem);
+  --step-3: clamp(1.8rem, 1.5rem + 1.5vw, 2.6rem);
+  --step-4: clamp(2.2rem, 1.75rem + 2.2vw, 3.8rem);
+
+  --space-1: 0.4rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4rem;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.9rem;
+  --radius-lg: 1.25rem;
+
+  --shadow-card: 0 6px 22px rgba(30, 61, 89, 0.12);
+  --shadow-soft: 0 10px 32px rgba(4, 4, 4, 0.08);
+
+  --container: min(1160px, 94vw);
+}

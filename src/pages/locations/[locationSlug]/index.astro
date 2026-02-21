@@ -1,0 +1,122 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import FAQBlock from "@/components/FAQBlock.astro";
+import GuideCard from "@/components/GuideCard.astro";
+import ListingCard from "@/components/ListingCard.astro";
+import RelatedLinks from "@/components/RelatedLinks.astro";
+import {
+  getLocations,
+  getLocationBySlug,
+  getTopCategories,
+  getNearbyLocations,
+  getListingsForLocation,
+  getGuidesByLocation
+} from "@/lib/data";
+import { isQualifiedCombo } from "@/lib/combo";
+import { buildSeo, clampMeta } from "@/lib/seo";
+import { faqSchema } from "@/lib/schema";
+
+export const getStaticPaths = () => getLocations().map((location) => ({ params: { locationSlug: location.slug } }));
+
+const { locationSlug } = Astro.params;
+const location = getLocationBySlug(locationSlug!);
+
+if (!location) {
+  throw new Error(`Location not found: ${locationSlug}`);
+}
+
+const topCategories = getTopCategories(12);
+const nearbyLocations = getNearbyLocations(location);
+const listings = getListingsForLocation(location.slug).slice(0, 8);
+const guides = await getGuidesByLocation(location.slug, 6);
+
+const localFaqs = [
+  {
+    q: `How quickly can services arrive in ${location.name}?`,
+    a: `Response windows depend on category and urgency, but many providers offer same-day availability for central localities.`
+  },
+  {
+    q: `Do providers charge travel fees in ${location.name}?`,
+    a: `Some providers include locality-based travel costs in their quote. Ask for this as a separate line item.`
+  },
+  {
+    q: `What should I compare before booking in ${location.name}?`,
+    a: `Compare scope clarity, response promises, warranty terms, and final invoice detail.`
+  },
+  {
+    q: `Are weekend appointments common in ${location.name}?`,
+    a: `Many categories offer weekend slots, though pricing may differ from weekday rates.`
+  }
+];
+
+const seo = buildSeo({
+  path: `/locations/${location.slug}/`,
+  title: `Services in ${location.name}`,
+  description: clampMeta(`Discover services in ${location.name}, Malta with local context, nearby links, and curated guides.`)
+});
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Locations", url: "/locations/" },
+  { name: location.name, url: `/locations/${location.slug}/` }
+];
+
+const categoryLinks = topCategories.map((category) => ({
+  title: `${category.pluralName} in ${location.name}`,
+  href: isQualifiedCombo(category.slug, location.slug)
+    ? `/categories/${category.slug}/${location.slug}/`
+    : `/categories/${category.slug}/`
+}));
+
+const nearbyLinks = nearbyLocations.map((item) => ({
+  title: item.name,
+  href: `/locations/${item.slug}/`
+}));
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[faqSchema(localFaqs)]}>
+  <main>
+    <section class="section">
+      <div class="container prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <h1>Services in {location.name}</h1>
+        <p class="lead">{location.intro}</p>
+        <p>
+          This locality hub connects you to high-priority service categories, nearby areas, and practical guides that reflect local demand conditions.
+        </p>
+      </div>
+    </section>
+
+    <RelatedLinks title={`Popular services in ${location.name}`} links={categoryLinks.slice(0, 12)} />
+    <RelatedLinks title="Nearby locations" links={nearbyLinks.slice(0, 6)} />
+
+    <section class="section">
+      <div class="container">
+        <h2>Listings in {location.name}</h2>
+        <div class="grid grid--cards">
+          {listings.map((listing) => (
+            <ListingCard listing={listing} />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container">
+        <h2>Related guides</h2>
+        <div class="grid grid--cards">
+          {guides.map((guide) => (
+            <GuideCard
+              title={guide.data.title}
+              description={guide.data.description}
+              href={`/guides/${guide.slug}/`}
+              dateUpdated={guide.data.dateUpdated.toISOString()}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <FAQBlock faqs={localFaqs} title={`FAQs for ${location.name}`} />
+  </main>
+</BaseLayout>

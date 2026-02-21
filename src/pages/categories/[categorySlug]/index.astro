@@ -1,0 +1,111 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import FAQBlock from "@/components/FAQBlock.astro";
+import GuideCard from "@/components/GuideCard.astro";
+import ListingCard from "@/components/ListingCard.astro";
+import RelatedLinks from "@/components/RelatedLinks.astro";
+import {
+  getCategories,
+  getCategoryBySlug,
+  getTopLocations,
+  getListingsForCategory,
+  getGuidesByCategory
+} from "@/lib/data";
+import { isQualifiedCombo } from "@/lib/combo";
+import { buildSeo, clampMeta } from "@/lib/seo";
+import { faqSchema } from "@/lib/schema";
+
+export const getStaticPaths = () => getCategories().map((category) => ({ params: { categorySlug: category.slug } }));
+
+const { categorySlug } = Astro.params;
+const category = getCategoryBySlug(categorySlug!);
+
+if (!category) {
+  throw new Error(`Category not found: ${categorySlug}`);
+}
+
+const topLocations = getTopLocations(12);
+const featuredListings = getListingsForCategory(category.slug).slice(0, 6);
+const guides = await getGuidesByCategory(category.slug, 6);
+
+const seo = buildSeo({
+  path: `/categories/${category.slug}/`,
+  title: `${category.pluralName} in Malta`,
+  description: clampMeta(`Compare ${category.pluralName.toLowerCase()} in Malta with local guides, FAQs, and quality-filtered locality pages.`)
+});
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Categories", url: "/categories/" },
+  { name: category.pluralName, url: `/categories/${category.slug}/` }
+];
+
+const locationLinks = topLocations.map((location) => {
+  const comboHref = `/categories/${category.slug}/${location.slug}/`;
+  return {
+    title: `${category.pluralName} in ${location.name}`,
+    href: isQualifiedCombo(category.slug, location.slug) ? comboHref : `/locations/${location.slug}/`
+  };
+});
+
+const relatedGuideLinks = guides.map((guide) => ({
+  title: guide.data.title,
+  href: `/guides/${guide.slug}/`
+}));
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[faqSchema(category.faq)]}>
+  <main>
+    <section class="section">
+      <div class="container prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <h1>{category.pluralName} in Malta</h1>
+        <p class="lead">{category.intro}</p>
+        <p>
+          Malta Service Hub helps you compare providers with practical criteria, not just ranking position. For this category, focus on service scope, response times, and clear cost breakdowns before you commit.
+        </p>
+        <h2>How to choose</h2>
+        <ol>
+          <li>Request written scope and exclusions.</li>
+          <li>Compare at least two itemized quotes.</li>
+          <li>Check warranty period and follow-up policy.</li>
+          <li>Confirm timeline and escalation path.</li>
+          <li>Keep invoices and communication in writing.</li>
+        </ol>
+      </div>
+    </section>
+
+    <RelatedLinks title="Top areas in Malta" links={locationLinks.slice(0, 12)} />
+
+    <section class="section">
+      <div class="container">
+        <h2>Featured listings</h2>
+        <div class="grid grid--cards">
+          {featuredListings.map((listing) => (
+            <ListingCard listing={listing} />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container">
+        <h2>Related guides</h2>
+        <div class="grid grid--cards">
+          {guides.map((guide) => (
+            <GuideCard
+              title={guide.data.title}
+              description={guide.data.description}
+              href={`/guides/${guide.slug}/`}
+              dateUpdated={guide.data.dateUpdated.toISOString()}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <FAQBlock faqs={category.faq} />
+
+    <RelatedLinks title="Related guides" links={relatedGuideLinks} />
+  </main>
+</BaseLayout>

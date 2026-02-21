@@ -1,0 +1,33 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ListingCard from "@/components/ListingCard.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { getListings } from "@/lib/data";
+import { buildSeo, clampMeta } from "@/lib/seo";
+
+const listings = getListings();
+const seo = buildSeo({
+  path: "/listings/",
+  title: "Service Listings in Malta",
+  description: clampMeta("Browse verified service listing profiles across Malta categories and localities.")
+});
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Listings", url: "/listings/" }
+];
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>Listings</h1>
+      <p class="lead">Directory profiles with category tags, locality context, and verification metadata.</p>
+      <div class="grid grid--cards" style="margin-top:1.5rem;">
+        {listings.map((listing) => (
+          <ListingCard listing={listing} />
+        ))}
+      </div>
+    </div>
+  </main>
+</BaseLayout>

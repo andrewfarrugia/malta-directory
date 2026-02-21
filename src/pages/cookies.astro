@@ -1,0 +1,35 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { buildSeo } from "@/lib/seo";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Cookie Policy", url: "/cookies/" }
+];
+
+const seo = buildSeo({
+  path: "/cookies/",
+  title: "Cookie Policy",
+  description: "Draft cookie policy describing necessary, analytics, and marketing categories for Malta Service Hub."
+});
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container prose">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>Cookie Policy (Draft)</h1>
+      <p class="notice">Legal review is required before production launch.</p>
+      <h2>Cookie categories</h2>
+      <ul>
+        <li>Necessary: required for consent and core site operation.</li>
+        <li>Analytics: optional, used for aggregate traffic measurement.</li>
+        <li>Marketing: optional, used for campaign attribution where enabled.</li>
+      </ul>
+      <h2>Consent controls</h2>
+      <p>Users can accept, reject, or set granular preferences and can reopen settings from the footer.</p>
+      <h2>How to withdraw consent</h2>
+      <p>Click "Cookie preferences" in the footer to update your settings.</p>
+    </div>
+  </main>
+</BaseLayout>

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "loc-valletta",
+    "slug": "valletta",
+    "name": "Valletta",
+    "region": "South Eastern Region",
+    "lat": 35.8989,
+    "lng": 14.5146,
+    "intro": "Valletta clients usually prioritize fast response windows, parking-aware logistics, and clear call-out terms for heritage-zone access.",
+    "nearbyLocationIds": ["loc-birkirkara", "loc-sliema", "loc-san-gwann"],
+    "priority": 5
+  },
+  {
+    "id": "loc-sliema",
+    "slug": "sliema",
+    "name": "Sliema",
+    "region": "Northern Harbour Region",
+    "lat": 35.9122,
+    "lng": 14.5049,
+    "intro": "Sliema has high demand for residential maintenance, quick appointments, and evening-friendly service slots for apartment blocks.",
+    "nearbyLocationIds": ["loc-st-julians", "loc-valletta", "loc-san-gwann"],
+    "priority": 5
+  },
+  {
+    "id": "loc-st-julians",
+    "slug": "st-julians",
+    "name": "St Julian's",
+    "region": "Northern Harbour Region",
+    "lat": 35.9224,
+    "lng": 14.4914,
+    "intro": "St Julian's mixes residential and hospitality demand, so providers with flexible timing and commercial experience are often preferred.",
+    "nearbyLocationIds": ["loc-sliema", "loc-swieqi", "loc-san-gwann"],
+    "priority": 5
+  },
+  {
+    "id": "loc-birkirkara",
+    "slug": "birkirkara",
+    "name": "Birkirkara",
+    "region": "Central Region",
+    "lat": 35.8972,
+    "lng": 14.4612,
+    "intro": "Birkirkara residents often compare value-first packages, response times, and after-service support for repeat maintenance needs.",
+    "nearbyLocationIds": ["loc-mosta", "loc-qormi", "loc-san-gwann"],
+    "priority": 5
+  },
+  {
+    "id": "loc-mosta",
+    "slug": "mosta",
+    "name": "Mosta",
+    "region": "Northern Region",
+    "lat": 35.9092,
+    "lng": 14.425,
+    "intro": "Mosta service buyers look for transparent quoting, reliability, and balanced scheduling for suburban homes and small businesses.",
+    "nearbyLocationIds": ["loc-birkirkara", "loc-swieqi", "loc-qormi"],
+    "priority": 4
+  },
+  {
+    "id": "loc-qormi",
+    "slug": "qormi",
+    "name": "Qormi",
+    "region": "Southern Region",
+    "lat": 35.8764,
+    "lng": 14.4722,
+    "intro": "Qormi clients often prioritize practical pricing and providers with proven local travel efficiency across central Malta.",
+    "nearbyLocationIds": ["loc-birkirkara", "loc-mosta", "loc-zabbar"],
+    "priority": 4
+  },
+  {
+    "id": "loc-swieqi",
+    "slug": "swieqi",
+    "name": "Swieqi",
+    "region": "Northern Harbour Region",
+    "lat": 35.9189,
+    "lng": 14.48,
+    "intro": "Swieqi households often shortlist providers with premium service quality, punctuality, and clear communication.",
+    "nearbyLocationIds": ["loc-st-julians", "loc-sliema", "loc-san-gwann"],
+    "priority": 4
+  },
+  {
+    "id": "loc-san-gwann",
+    "slug": "san-gwann",
+    "name": "San Gwann",
+    "region": "Central Region",
+    "lat": 35.9117,
+    "lng": 14.4756,
+    "intro": "San Gwann has steady demand across repairs, cleaning, and installation services with strong preference for dependable follow-ups.",
+    "nearbyLocationIds": ["loc-sliema", "loc-st-julians", "loc-birkirkara"],
+    "priority": 4
+  },
+  {
+    "id": "loc-mellieha",
+    "slug": "mellieha",
+    "name": "Mellieha",
+    "region": "Northern Region",
+    "lat": 35.9564,
+    "lng": 14.3622,
+    "intro": "Mellieha customers usually compare travel surcharges, appointment windows, and provider availability during seasonal demand peaks.",
+    "nearbyLocationIds": ["loc-mosta", "loc-swieqi", "loc-victoria-gozo"],
+    "priority": 3
+  },
+  {
+    "id": "loc-marsaskala",
+    "slug": "marsaskala",
+    "name": "Marsaskala",
+    "region": "South Eastern Region",
+    "lat": 35.8622,
+    "lng": 14.5678,
+    "intro": "Marsaskala service demand is often residential-first, with clients favoring transparent pricing and weekend-friendly scheduling.",
+    "nearbyLocationIds": ["loc-zabbar", "loc-valletta", "loc-qormi"],
+    "priority": 3
+  },
+  {
+    "id": "loc-zabbar",
+    "slug": "zabbar",
+    "name": "Zabbar",
+    "region": "South Eastern Region",
+    "lat": 35.8761,
+    "lng": 14.534,
+    "intro": "Zabbar customers typically value reliable quote follow-through and providers that can handle repeat home maintenance.",
+    "nearbyLocationIds": ["loc-marsaskala", "loc-qormi", "loc-valletta"],
+    "priority": 3
+  },
+  {
+    "id": "loc-victoria-gozo",
+    "slug": "victoria-gozo",
+    "name": "Victoria (Gozo)",
+    "region": "Gozo Region",
+    "lat": 36.0443,
+    "lng": 14.2397,
+    "intro": "Victoria in Gozo requires providers with clear island coverage and realistic timelines for appointments and follow-ups.",
+    "nearbyLocationIds": ["loc-mellieha", "loc-mosta", "loc-valletta"],
+    "priority": 4
+  }
+]

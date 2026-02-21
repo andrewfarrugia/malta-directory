@@ -1,0 +1,43 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { buildSeo, clampMeta } from "@/lib/seo";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Contact", url: "/contact/" }
+];
+
+const seo = buildSeo({
+  path: "/contact/",
+  title: "Contact Malta Service Hub",
+  description: clampMeta(
+    "Contact Malta Service Hub for listing corrections, data-rights requests, and business submissions."
+  )
+});
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container prose">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>Contact</h1>
+      <p>
+        For listing updates, correction requests, data-rights requests, or business submissions, contact us through the channels below.
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:privacy@maltaservicehub.com" data-track="email-click" data-track-label="privacy email">privacy@maltaservicehub.com</a></li>
+        <li>General: <a href="mailto:hello@maltaservicehub.com" data-track="email-click" data-track-label="general email">hello@maltaservicehub.com</a></li>
+        <li>Phone: <a href="tel:+35620101010" data-track="phone-click" data-track-label="main phone">+356 20 101 010</a></li>
+      </ul>
+
+      <h2>Business submissions</h2>
+      <p>Use the draft form below. In production, connect this to your preferred processing endpoint.</p>
+      <form class="card" onsubmit="window.mshTrackEvent && window.mshTrackEvent('contact-submit', { form: 'business-submission' })">
+        <label>Name<br /><input type="text" required style="width:100%;padding:0.6rem;margin-top:0.3rem;" /></label><br />
+        <label>Email<br /><input type="email" required style="width:100%;padding:0.6rem;margin-top:0.3rem;" /></label><br />
+        <label>Message<br /><textarea required style="width:100%;padding:0.6rem;margin-top:0.3rem;min-height:130px;"></textarea></label><br />
+        <button class="btn btn--primary" type="submit" data-track="contact-submit" data-track-label="contact form">Send request</button>
+      </form>
+    </div>
+  </main>
+</BaseLayout>

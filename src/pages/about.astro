@@ -1,0 +1,39 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { buildSeo, clampMeta } from "@/lib/seo";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "About", url: "/about/" }
+];
+
+const seo = buildSeo({
+  path: "/about/",
+  title: "About Malta Service Hub",
+  description: clampMeta(
+    "Learn how Malta Service Hub curates local services, publishes practical guides, and applies quality controls to location pages."
+  )
+});
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container prose">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>About Malta Service Hub</h1>
+      <p>
+        Malta Service Hub is a local-first directory and editorial platform built to help users compare service providers with more confidence. We focus on transparent structure, practical checklists, and useful locality context.
+      </p>
+      <h2>How we curate</h2>
+      <p>
+        We collect publicly available provider information, map services to categories and localities, and record source notes. Combined category-location pages are published only when they meet quality thresholds for utility.
+      </p>
+      <h2>Editorial principles</h2>
+      <ul>
+        <li>Practical guidance over generic keyword copy.</li>
+        <li>Clear internal linking for discovery and context.</li>
+        <li>Ongoing updates to improve accuracy and depth.</li>
+      </ul>
+    </div>
+  </main>
+</BaseLayout>

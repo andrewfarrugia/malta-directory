@@ -1,0 +1,43 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import HubCard from "@/components/HubCard.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { getLocations } from "@/lib/data";
+import { buildSeo, clampMeta } from "@/lib/seo";
+
+const locations = getLocations().sort((a, b) => a.name.localeCompare(b.name));
+const seo = buildSeo({
+  path: "/locations/",
+  title: "Malta Locations We Cover",
+  description: clampMeta("Browse Malta localities and discover available services, nearby areas, and local hiring advice.")
+});
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Locations", url: "/locations/" }
+];
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>Locations in Malta</h1>
+      <p class="lead">
+        Browse major localities with local context, nearby links, and category-specific service options.
+      </p>
+      <div class="grid grid--cards" style="margin-top:1.5rem;">
+        {locations.map((location) => (
+          <HubCard
+            title={location.name}
+            description={location.intro}
+            href={`/locations/${location.slug}/`}
+            chips={location.region ? [location.region] : []}
+          />
+        ))}
+      </div>
+      <p style="margin-top:1.5rem;">
+        Continue to <a href="/categories/">category index</a> or read <a href="/guides/">guides</a>.
+      </p>
+    </div>
+  </main>
+</BaseLayout>

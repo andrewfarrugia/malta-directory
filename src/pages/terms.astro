@@ -1,0 +1,33 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { buildSeo } from "@/lib/seo";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Terms and Conditions", url: "/terms/" }
+];
+
+const seo = buildSeo({
+  path: "/terms/",
+  title: "Terms and Conditions",
+  description: "Draft terms and conditions for use of Malta Service Hub."
+});
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container prose">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>Terms and Conditions (Draft)</h1>
+      <p class="notice">This draft does not constitute legal advice and requires legal review.</p>
+      <h2>Use of the site</h2>
+      <p>Users may browse content for informational purposes. Unauthorized scraping, misuse, or unlawful use is prohibited.</p>
+      <h2>Listings and guide content</h2>
+      <p>Information is provided on an "as-is" basis and may change. Users should independently verify provider suitability.</p>
+      <h2>Limitation of liability</h2>
+      <p>To the maximum extent permitted by law, Malta Service Hub is not liable for indirect or consequential losses arising from site use.</p>
+      <h2>Governing law</h2>
+      <p>These terms are governed by Maltese law unless otherwise required by applicable law.</p>
+    </div>
+  </main>
+</BaseLayout>

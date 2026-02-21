@@ -1,0 +1,94 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import RelatedLinks from "@/components/RelatedLinks.astro";
+import { render } from "astro:content";
+import { getGuides } from "@/lib/data";
+import { getCategoryBySlug, getLocationBySlug } from "@/lib/data";
+import { buildSeo, clampMeta } from "@/lib/seo";
+import { estimateReadTime } from "@/lib/utils";
+
+export const getStaticPaths = async () => {
+  const guides = await getGuides();
+  return guides.map((guide) => ({ params: { guideSlug: guide.slug } }));
+};
+
+const { guideSlug } = Astro.params;
+const guides = await getGuides();
+const guide = guides.find((entry) => entry.slug === guideSlug);
+
+if (!guide) {
+  throw new Error(`Guide not found: ${guideSlug}`);
+}
+
+const { Content, headings } = await render(guide);
+
+const seo = buildSeo({
+  path: `/guides/${guide.slug}/`,
+  title: guide.data.title,
+  description: clampMeta(guide.data.description)
+});
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Guides", url: "/guides/" },
+  { name: guide.data.title, url: `/guides/${guide.slug}/` }
+];
+
+const relatedServices = guide.data.categorySlugs
+  .map((slug) => getCategoryBySlug(slug))
+  .filter(Boolean)
+  .map((category) => ({
+    title: `${category!.pluralName} in Malta`,
+    href: `/categories/${category!.slug}/`
+  }));
+
+const relatedLocations = (guide.data.locationSlugs || [])
+  .map((slug) => getLocationBySlug(slug))
+  .filter(Boolean)
+  .map((location) => ({
+    title: `Services in ${location!.name}`,
+    href: `/locations/${location!.slug}/`
+  }));
+
+const readTime = estimateReadTime(guide.body);
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container read-grid">
+      <article class="prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <h1>{guide.data.title}</h1>
+        <p class="meta">
+          Updated {new Date(guide.data.dateUpdated).toLocaleDateString("en-MT")} · {readTime} min read
+        </p>
+        <Content />
+
+        <section class="card" style="margin-top:1rem;">
+          <h2>Author</h2>
+          <p>
+            {guide.data.author} writes practical local-intent guides for Malta service buyers.
+          </p>
+        </section>
+
+        <section class="card" style="margin-top:1rem;">
+          <h2>Next step</h2>
+          <p>Compare listings and local hubs before booking.</p>
+          <a class="btn btn--primary" href="/listings/">Browse listings</a>
+        </section>
+      </article>
+
+      <aside class="sidebar card">
+        <h2 style="font-size:1.1rem;">Table of contents</h2>
+        <ul>
+          {headings.map((heading) => (
+            <li><a href={`#${heading.slug}`}>{heading.text}</a></li>
+          ))}
+        </ul>
+      </aside>
+    </div>
+
+    <RelatedLinks title="Related services" links={relatedServices} />
+    <RelatedLinks title="Related locations" links={relatedLocations} />
+  </main>
+</BaseLayout>

@@ -1,0 +1,3730 @@
+[
+  {
+    "id": "lst-1",
+    "slug": "plumbers-valletta-1",
+    "name": "Bluewave Plumbers Valletta",
+    "categorySlugs": [
+      "plumbers"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "16 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2001",
+      "country": "MT"
+    },
+    "phone": "+356 79200001",
+    "email": "info1@plumbers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8959,
+      "lng": 14.5116
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Bluewave Plumbers Valletta delivers plumbers support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "plumbers",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-2",
+    "slug": "plumbers-sliema-2",
+    "name": "Crest Plumbers Sliema",
+    "categorySlugs": [
+      "plumbers"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "17 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2002",
+      "country": "MT"
+    },
+    "phone": "+356 79200002",
+    "email": "info2@plumbers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9122,
+      "lng": 14.5049
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Crest Plumbers Sliema delivers plumbers support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "plumbers",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-3",
+    "slug": "plumbers-st-julians-3",
+    "name": "Delta Plumbers St Julian's",
+    "categorySlugs": [
+      "plumbers"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "18 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2003",
+      "country": "MT"
+    },
+    "phone": "+356 79200003",
+    "email": "info3@plumbers.mt",
+    "website": "https://www.plumbers-st-julians-3.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9254,
+      "lng": 14.4944
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Delta Plumbers St Julian's delivers plumbers support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "plumbers",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-4",
+    "slug": "plumbers-birkirkara-4",
+    "name": "Ever Plumbers Birkirkara",
+    "categorySlugs": [
+      "plumbers"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "19 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2004",
+      "country": "MT"
+    },
+    "phone": "+356 79200004",
+    "email": "info4@plumbers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9032,
+      "lng": 14.4672
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Ever Plumbers Birkirkara delivers plumbers support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "plumbers",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/plumbers-birkirkara-4"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-5",
+    "slug": "plumbers-mosta-5",
+    "name": "Firstline Plumbers Mosta",
+    "categorySlugs": [
+      "plumbers"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "20 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2005",
+      "country": "MT"
+    },
+    "phone": "+356 79200005",
+    "email": "info5@plumbers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9032,
+      "lng": 14.419
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Firstline Plumbers Mosta delivers plumbers support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "plumbers",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-6",
+    "slug": "plumbers-qormi-6",
+    "name": "Grand Plumbers Qormi",
+    "categorySlugs": [
+      "plumbers"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "21 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2006",
+      "country": "MT"
+    },
+    "phone": "+356 79200006",
+    "email": "info6@plumbers.mt",
+    "website": "https://www.plumbers-qormi-6.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8734,
+      "lng": 14.4692
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Grand Plumbers Qormi delivers plumbers support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "plumbers",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-7",
+    "slug": "plumbers-swieqi-7",
+    "name": "Harbour Plumbers Swieqi",
+    "categorySlugs": [
+      "plumbers"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "22 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2007",
+      "country": "MT"
+    },
+    "phone": "+356 79200007",
+    "email": "info7@plumbers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9189,
+      "lng": 14.48
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Harbour Plumbers Swieqi delivers plumbers support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "plumbers",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-8",
+    "slug": "plumbers-san-gwann-8",
+    "name": "Island Plumbers San Gwann",
+    "categorySlugs": [
+      "plumbers"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "23 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2008",
+      "country": "MT"
+    },
+    "phone": "+356 79200008",
+    "email": "info8@plumbers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9147,
+      "lng": 14.4786
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Island Plumbers San Gwann delivers plumbers support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "plumbers",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/plumbers-san-gwann-8"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-9",
+    "slug": "electricians-valletta-9",
+    "name": "Jade Electricians Valletta",
+    "categorySlugs": [
+      "electricians"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "24 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2009",
+      "country": "MT"
+    },
+    "phone": "+356 79200009",
+    "email": "info9@electricians.mt",
+    "website": "https://www.electricians-valletta-9.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9049,
+      "lng": 14.5206
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Jade Electricians Valletta delivers electricians support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "electricians",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-10",
+    "slug": "electricians-sliema-10",
+    "name": "Keystone Electricians Sliema",
+    "categorySlugs": [
+      "electricians"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "25 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2010",
+      "country": "MT"
+    },
+    "phone": "+356 79200010",
+    "email": "info10@electricians.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9062,
+      "lng": 14.498899999999999
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Keystone Electricians Sliema delivers electricians support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "electricians",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-11",
+    "slug": "electricians-st-julians-11",
+    "name": "Lighthouse Electricians St Julian's",
+    "categorySlugs": [
+      "electricians"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "26 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2011",
+      "country": "MT"
+    },
+    "phone": "+356 79200011",
+    "email": "info11@electricians.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9194,
+      "lng": 14.4884
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Lighthouse Electricians St Julian's delivers electricians support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "electricians",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-12",
+    "slug": "electricians-birkirkara-12",
+    "name": "Metro Electricians Birkirkara",
+    "categorySlugs": [
+      "electricians"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "27 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2012",
+      "country": "MT"
+    },
+    "phone": "+356 79200012",
+    "email": "info12@electricians.mt",
+    "website": "https://www.electricians-birkirkara-12.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8972,
+      "lng": 14.4612
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Metro Electricians Birkirkara delivers electricians support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "electricians",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/electricians-birkirkara-12"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-13",
+    "slug": "electricians-mosta-13",
+    "name": "Noble Electricians Mosta",
+    "categorySlugs": [
+      "electricians"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "28 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2013",
+      "country": "MT"
+    },
+    "phone": "+356 79200013",
+    "email": "info13@electricians.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9122,
+      "lng": 14.428
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Noble Electricians Mosta delivers electricians support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "electricians",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-14",
+    "slug": "electricians-qormi-14",
+    "name": "Optima Electricians Qormi",
+    "categorySlugs": [
+      "electricians"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "29 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2014",
+      "country": "MT"
+    },
+    "phone": "+356 79200014",
+    "email": "info14@electricians.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8824,
+      "lng": 14.478200000000001
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Optima Electricians Qormi delivers electricians support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "electricians",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-15",
+    "slug": "electricians-swieqi-15",
+    "name": "Prime Electricians Swieqi",
+    "categorySlugs": [
+      "electricians"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "30 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2015",
+      "country": "MT"
+    },
+    "phone": "+356 79200015",
+    "email": "info15@electricians.mt",
+    "website": "https://www.electricians-swieqi-15.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9129,
+      "lng": 14.474
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Prime Electricians Swieqi delivers electricians support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "electricians",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-16",
+    "slug": "electricians-san-gwann-16",
+    "name": "QuickFix Electricians San Gwann",
+    "categorySlugs": [
+      "electricians"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "31 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2016",
+      "country": "MT"
+    },
+    "phone": "+356 79200016",
+    "email": "info16@electricians.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9087,
+      "lng": 14.4726
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "QuickFix Electricians San Gwann delivers electricians support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "electricians",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/electricians-san-gwann-16"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-17",
+    "slug": "cleaning-services-valletta-17",
+    "name": "Reliable Cleaning Services Valletta",
+    "categorySlugs": [
+      "cleaning-services"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "32 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2017",
+      "country": "MT"
+    },
+    "phone": "+356 79200017",
+    "email": "info17@cleaningservices.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8989,
+      "lng": 14.5146
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Reliable Cleaning Services Valletta delivers cleaning services support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "cleaning-services",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-18",
+    "slug": "cleaning-services-sliema-18",
+    "name": "Smart Cleaning Services Sliema",
+    "categorySlugs": [
+      "cleaning-services"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "33 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2018",
+      "country": "MT"
+    },
+    "phone": "+356 79200018",
+    "email": "info18@cleaningservices.mt",
+    "website": "https://www.cleaning-services-sliema-18.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9152,
+      "lng": 14.5079
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Smart Cleaning Services Sliema delivers cleaning services support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "cleaning-services",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-19",
+    "slug": "cleaning-services-st-julians-19",
+    "name": "Trusted Cleaning Services St Julian's",
+    "categorySlugs": [
+      "cleaning-services"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "34 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2019",
+      "country": "MT"
+    },
+    "phone": "+356 79200019",
+    "email": "info19@cleaningservices.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9284,
+      "lng": 14.4974
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Trusted Cleaning Services St Julian's delivers cleaning services support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "cleaning-services",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-20",
+    "slug": "cleaning-services-birkirkara-20",
+    "name": "Alpha Cleaning Services Birkirkara",
+    "categorySlugs": [
+      "cleaning-services"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "35 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2020",
+      "country": "MT"
+    },
+    "phone": "+356 79200020",
+    "email": "info20@cleaningservices.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8912,
+      "lng": 14.4552
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Alpha Cleaning Services Birkirkara delivers cleaning services support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "cleaning-services",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/cleaning-services-birkirkara-20"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-21",
+    "slug": "cleaning-services-mosta-21",
+    "name": "Bluewave Cleaning Services Mosta",
+    "categorySlugs": [
+      "cleaning-services"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "36 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2021",
+      "country": "MT"
+    },
+    "phone": "+356 79200021",
+    "email": "info21@cleaningservices.mt",
+    "website": "https://www.cleaning-services-mosta-21.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9062,
+      "lng": 14.422
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Bluewave Cleaning Services Mosta delivers cleaning services support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "cleaning-services",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-22",
+    "slug": "cleaning-services-qormi-22",
+    "name": "Crest Cleaning Services Qormi",
+    "categorySlugs": [
+      "cleaning-services"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "37 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2022",
+      "country": "MT"
+    },
+    "phone": "+356 79200022",
+    "email": "info22@cleaningservices.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8764,
+      "lng": 14.4722
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Crest Cleaning Services Qormi delivers cleaning services support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "cleaning-services",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-23",
+    "slug": "cleaning-services-swieqi-23",
+    "name": "Delta Cleaning Services Swieqi",
+    "categorySlugs": [
+      "cleaning-services"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "38 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2023",
+      "country": "MT"
+    },
+    "phone": "+356 79200023",
+    "email": "info23@cleaningservices.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9219,
+      "lng": 14.483
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Delta Cleaning Services Swieqi delivers cleaning services support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "cleaning-services",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-24",
+    "slug": "cleaning-services-san-gwann-24",
+    "name": "Ever Cleaning Services San Gwann",
+    "categorySlugs": [
+      "cleaning-services"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "39 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2024",
+      "country": "MT"
+    },
+    "phone": "+356 79200024",
+    "email": "info24@cleaningservices.mt",
+    "website": "https://www.cleaning-services-san-gwann-24.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9177,
+      "lng": 14.4816
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Ever Cleaning Services San Gwann delivers cleaning services support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "cleaning-services",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/cleaning-services-san-gwann-24"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-25",
+    "slug": "painters-valletta-25",
+    "name": "Firstline Painters Valletta",
+    "categorySlugs": [
+      "painters"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "40 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2025",
+      "country": "MT"
+    },
+    "phone": "+356 79200025",
+    "email": "info25@painters.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8929,
+      "lng": 14.5086
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Firstline Painters Valletta delivers painters support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "painters",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-26",
+    "slug": "painters-sliema-26",
+    "name": "Grand Painters Sliema",
+    "categorySlugs": [
+      "painters"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "41 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2026",
+      "country": "MT"
+    },
+    "phone": "+356 79200026",
+    "email": "info26@painters.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9092,
+      "lng": 14.5019
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Grand Painters Sliema delivers painters support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "painters",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-27",
+    "slug": "painters-st-julians-27",
+    "name": "Harbour Painters St Julian's",
+    "categorySlugs": [
+      "painters"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "42 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2027",
+      "country": "MT"
+    },
+    "phone": "+356 79200027",
+    "email": "info27@painters.mt",
+    "website": "https://www.painters-st-julians-27.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9224,
+      "lng": 14.4914
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Harbour Painters St Julian's delivers painters support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "painters",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-28",
+    "slug": "painters-birkirkara-28",
+    "name": "Island Painters Birkirkara",
+    "categorySlugs": [
+      "painters"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "43 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2028",
+      "country": "MT"
+    },
+    "phone": "+356 79200028",
+    "email": "info28@painters.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9002,
+      "lng": 14.4642
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Island Painters Birkirkara delivers painters support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "painters",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/painters-birkirkara-28"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-29",
+    "slug": "painters-mosta-29",
+    "name": "Jade Painters Mosta",
+    "categorySlugs": [
+      "painters"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "44 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2029",
+      "country": "MT"
+    },
+    "phone": "+356 79200029",
+    "email": "info29@painters.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9152,
+      "lng": 14.431000000000001
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Jade Painters Mosta delivers painters support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "painters",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-30",
+    "slug": "painters-qormi-30",
+    "name": "Keystone Painters Qormi",
+    "categorySlugs": [
+      "painters"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "45 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2030",
+      "country": "MT"
+    },
+    "phone": "+356 79200030",
+    "email": "info30@painters.mt",
+    "website": "https://www.painters-qormi-30.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8704,
+      "lng": 14.4662
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Keystone Painters Qormi delivers painters support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "painters",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-31",
+    "slug": "painters-swieqi-31",
+    "name": "Lighthouse Painters Swieqi",
+    "categorySlugs": [
+      "painters"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "46 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2031",
+      "country": "MT"
+    },
+    "phone": "+356 79200031",
+    "email": "info31@painters.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9159,
+      "lng": 14.477
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Lighthouse Painters Swieqi delivers painters support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "painters",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-32",
+    "slug": "painters-san-gwann-32",
+    "name": "Metro Painters San Gwann",
+    "categorySlugs": [
+      "painters"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "47 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2032",
+      "country": "MT"
+    },
+    "phone": "+356 79200032",
+    "email": "info32@painters.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9117,
+      "lng": 14.4756
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Metro Painters San Gwann delivers painters support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "painters",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/painters-san-gwann-32"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-33",
+    "slug": "pest-control-valletta-33",
+    "name": "Noble Pest Control Valletta",
+    "categorySlugs": [
+      "pest-control"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "48 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2033",
+      "country": "MT"
+    },
+    "phone": "+356 79200033",
+    "email": "info33@pestcontrol.mt",
+    "website": "https://www.pest-control-valletta-33.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9019,
+      "lng": 14.5176
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Noble Pest Control Valletta delivers pest control support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "pest-control",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-34",
+    "slug": "pest-control-sliema-34",
+    "name": "Optima Pest Control Sliema",
+    "categorySlugs": [
+      "pest-control"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "49 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2034",
+      "country": "MT"
+    },
+    "phone": "+356 79200034",
+    "email": "info34@pestcontrol.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9182,
+      "lng": 14.5109
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Optima Pest Control Sliema delivers pest control support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "pest-control",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-35",
+    "slug": "pest-control-st-julians-35",
+    "name": "Prime Pest Control St Julian's",
+    "categorySlugs": [
+      "pest-control"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "50 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2035",
+      "country": "MT"
+    },
+    "phone": "+356 79200035",
+    "email": "info35@pestcontrol.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9164,
+      "lng": 14.4854
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Prime Pest Control St Julian's delivers pest control support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "pest-control",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-36",
+    "slug": "pest-control-birkirkara-36",
+    "name": "QuickFix Pest Control Birkirkara",
+    "categorySlugs": [
+      "pest-control"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "51 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2036",
+      "country": "MT"
+    },
+    "phone": "+356 79200036",
+    "email": "info36@pestcontrol.mt",
+    "website": "https://www.pest-control-birkirkara-36.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8942,
+      "lng": 14.4582
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "QuickFix Pest Control Birkirkara delivers pest control support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "pest-control",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/pest-control-birkirkara-36"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-37",
+    "slug": "pest-control-mosta-37",
+    "name": "Reliable Pest Control Mosta",
+    "categorySlugs": [
+      "pest-control"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "52 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2037",
+      "country": "MT"
+    },
+    "phone": "+356 79200037",
+    "email": "info37@pestcontrol.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9092,
+      "lng": 14.425
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Reliable Pest Control Mosta delivers pest control support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "pest-control",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-38",
+    "slug": "pest-control-qormi-38",
+    "name": "Smart Pest Control Qormi",
+    "categorySlugs": [
+      "pest-control"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "53 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2038",
+      "country": "MT"
+    },
+    "phone": "+356 79200038",
+    "email": "info38@pestcontrol.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8794,
+      "lng": 14.475200000000001
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Smart Pest Control Qormi delivers pest control support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "pest-control",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-39",
+    "slug": "pest-control-swieqi-39",
+    "name": "Trusted Pest Control Swieqi",
+    "categorySlugs": [
+      "pest-control"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "54 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2039",
+      "country": "MT"
+    },
+    "phone": "+356 79200039",
+    "email": "info39@pestcontrol.mt",
+    "website": "https://www.pest-control-swieqi-39.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9249,
+      "lng": 14.486
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Trusted Pest Control Swieqi delivers pest control support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "pest-control",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-40",
+    "slug": "pest-control-san-gwann-40",
+    "name": "Alpha Pest Control San Gwann",
+    "categorySlugs": [
+      "pest-control"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "55 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2040",
+      "country": "MT"
+    },
+    "phone": "+356 79200040",
+    "email": "info40@pestcontrol.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9057,
+      "lng": 14.4696
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Alpha Pest Control San Gwann delivers pest control support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "pest-control",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/pest-control-san-gwann-40"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-41",
+    "slug": "hvac-technicians-valletta-41",
+    "name": "Bluewave Hvac Technicians Valletta",
+    "categorySlugs": [
+      "hvac-technicians"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "56 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2041",
+      "country": "MT"
+    },
+    "phone": "+356 79200041",
+    "email": "info41@hvactechnicians.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8959,
+      "lng": 14.5116
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Bluewave Hvac Technicians Valletta delivers hvac technicians support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "hvac-technicians",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-42",
+    "slug": "hvac-technicians-sliema-42",
+    "name": "Crest Hvac Technicians Sliema",
+    "categorySlugs": [
+      "hvac-technicians"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "57 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2042",
+      "country": "MT"
+    },
+    "phone": "+356 79200042",
+    "email": "info42@hvactechnicians.mt",
+    "website": "https://www.hvac-technicians-sliema-42.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9122,
+      "lng": 14.5049
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Crest Hvac Technicians Sliema delivers hvac technicians support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "hvac-technicians",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-43",
+    "slug": "hvac-technicians-st-julians-43",
+    "name": "Delta Hvac Technicians St Julian's",
+    "categorySlugs": [
+      "hvac-technicians"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "58 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2043",
+      "country": "MT"
+    },
+    "phone": "+356 79200043",
+    "email": "info43@hvactechnicians.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9254,
+      "lng": 14.4944
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Delta Hvac Technicians St Julian's delivers hvac technicians support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "hvac-technicians",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-44",
+    "slug": "hvac-technicians-birkirkara-44",
+    "name": "Ever Hvac Technicians Birkirkara",
+    "categorySlugs": [
+      "hvac-technicians"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "59 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2044",
+      "country": "MT"
+    },
+    "phone": "+356 79200044",
+    "email": "info44@hvactechnicians.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9032,
+      "lng": 14.4672
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Ever Hvac Technicians Birkirkara delivers hvac technicians support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "hvac-technicians",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/hvac-technicians-birkirkara-44"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-45",
+    "slug": "hvac-technicians-mosta-45",
+    "name": "Firstline Hvac Technicians Mosta",
+    "categorySlugs": [
+      "hvac-technicians"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "60 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2045",
+      "country": "MT"
+    },
+    "phone": "+356 79200045",
+    "email": "info45@hvactechnicians.mt",
+    "website": "https://www.hvac-technicians-mosta-45.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9032,
+      "lng": 14.419
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Firstline Hvac Technicians Mosta delivers hvac technicians support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "hvac-technicians",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-46",
+    "slug": "hvac-technicians-qormi-46",
+    "name": "Grand Hvac Technicians Qormi",
+    "categorySlugs": [
+      "hvac-technicians"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "61 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2046",
+      "country": "MT"
+    },
+    "phone": "+356 79200046",
+    "email": "info46@hvactechnicians.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8734,
+      "lng": 14.4692
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Grand Hvac Technicians Qormi delivers hvac technicians support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "hvac-technicians",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-47",
+    "slug": "hvac-technicians-swieqi-47",
+    "name": "Harbour Hvac Technicians Swieqi",
+    "categorySlugs": [
+      "hvac-technicians"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "62 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2047",
+      "country": "MT"
+    },
+    "phone": "+356 79200047",
+    "email": "info47@hvactechnicians.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9189,
+      "lng": 14.48
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Harbour Hvac Technicians Swieqi delivers hvac technicians support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "hvac-technicians",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-48",
+    "slug": "hvac-technicians-san-gwann-48",
+    "name": "Island Hvac Technicians San Gwann",
+    "categorySlugs": [
+      "hvac-technicians"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "63 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2048",
+      "country": "MT"
+    },
+    "phone": "+356 79200048",
+    "email": "info48@hvactechnicians.mt",
+    "website": "https://www.hvac-technicians-san-gwann-48.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9147,
+      "lng": 14.4786
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Island Hvac Technicians San Gwann delivers hvac technicians support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "hvac-technicians",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/hvac-technicians-san-gwann-48"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-49",
+    "slug": "roofing-contractors-valletta-49",
+    "name": "Jade Roofing Contractors Valletta",
+    "categorySlugs": [
+      "roofing-contractors"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "64 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2049",
+      "country": "MT"
+    },
+    "phone": "+356 79200049",
+    "email": "info49@roofingcontractors.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9049,
+      "lng": 14.5206
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Jade Roofing Contractors Valletta delivers roofing contractors support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "roofing-contractors",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-50",
+    "slug": "roofing-contractors-sliema-50",
+    "name": "Keystone Roofing Contractors Sliema",
+    "categorySlugs": [
+      "roofing-contractors"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "65 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2050",
+      "country": "MT"
+    },
+    "phone": "+356 79200050",
+    "email": "info50@roofingcontractors.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9062,
+      "lng": 14.498899999999999
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Keystone Roofing Contractors Sliema delivers roofing contractors support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "roofing-contractors",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-51",
+    "slug": "roofing-contractors-st-julians-51",
+    "name": "Lighthouse Roofing Contractors St Julian's",
+    "categorySlugs": [
+      "roofing-contractors"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "66 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2051",
+      "country": "MT"
+    },
+    "phone": "+356 79200051",
+    "email": "info51@roofingcontractors.mt",
+    "website": "https://www.roofing-contractors-st-julians-51.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9194,
+      "lng": 14.4884
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Lighthouse Roofing Contractors St Julian's delivers roofing contractors support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "roofing-contractors",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-52",
+    "slug": "roofing-contractors-birkirkara-52",
+    "name": "Metro Roofing Contractors Birkirkara",
+    "categorySlugs": [
+      "roofing-contractors"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "67 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2052",
+      "country": "MT"
+    },
+    "phone": "+356 79200052",
+    "email": "info52@roofingcontractors.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8972,
+      "lng": 14.4612
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Metro Roofing Contractors Birkirkara delivers roofing contractors support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "roofing-contractors",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/roofing-contractors-birkirkara-52"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-53",
+    "slug": "roofing-contractors-mosta-53",
+    "name": "Noble Roofing Contractors Mosta",
+    "categorySlugs": [
+      "roofing-contractors"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "68 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2053",
+      "country": "MT"
+    },
+    "phone": "+356 79200053",
+    "email": "info53@roofingcontractors.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9122,
+      "lng": 14.428
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Noble Roofing Contractors Mosta delivers roofing contractors support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "roofing-contractors",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-54",
+    "slug": "roofing-contractors-qormi-54",
+    "name": "Optima Roofing Contractors Qormi",
+    "categorySlugs": [
+      "roofing-contractors"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "69 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2054",
+      "country": "MT"
+    },
+    "phone": "+356 79200054",
+    "email": "info54@roofingcontractors.mt",
+    "website": "https://www.roofing-contractors-qormi-54.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8824,
+      "lng": 14.478200000000001
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Optima Roofing Contractors Qormi delivers roofing contractors support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "roofing-contractors",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-55",
+    "slug": "roofing-contractors-swieqi-55",
+    "name": "Prime Roofing Contractors Swieqi",
+    "categorySlugs": [
+      "roofing-contractors"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "70 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2055",
+      "country": "MT"
+    },
+    "phone": "+356 79200055",
+    "email": "info55@roofingcontractors.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9129,
+      "lng": 14.474
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Prime Roofing Contractors Swieqi delivers roofing contractors support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "roofing-contractors",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-56",
+    "slug": "roofing-contractors-san-gwann-56",
+    "name": "QuickFix Roofing Contractors San Gwann",
+    "categorySlugs": [
+      "roofing-contractors"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "71 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2056",
+      "country": "MT"
+    },
+    "phone": "+356 79200056",
+    "email": "info56@roofingcontractors.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9087,
+      "lng": 14.4726
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "QuickFix Roofing Contractors San Gwann delivers roofing contractors support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "roofing-contractors",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/roofing-contractors-san-gwann-56"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-57",
+    "slug": "locksmiths-valletta-57",
+    "name": "Reliable Locksmiths Valletta",
+    "categorySlugs": [
+      "locksmiths"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "72 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2057",
+      "country": "MT"
+    },
+    "phone": "+356 79200057",
+    "email": "info57@locksmiths.mt",
+    "website": "https://www.locksmiths-valletta-57.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8989,
+      "lng": 14.5146
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Reliable Locksmiths Valletta delivers locksmiths support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "locksmiths",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-58",
+    "slug": "locksmiths-sliema-58",
+    "name": "Smart Locksmiths Sliema",
+    "categorySlugs": [
+      "locksmiths"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "73 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2058",
+      "country": "MT"
+    },
+    "phone": "+356 79200058",
+    "email": "info58@locksmiths.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9152,
+      "lng": 14.5079
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Smart Locksmiths Sliema delivers locksmiths support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "locksmiths",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-59",
+    "slug": "locksmiths-st-julians-59",
+    "name": "Trusted Locksmiths St Julian's",
+    "categorySlugs": [
+      "locksmiths"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "74 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2059",
+      "country": "MT"
+    },
+    "phone": "+356 79200059",
+    "email": "info59@locksmiths.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9284,
+      "lng": 14.4974
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Trusted Locksmiths St Julian's delivers locksmiths support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "locksmiths",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-60",
+    "slug": "locksmiths-birkirkara-60",
+    "name": "Alpha Locksmiths Birkirkara",
+    "categorySlugs": [
+      "locksmiths"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "75 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2060",
+      "country": "MT"
+    },
+    "phone": "+356 79200060",
+    "email": "info60@locksmiths.mt",
+    "website": "https://www.locksmiths-birkirkara-60.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8912,
+      "lng": 14.4552
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Alpha Locksmiths Birkirkara delivers locksmiths support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "locksmiths",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/locksmiths-birkirkara-60"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-61",
+    "slug": "locksmiths-mosta-61",
+    "name": "Bluewave Locksmiths Mosta",
+    "categorySlugs": [
+      "locksmiths"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "76 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2061",
+      "country": "MT"
+    },
+    "phone": "+356 79200061",
+    "email": "info61@locksmiths.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9062,
+      "lng": 14.422
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Bluewave Locksmiths Mosta delivers locksmiths support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "locksmiths",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-62",
+    "slug": "locksmiths-qormi-62",
+    "name": "Crest Locksmiths Qormi",
+    "categorySlugs": [
+      "locksmiths"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "77 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2062",
+      "country": "MT"
+    },
+    "phone": "+356 79200062",
+    "email": "info62@locksmiths.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8764,
+      "lng": 14.4722
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Crest Locksmiths Qormi delivers locksmiths support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "locksmiths",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-63",
+    "slug": "locksmiths-swieqi-63",
+    "name": "Delta Locksmiths Swieqi",
+    "categorySlugs": [
+      "locksmiths"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "78 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2063",
+      "country": "MT"
+    },
+    "phone": "+356 79200063",
+    "email": "info63@locksmiths.mt",
+    "website": "https://www.locksmiths-swieqi-63.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9219,
+      "lng": 14.483
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Delta Locksmiths Swieqi delivers locksmiths support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "locksmiths",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-64",
+    "slug": "locksmiths-san-gwann-64",
+    "name": "Ever Locksmiths San Gwann",
+    "categorySlugs": [
+      "locksmiths"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "79 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2064",
+      "country": "MT"
+    },
+    "phone": "+356 79200064",
+    "email": "info64@locksmiths.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9177,
+      "lng": 14.4816
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Ever Locksmiths San Gwann delivers locksmiths support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "locksmiths",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/locksmiths-san-gwann-64"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-65",
+    "slug": "movers-valletta-65",
+    "name": "Firstline Movers Valletta",
+    "categorySlugs": [
+      "movers"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "80 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2065",
+      "country": "MT"
+    },
+    "phone": "+356 79200065",
+    "email": "info65@movers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8929,
+      "lng": 14.5086
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Firstline Movers Valletta delivers movers support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "movers",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-66",
+    "slug": "movers-sliema-66",
+    "name": "Grand Movers Sliema",
+    "categorySlugs": [
+      "movers"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "81 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2066",
+      "country": "MT"
+    },
+    "phone": "+356 79200066",
+    "email": "info66@movers.mt",
+    "website": "https://www.movers-sliema-66.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9092,
+      "lng": 14.5019
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Grand Movers Sliema delivers movers support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "movers",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-67",
+    "slug": "movers-st-julians-67",
+    "name": "Harbour Movers St Julian's",
+    "categorySlugs": [
+      "movers"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "82 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2067",
+      "country": "MT"
+    },
+    "phone": "+356 79200067",
+    "email": "info67@movers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9224,
+      "lng": 14.4914
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Harbour Movers St Julian's delivers movers support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "movers",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-68",
+    "slug": "movers-birkirkara-68",
+    "name": "Island Movers Birkirkara",
+    "categorySlugs": [
+      "movers"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "83 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2068",
+      "country": "MT"
+    },
+    "phone": "+356 79200068",
+    "email": "info68@movers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9002,
+      "lng": 14.4642
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Island Movers Birkirkara delivers movers support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "movers",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/movers-birkirkara-68"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-69",
+    "slug": "movers-mosta-69",
+    "name": "Jade Movers Mosta",
+    "categorySlugs": [
+      "movers"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "84 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2069",
+      "country": "MT"
+    },
+    "phone": "+356 79200069",
+    "email": "info69@movers.mt",
+    "website": "https://www.movers-mosta-69.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9152,
+      "lng": 14.431000000000001
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Jade Movers Mosta delivers movers support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "movers",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-70",
+    "slug": "movers-qormi-70",
+    "name": "Keystone Movers Qormi",
+    "categorySlugs": [
+      "movers"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "15 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2070",
+      "country": "MT"
+    },
+    "phone": "+356 79200070",
+    "email": "info70@movers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8704,
+      "lng": 14.4662
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Keystone Movers Qormi delivers movers support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "movers",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-71",
+    "slug": "movers-swieqi-71",
+    "name": "Lighthouse Movers Swieqi",
+    "categorySlugs": [
+      "movers"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "16 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2071",
+      "country": "MT"
+    },
+    "phone": "+356 79200071",
+    "email": "info71@movers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9159,
+      "lng": 14.477
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Lighthouse Movers Swieqi delivers movers support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "movers",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-72",
+    "slug": "movers-san-gwann-72",
+    "name": "Metro Movers San Gwann",
+    "categorySlugs": [
+      "movers"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "17 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2072",
+      "country": "MT"
+    },
+    "phone": "+356 79200072",
+    "email": "info72@movers.mt",
+    "website": "https://www.movers-san-gwann-72.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9117,
+      "lng": 14.4756
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Metro Movers San Gwann delivers movers support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "movers",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/movers-san-gwann-72"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-73",
+    "slug": "photographers-valletta-73",
+    "name": "Noble Photographers Valletta",
+    "categorySlugs": [
+      "photographers"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "18 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2073",
+      "country": "MT"
+    },
+    "phone": "+356 79200073",
+    "email": "info73@photographers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9019,
+      "lng": 14.5176
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Noble Photographers Valletta delivers photographers support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "photographers",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-74",
+    "slug": "photographers-sliema-74",
+    "name": "Optima Photographers Sliema",
+    "categorySlugs": [
+      "photographers"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "19 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2074",
+      "country": "MT"
+    },
+    "phone": "+356 79200074",
+    "email": "info74@photographers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9182,
+      "lng": 14.5109
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Optima Photographers Sliema delivers photographers support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "photographers",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-75",
+    "slug": "photographers-st-julians-75",
+    "name": "Prime Photographers St Julian's",
+    "categorySlugs": [
+      "photographers"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "20 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2075",
+      "country": "MT"
+    },
+    "phone": "+356 79200075",
+    "email": "info75@photographers.mt",
+    "website": "https://www.photographers-st-julians-75.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9164,
+      "lng": 14.4854
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Prime Photographers St Julian's delivers photographers support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "photographers",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-76",
+    "slug": "photographers-birkirkara-76",
+    "name": "QuickFix Photographers Birkirkara",
+    "categorySlugs": [
+      "photographers"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "21 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2076",
+      "country": "MT"
+    },
+    "phone": "+356 79200076",
+    "email": "info76@photographers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8942,
+      "lng": 14.4582
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "QuickFix Photographers Birkirkara delivers photographers support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "photographers",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/photographers-birkirkara-76"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-77",
+    "slug": "photographers-mosta-77",
+    "name": "Reliable Photographers Mosta",
+    "categorySlugs": [
+      "photographers"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "22 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2077",
+      "country": "MT"
+    },
+    "phone": "+356 79200077",
+    "email": "info77@photographers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9092,
+      "lng": 14.425
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Reliable Photographers Mosta delivers photographers support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "photographers",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-78",
+    "slug": "photographers-qormi-78",
+    "name": "Smart Photographers Qormi",
+    "categorySlugs": [
+      "photographers"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "23 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2078",
+      "country": "MT"
+    },
+    "phone": "+356 79200078",
+    "email": "info78@photographers.mt",
+    "website": "https://www.photographers-qormi-78.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8794,
+      "lng": 14.475200000000001
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Smart Photographers Qormi delivers photographers support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "photographers",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-79",
+    "slug": "photographers-swieqi-79",
+    "name": "Trusted Photographers Swieqi",
+    "categorySlugs": [
+      "photographers"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "24 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2079",
+      "country": "MT"
+    },
+    "phone": "+356 79200079",
+    "email": "info79@photographers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9249,
+      "lng": 14.486
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Trusted Photographers Swieqi delivers photographers support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "photographers",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-80",
+    "slug": "photographers-san-gwann-80",
+    "name": "Alpha Photographers San Gwann",
+    "categorySlugs": [
+      "photographers"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "25 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2080",
+      "country": "MT"
+    },
+    "phone": "+356 79200080",
+    "email": "info80@photographers.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9057,
+      "lng": 14.4696
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Alpha Photographers San Gwann delivers photographers support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "photographers",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/photographers-san-gwann-80"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-81",
+    "slug": "wedding-planners-valletta-81",
+    "name": "Bluewave Wedding Planners Valletta",
+    "categorySlugs": [
+      "wedding-planners"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "26 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2081",
+      "country": "MT"
+    },
+    "phone": "+356 79200081",
+    "email": "info81@weddingplanners.mt",
+    "website": "https://www.wedding-planners-valletta-81.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8959,
+      "lng": 14.5116
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Bluewave Wedding Planners Valletta delivers wedding planners support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "wedding-planners",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-82",
+    "slug": "wedding-planners-sliema-82",
+    "name": "Crest Wedding Planners Sliema",
+    "categorySlugs": [
+      "wedding-planners"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "27 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2082",
+      "country": "MT"
+    },
+    "phone": "+356 79200082",
+    "email": "info82@weddingplanners.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9122,
+      "lng": 14.5049
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Crest Wedding Planners Sliema delivers wedding planners support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "wedding-planners",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-83",
+    "slug": "wedding-planners-st-julians-83",
+    "name": "Delta Wedding Planners St Julian's",
+    "categorySlugs": [
+      "wedding-planners"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "28 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2083",
+      "country": "MT"
+    },
+    "phone": "+356 79200083",
+    "email": "info83@weddingplanners.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9254,
+      "lng": 14.4944
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Delta Wedding Planners St Julian's delivers wedding planners support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "wedding-planners",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-84",
+    "slug": "wedding-planners-birkirkara-84",
+    "name": "Ever Wedding Planners Birkirkara",
+    "categorySlugs": [
+      "wedding-planners"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "29 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2084",
+      "country": "MT"
+    },
+    "phone": "+356 79200084",
+    "email": "info84@weddingplanners.mt",
+    "website": "https://www.wedding-planners-birkirkara-84.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9032,
+      "lng": 14.4672
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Ever Wedding Planners Birkirkara delivers wedding planners support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "wedding-planners",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/wedding-planners-birkirkara-84"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-85",
+    "slug": "wedding-planners-mosta-85",
+    "name": "Firstline Wedding Planners Mosta",
+    "categorySlugs": [
+      "wedding-planners"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "30 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2085",
+      "country": "MT"
+    },
+    "phone": "+356 79200085",
+    "email": "info85@weddingplanners.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9032,
+      "lng": 14.419
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Firstline Wedding Planners Mosta delivers wedding planners support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "wedding-planners",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-86",
+    "slug": "wedding-planners-qormi-86",
+    "name": "Grand Wedding Planners Qormi",
+    "categorySlugs": [
+      "wedding-planners"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "31 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2086",
+      "country": "MT"
+    },
+    "phone": "+356 79200086",
+    "email": "info86@weddingplanners.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8734,
+      "lng": 14.4692
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Grand Wedding Planners Qormi delivers wedding planners support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "wedding-planners",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-87",
+    "slug": "wedding-planners-swieqi-87",
+    "name": "Harbour Wedding Planners Swieqi",
+    "categorySlugs": [
+      "wedding-planners"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "32 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2087",
+      "country": "MT"
+    },
+    "phone": "+356 79200087",
+    "email": "info87@weddingplanners.mt",
+    "website": "https://www.wedding-planners-swieqi-87.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9189,
+      "lng": 14.48
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Harbour Wedding Planners Swieqi delivers wedding planners support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "wedding-planners",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-88",
+    "slug": "wedding-planners-san-gwann-88",
+    "name": "Island Wedding Planners San Gwann",
+    "categorySlugs": [
+      "wedding-planners"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "33 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2088",
+      "country": "MT"
+    },
+    "phone": "+356 79200088",
+    "email": "info88@weddingplanners.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9147,
+      "lng": 14.4786
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Island Wedding Planners San Gwann delivers wedding planners support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "wedding-planners",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/wedding-planners-san-gwann-88"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-89",
+    "slug": "it-support-valletta-89",
+    "name": "Jade It Support Valletta",
+    "categorySlugs": [
+      "it-support"
+    ],
+    "locationSlug": "valletta",
+    "address": {
+      "line1": "34 Triq Valletta",
+      "locality": "Valletta",
+      "postalCode": "2089",
+      "country": "MT"
+    },
+    "phone": "+356 79200089",
+    "email": "info89@itsupport.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9049,
+      "lng": 14.5206
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Jade It Support Valletta delivers it support support in Valletta with transparent communication and verified profile metadata.",
+    "tags": [
+      "it-support",
+      "malta",
+      "valletta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-90",
+    "slug": "it-support-sliema-90",
+    "name": "Keystone It Support Sliema",
+    "categorySlugs": [
+      "it-support"
+    ],
+    "locationSlug": "sliema",
+    "address": {
+      "line1": "35 Triq Sliema",
+      "locality": "Sliema",
+      "postalCode": "2090",
+      "country": "MT"
+    },
+    "phone": "+356 79200090",
+    "email": "info90@itsupport.mt",
+    "website": "https://www.it-support-sliema-90.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9062,
+      "lng": 14.498899999999999
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Keystone It Support Sliema delivers it support support in Sliema with transparent communication and verified profile metadata.",
+    "tags": [
+      "it-support",
+      "malta",
+      "sliema"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-91",
+    "slug": "it-support-st-julians-91",
+    "name": "Lighthouse It Support St Julian's",
+    "categorySlugs": [
+      "it-support"
+    ],
+    "locationSlug": "st-julians",
+    "address": {
+      "line1": "36 Triq St",
+      "locality": "St Julian's",
+      "postalCode": "2091",
+      "country": "MT"
+    },
+    "phone": "+356 79200091",
+    "email": "info91@itsupport.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9194,
+      "lng": 14.4884
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Lighthouse It Support St Julian's delivers it support support in St Julian's with transparent communication and verified profile metadata.",
+    "tags": [
+      "it-support",
+      "malta",
+      "st-julians"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-92",
+    "slug": "it-support-birkirkara-92",
+    "name": "Metro It Support Birkirkara",
+    "categorySlugs": [
+      "it-support"
+    ],
+    "locationSlug": "birkirkara",
+    "address": {
+      "line1": "37 Triq Birkirkara",
+      "locality": "Birkirkara",
+      "postalCode": "2092",
+      "country": "MT"
+    },
+    "phone": "+356 79200092",
+    "email": "info92@itsupport.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8972,
+      "lng": 14.4612
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Metro It Support Birkirkara delivers it support support in Birkirkara with transparent communication and verified profile metadata.",
+    "tags": [
+      "it-support",
+      "malta",
+      "birkirkara"
+    ],
+    "socialLinks": [
+      "https://facebook.com/it-support-birkirkara-92"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-93",
+    "slug": "it-support-mosta-93",
+    "name": "Noble It Support Mosta",
+    "categorySlugs": [
+      "it-support"
+    ],
+    "locationSlug": "mosta",
+    "address": {
+      "line1": "38 Triq Mosta",
+      "locality": "Mosta",
+      "postalCode": "2093",
+      "country": "MT"
+    },
+    "phone": "+356 79200093",
+    "email": "info93@itsupport.mt",
+    "website": "https://www.it-support-mosta-93.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9122,
+      "lng": 14.428
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Noble It Support Mosta delivers it support support in Mosta with transparent communication and verified profile metadata.",
+    "tags": [
+      "it-support",
+      "malta",
+      "mosta"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-94",
+    "slug": "it-support-qormi-94",
+    "name": "Optima It Support Qormi",
+    "categorySlugs": [
+      "it-support"
+    ],
+    "locationSlug": "qormi",
+    "address": {
+      "line1": "39 Triq Qormi",
+      "locality": "Qormi",
+      "postalCode": "2094",
+      "country": "MT"
+    },
+    "phone": "+356 79200094",
+    "email": "info94@itsupport.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.8824,
+      "lng": 14.478200000000001
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Optima It Support Qormi delivers it support support in Qormi with transparent communication and verified profile metadata.",
+    "tags": [
+      "it-support",
+      "malta",
+      "qormi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-95",
+    "slug": "it-support-swieqi-95",
+    "name": "Prime It Support Swieqi",
+    "categorySlugs": [
+      "it-support"
+    ],
+    "locationSlug": "swieqi",
+    "address": {
+      "line1": "40 Triq Swieqi",
+      "locality": "Swieqi",
+      "postalCode": "2095",
+      "country": "MT"
+    },
+    "phone": "+356 79200095",
+    "email": "info95@itsupport.mt",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9129,
+      "lng": 14.474
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "Prime It Support Swieqi delivers it support support in Swieqi with transparent communication and verified profile metadata.",
+    "tags": [
+      "it-support",
+      "malta",
+      "swieqi"
+    ],
+    "socialLinks": [],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  },
+  {
+    "id": "lst-96",
+    "slug": "it-support-san-gwann-96",
+    "name": "QuickFix It Support San Gwann",
+    "categorySlugs": [
+      "it-support"
+    ],
+    "locationSlug": "san-gwann",
+    "address": {
+      "line1": "41 Triq San",
+      "locality": "San Gwann",
+      "postalCode": "2096",
+      "country": "MT"
+    },
+    "phone": "+356 79200096",
+    "email": "info96@itsupport.mt",
+    "website": "https://www.it-support-san-gwann-96.com",
+    "openingHours": [
+      "Mon-Fri 08:00-18:00",
+      "Sat 08:00-13:00"
+    ],
+    "geo": {
+      "lat": 35.9087,
+      "lng": 14.4726
+    },
+    "images": [
+      "/images/listing-placeholder-1.svg",
+      "/images/listing-placeholder-2.svg"
+    ],
+    "shortDescription": "QuickFix It Support San Gwann delivers it support support in San Gwann with transparent communication and verified profile metadata.",
+    "tags": [
+      "it-support",
+      "malta",
+      "san-gwann"
+    ],
+    "socialLinks": [
+      "https://facebook.com/it-support-san-gwann-96"
+    ],
+    "lastVerifiedDate": "2026-02-21",
+    "sourceNotes": "Compiled from publicly available business profile information and directory references; verify before publishing in production."
+  }
+]

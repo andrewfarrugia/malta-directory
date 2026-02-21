@@ -1,0 +1,109 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import FAQBlock from "@/components/FAQBlock.astro";
+import ListingCard from "@/components/ListingCard.astro";
+import RelatedLinks from "@/components/RelatedLinks.astro";
+import {
+  getCategoryBySlug,
+  getLocationBySlug,
+  getListingsForCombo,
+  getGuidesByCategory,
+  getGuidesByLocation
+} from "@/lib/data";
+import { getQualifiedCombos, getQualifiedComboEditorial } from "@/lib/combo";
+import { buildSeo, clampMeta } from "@/lib/seo";
+import { faqSchema } from "@/lib/schema";
+
+export const getStaticPaths = () =>
+  getQualifiedCombos().map((combo) => ({
+    params: { categorySlug: combo.categorySlug, locationSlug: combo.locationSlug }
+  }));
+
+const { categorySlug, locationSlug } = Astro.params;
+const category = getCategoryBySlug(categorySlug!);
+const location = getLocationBySlug(locationSlug!);
+
+if (!category || !location) {
+  throw new Error(`Missing combo context: ${categorySlug}/${locationSlug}`);
+}
+
+const combo = getQualifiedComboEditorial(category.slug, location.slug);
+if (!combo) {
+  throw new Error(`Combo not qualified: ${category.slug}/${location.slug}`);
+}
+
+const listings = getListingsForCombo(category.slug, location.slug);
+const guidesByCategory = await getGuidesByCategory(category.slug, 4);
+const guidesByLocation = await getGuidesByLocation(location.slug, 4);
+
+const relatedGuides = [...guidesByCategory, ...guidesByLocation].filter(
+  (guide, index, all) => all.findIndex((candidate) => candidate.slug === guide.slug) === index
+);
+
+const title = combo.titleOverride || `${category.pluralName} in ${location.name}, Malta`;
+const description = combo.descriptionOverride ||
+  `Compare ${category.pluralName.toLowerCase()} in ${location.name} with local pricing context and practical selection guidance.`;
+
+const seo = buildSeo({
+  path: `/categories/${category.slug}/${location.slug}/`,
+  title,
+  description: clampMeta(description)
+});
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Categories", url: "/categories/" },
+  { name: category.pluralName, url: `/categories/${category.slug}/` },
+  { name: location.name, url: `/categories/${category.slug}/${location.slug}/` }
+];
+
+const guideLinks = relatedGuides.map((guide) => ({ title: guide.data.title, href: `/guides/${guide.slug}/` }));
+const bodyParagraphs = combo.body.split(/\n\n+/).map((part) => part.trim()).filter(Boolean);
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[faqSchema(combo.faqs)]}>
+  <main>
+    <section class="section">
+      <div class="container prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <h1>{title}</h1>
+        <p class="lead">{combo.uniqueIntro}</p>
+        {combo.priceRange && (
+          <div class="notice">
+            <strong>Typical prices in {location.name}</strong>
+            <p>{combo.priceRange}</p>
+          </div>
+        )}
+        {bodyParagraphs.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+        <h2>Local pitfalls to avoid</h2>
+        <ul>
+          <li>Choosing only by lowest headline price without written scope.</li>
+          <li>Skipping timeline confirmation for follow-up visits.</li>
+          <li>Ignoring locality access constraints that impact final pricing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container">
+        <h2>Curated listings for this area</h2>
+        <div class="grid grid--cards">
+          {listings.length > 0 ? listings.map((listing) => <ListingCard listing={listing} />) : <p>No listings yet for this pair.</p>}
+        </div>
+      </div>
+    </section>
+
+    <FAQBlock faqs={combo.faqs} title={`FAQs: ${category.pluralName} in ${location.name}`} />
+
+    <RelatedLinks title="Related guides" links={guideLinks} />
+    <RelatedLinks
+      title="Explore more"
+      links={[
+        { title: `${category.pluralName} in Malta`, href: `/categories/${category.slug}/` },
+        { title: `Services in ${location.name}`, href: `/locations/${location.slug}/` }
+      ]}
+    />
+  </main>
+</BaseLayout>

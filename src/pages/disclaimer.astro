@@ -1,0 +1,31 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { buildSeo } from "@/lib/seo";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Disclaimer", url: "/disclaimer/" }
+];
+
+const seo = buildSeo({
+  path: "/disclaimer/",
+  title: "Disclaimer",
+  description: "Draft website disclaimer for Malta Service Hub listing and guide content."
+});
+---
+<BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
+  <main class="section">
+    <div class="container prose">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1>Disclaimer (Draft)</h1>
+      <p class="notice">Legal review required before publication.</p>
+      <p>
+        Malta Service Hub provides informational content and directory listings. We do not guarantee that every provider will meet individual user requirements. Users should carry out their own due diligence before engaging any business.
+      </p>
+      <p>
+        Pricing ranges are indicative and may vary by scope, urgency, and provider policy.
+      </p>
+    </div>
+  </main>
+</BaseLayout>
