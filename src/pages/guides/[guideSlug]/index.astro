@@ -64,22 +64,22 @@ const readTime = estimateReadTime(guide.body);
         </p>
         <Content />
 
-        <section class="card" style="margin-top:1rem;">
+        <section class="card mt-sm">
           <h2>Author</h2>
           <p>
             {guide.data.author} writes practical local-intent guides for Malta service buyers.
           </p>
         </section>
 
-        <section class="card" style="margin-top:1rem;">
+        <section class="card mt-sm">
           <h2>Next step</h2>
-          <p>Compare listings and local hubs before booking.</p>
-          <a class="btn btn--primary" href="/listings/">Browse listings</a>
+          <p>Compare category and locality hubs, then request direct quotes from providers.</p>
+          <a class="btn btn--primary" href="/categories/">Browse categories</a>
         </section>
       </article>
 
       <aside class="sidebar card">
-        <h2 style="font-size:1.1rem;">Table of contents</h2>
+        <h2>Table of contents</h2>
         <ul>
           {headings.map((heading) => (
             <li><a href={`#${heading.slug}`}>{heading.text}</a></li>

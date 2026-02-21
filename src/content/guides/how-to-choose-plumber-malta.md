@@ -1,6 +1,6 @@
 ---
 title: "How to Choose a Plumber in Malta: 10-Point Checklist"
-description: "Use this checklist to choose a reliable plumber in Malta with fewer pricing surprises."
+description: "Use this checklist to choose a plumber in Malta with fewer pricing surprises."
 datePublished: 2026-01-22
 dateUpdated: 2026-02-21
 categorySlugs:

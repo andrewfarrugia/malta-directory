@@ -3,14 +3,12 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import FAQBlock from "@/components/FAQBlock.astro";
 import GuideCard from "@/components/GuideCard.astro";
-import ListingCard from "@/components/ListingCard.astro";
 import RelatedLinks from "@/components/RelatedLinks.astro";
 import {
   getLocations,
   getLocationBySlug,
   getTopCategories,
   getNearbyLocations,
-  getListingsForLocation,
   getGuidesByLocation
 } from "@/lib/data";
 import { isQualifiedCombo } from "@/lib/combo";
@@ -28,7 +26,6 @@ if (!location) {
 
 const topCategories = getTopCategories(12);
 const nearbyLocations = getNearbyLocations(location);
-const listings = getListingsForLocation(location.slug).slice(0, 8);
 const guides = await getGuidesByLocation(location.slug, 6);
 
 const localFaqs = [
@@ -92,12 +89,10 @@ const nearbyLinks = nearbyLocations.map((item) => ({
 
     <section class="section">
       <div class="container">
-        <h2>Listings in {location.name}</h2>
-        <div class="grid grid--cards">
-          {listings.map((listing) => (
-            <ListingCard listing={listing} />
-          ))}
-        </div>
+        <h2>Directory notes for {location.name}</h2>
+        <p class="prose">
+          Public listing records for this locality are currently excluded from indexed directory pages. Please confirm current provider details directly before making a booking decision.
+        </p>
       </div>
     </section>
 

@@ -3,7 +3,7 @@ export const siteConfig = {
   siteUrl: process.env.SITE_URL || "https://maltaservicehub.com",
   defaultTitle: "Malta Service Hub - Local directory and guides for Malta",
   defaultDescription:
-    "Find trusted services, local business listings, and practical guides for Malta across top categories and localities.",
+    "Independent Malta services directory and practical local guides compiled from publicly available information.",
   socialImage: "/images/og-default.svg",
   contactEmail: "hello@maltaservicehub.com",
   analytics: {

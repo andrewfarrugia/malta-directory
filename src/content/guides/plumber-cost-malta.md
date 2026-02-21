@@ -12,6 +12,9 @@ locationSlugs:
 intent: pricing
 author: "Malta Service Hub Editorial"
 ---
+
+Prices are indicative and may vary depending on scope, location, and provider.
+
 Plumbing costs in Malta typically combine a call-out fee, labor time, and materials. For small repairs, many households see a base visit fee plus one hour of labor. More complex work, such as concealed leak detection or pipe replacement, can increase total cost because diagnostics and parts take longer.
 
 ## Typical plumber price ranges in Malta
@@ -44,3 +47,5 @@ Ask for an itemized quote with call-out, labor, parts, and VAT. Confirm whether 
 - No written confirmation before work starts.
 
 Use this guide as a benchmark and compare at least two providers before you book.
+
+Pricing information is based on general market research and may vary. Always request a direct quote.

@@ -64,7 +64,7 @@
     "faq": [
       { "q": "How long does repainting take?", "a": "Small apartments can take 2-4 days, while larger homes and exterior jobs take longer." },
       { "q": "Do painters include wall prep?", "a": "Professional quotes typically include patching, sanding, and protective masking." },
-      { "q": "Can painters work around occupied homes?", "a": "Yes, but phased room-by-room plans are recommended." },
+      { "q": "Can painters work around occupied homes?", "a": "Yes, but phased room-by-room plans are commonly used." },
       { "q": "What paint finish is best for humidity?", "a": "Washable and moisture-resistant systems are preferred in kitchens and bathrooms." }
     ],
     "relatedCategoryIds": ["cat-cleaning", "cat-roofing", "cat-plumbers"],
@@ -96,7 +96,7 @@
     "pluralName": "HVAC Technicians",
     "primaryKeyword": "air conditioning service malta",
     "synonyms": ["ac repair malta", "hvac maintenance malta"],
-    "intro": "HVAC technicians in Malta provide AC installation, seasonal servicing, and fault repair for homes and commercial sites. Prioritize certified handling, clear warranty terms, and response windows.",
+    "intro": "HVAC technicians in Malta provide AC installation, seasonal servicing, and fault repair for homes and commercial sites. Prioritize clear service scope, warranty terms, and response windows.",
     "faq": [
       { "q": "How often should AC systems be serviced?", "a": "Twice per year is common in Malta, especially before and after peak summer." },
       { "q": "What is included in a standard service?", "a": "Cleaning filters, checking gas pressure, inspecting electrical components, and system testing." },
@@ -118,7 +118,7 @@
     "faq": [
       { "q": "What is the average roof repair timeline?", "a": "Many standard residential repairs are completed within 1-3 days, weather permitting." },
       { "q": "Do roofing contractors provide waterproofing certificates?", "a": "Some providers issue workmanship warranties and product documentation." },
-      { "q": "Can contractors inspect leaks first?", "a": "Yes, inspection-first visits are recommended before committing to a full scope." },
+      { "q": "Can contractors inspect leaks first?", "a": "Yes, inspection-first visits are commonly used before committing to a full scope." },
       { "q": "Do roof repairs need permits?", "a": "Permit needs vary based on building type and structural scope." }
     ],
     "relatedCategoryIds": ["cat-plumbers", "cat-painters", "cat-electricians"],
@@ -170,7 +170,7 @@
     "synonyms": ["event photographers malta", "wedding photographers malta"],
     "intro": "Photographers in Malta cover weddings, events, corporate shoots, and lifestyle sessions. Review portfolio quality, turnaround times, and usage rights before booking.",
     "faq": [
-      { "q": "How far in advance should I book a photographer?", "a": "For weddings and peak dates, booking several months ahead is recommended." },
+      { "q": "How far in advance should I book a photographer?", "a": "For weddings and peak dates, booking several months ahead is commonly used." },
       { "q": "Are edited photos included?", "a": "Most packages include edited highlights, with optional full-gallery upgrades." },
       { "q": "Do photographers offer video too?", "a": "Some teams provide bundled photo and video services." },
       { "q": "What rights do I get over the photos?", "a": "Usage rights vary, so confirm personal and commercial usage terms." }

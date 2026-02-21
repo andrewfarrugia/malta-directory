@@ -2,7 +2,6 @@ import type { APIRoute } from "astro";
 import {
   getCategories,
   getLocations,
-  getListings,
   getGuides
 } from "@/lib/data";
 import { getQualifiedCombos } from "@/lib/combo";
@@ -11,7 +10,6 @@ import type { SearchDocument } from "@/lib/types";
 export const GET: APIRoute = async () => {
   const categories = getCategories();
   const locations = getLocations();
-  const listings = getListings();
   const guides = await getGuides();
   const combos = getQualifiedCombos();
 
@@ -71,13 +69,6 @@ export const GET: APIRoute = async () => {
       type: "guide" as const,
       tags: [...guide.data.categorySlugs, ...(guide.data.locationSlugs || []), guide.data.intent],
       description: guide.data.description
-    })),
-    ...listings.map((listing) => ({
-      title: listing.name,
-      url: `/listings/${listing.slug}/`,
-      type: "listing" as const,
-      tags: [...listing.categorySlugs, listing.locationSlug, ...listing.tags],
-      description: listing.shortDescription
     }))
   ];
 

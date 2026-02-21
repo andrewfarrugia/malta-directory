@@ -12,6 +12,9 @@ locationSlugs:
 intent: pricing
 author: "Malta Service Hub Editorial"
 ---
+
+Prices are indicative and may vary depending on scope, location, and provider.
+
 Roofing costs in Malta vary based on surface condition, membrane selection, and drainage complexity. Small patch repairs are lower cost, while full waterproofing systems require larger material and labor budgets.
 
 ## Typical roof work ranges
@@ -24,3 +27,5 @@ Roofing costs in Malta vary based on surface condition, membrane selection, and 
 | Terrace re-sealing and detailing | EUR 800-2,500 |
 
 Weather windows and prep work strongly affect project timelines. Always request written detail on substrate preparation, curing time, and warranty coverage.
+
+Pricing information is based on general market research and may vary. Always request a direct quote.

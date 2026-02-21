@@ -8,9 +8,9 @@ interface Props {
 const { listing } = Astro.props as Props;
 ---
 <article class="card">
-  <h3 style="margin-bottom:0.5rem;"><a href={`/listings/${listing.slug}/`}>{listing.name}</a></h3>
+  <h3>{listing.name}</h3>
   <p>{listing.shortDescription}</p>
-  <p class="meta">{listing.address.locality}</p>
+  <p class="meta">{listing.address.locality} · Independent sample directory entry</p>
   <div>
     {listing.categorySlugs.map((slug) => (
       <span class="chip">{slug.replaceAll("-", " ")}</span>

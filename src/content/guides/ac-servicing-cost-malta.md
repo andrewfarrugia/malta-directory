@@ -12,6 +12,9 @@ locationSlugs:
 intent: pricing
 author: "Malta Service Hub Editorial"
 ---
+
+Prices are indicative and may vary depending on scope, location, and provider.
+
 AC servicing in Malta is often seasonal. Booking before summer demand increases usually improves availability and pricing consistency.
 
 ## Typical AC service prices
@@ -31,3 +34,5 @@ AC servicing in Malta is often seasonal. Booking before summer demand increases 
 - Performance test after servicing.
 
 Ask for a clear service report after each visit so you can track recurring issues and plan replacements early.
+
+Pricing information is based on general market research and may vary. Always request a direct quote.

@@ -18,3 +18,13 @@ author: "Malta Service Hub Editorial"
 ## Checklist
 
 ## Next actions
+
+---
+
+Independent directory note:
+Please confirm information directly with providers, as details may change over time.
+
+If this is a pricing guide, include:
+Prices are indicative and may vary depending on scope, location, and provider.
+
+Pricing information is based on general market research and may vary. Always request a direct quote.

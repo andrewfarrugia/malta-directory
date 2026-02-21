@@ -3,13 +3,11 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import FAQBlock from "@/components/FAQBlock.astro";
 import GuideCard from "@/components/GuideCard.astro";
-import ListingCard from "@/components/ListingCard.astro";
 import RelatedLinks from "@/components/RelatedLinks.astro";
 import {
   getCategories,
   getCategoryBySlug,
   getTopLocations,
-  getListingsForCategory,
   getGuidesByCategory
 } from "@/lib/data";
 import { isQualifiedCombo } from "@/lib/combo";
@@ -26,7 +24,6 @@ if (!category) {
 }
 
 const topLocations = getTopLocations(12);
-const featuredListings = getListingsForCategory(category.slug).slice(0, 6);
 const guides = await getGuidesByCategory(category.slug, 6);
 
 const seo = buildSeo({
@@ -79,12 +76,10 @@ const relatedGuideLinks = guides.map((guide) => ({
 
     <section class="section">
       <div class="container">
-        <h2>Featured listings</h2>
-        <div class="grid grid--cards">
-          {featuredListings.map((listing) => (
-            <ListingCard listing={listing} />
-          ))}
-        </div>
+        <h2>Directory notes for this category</h2>
+        <p class="prose">
+          Public listing records for this category are currently excluded from indexed directory pages. Use the guides and locality hubs above, then confirm provider details directly before booking.
+        </p>
       </div>
     </section>
 

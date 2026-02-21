@@ -32,10 +32,10 @@ const seo = buildSeo({
 
       <h2>Business submissions</h2>
       <p>Use the draft form below. In production, connect this to your preferred processing endpoint.</p>
-      <form class="card" onsubmit="window.mshTrackEvent && window.mshTrackEvent('contact-submit', { form: 'business-submission' })">
-        <label>Name<br /><input type="text" required style="width:100%;padding:0.6rem;margin-top:0.3rem;" /></label><br />
-        <label>Email<br /><input type="email" required style="width:100%;padding:0.6rem;margin-top:0.3rem;" /></label><br />
-        <label>Message<br /><textarea required style="width:100%;padding:0.6rem;margin-top:0.3rem;min-height:130px;"></textarea></label><br />
+      <form class="card form-stack" onsubmit="window.mshTrackEvent && window.mshTrackEvent('contact-submit', { form: 'business-submission' })">
+        <label class="field-label">Name<input class="input-control" type="text" required /></label>
+        <label class="field-label">Email<input class="input-control" type="email" required /></label>
+        <label class="field-label">Message<textarea class="input-control input-control--textarea" required></textarea></label>
         <button class="btn btn--primary" type="submit" data-track="contact-submit" data-track-label="contact form">Send request</button>
       </form>
     </div>

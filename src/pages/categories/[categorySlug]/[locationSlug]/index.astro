@@ -2,12 +2,10 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import FAQBlock from "@/components/FAQBlock.astro";
-import ListingCard from "@/components/ListingCard.astro";
 import RelatedLinks from "@/components/RelatedLinks.astro";
 import {
   getCategoryBySlug,
   getLocationBySlug,
-  getListingsForCombo,
   getGuidesByCategory,
   getGuidesByLocation
 } from "@/lib/data";
@@ -33,7 +31,6 @@ if (!combo) {
   throw new Error(`Combo not qualified: ${category.slug}/${location.slug}`);
 }
 
-const listings = getListingsForCombo(category.slug, location.slug);
 const guidesByCategory = await getGuidesByCategory(category.slug, 4);
 const guidesByLocation = await getGuidesByLocation(location.slug, 4);
 
@@ -88,10 +85,10 @@ const bodyParagraphs = combo.body.split(/\n\n+/).map((part) => part.trim()).filt
 
     <section class="section section--muted">
       <div class="container">
-        <h2>Curated listings for this area</h2>
-        <div class="grid grid--cards">
-          {listings.length > 0 ? listings.map((listing) => <ListingCard listing={listing} />) : <p>No listings yet for this pair.</p>}
-        </div>
+        <h2>Directory note for this locality</h2>
+        <p class="prose">
+          Listing records for this category and locality pair are currently excluded from indexed directory pages. Details should be confirmed directly with providers before engagement.
+        </p>
       </div>
     </section>
 

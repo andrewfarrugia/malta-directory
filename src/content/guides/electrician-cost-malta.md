@@ -12,6 +12,9 @@ locationSlugs:
 intent: pricing
 author: "Malta Service Hub Editorial"
 ---
+
+Prices are indicative and may vary depending on scope, location, and provider.
+
 Electrician pricing in Malta depends on whether the job is diagnostic, installation-based, or emergency work. A quick outlet repair may be low cost, while distribution board upgrades require careful inspection and compliance checks.
 
 ## Typical electrician price ranges
@@ -40,3 +43,5 @@ Electrician pricing in Malta depends on whether the job is diagnostic, installat
 - Post-install support details.
 
 Choosing the cheapest quote can cost more if troubleshooting or compliance steps are skipped. Prioritize transparent scope and proven experience for similar property types.
+
+Pricing information is based on general market research and may vary. Always request a direct quote.

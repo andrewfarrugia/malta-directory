@@ -7,6 +7,7 @@ Allow: /
 Disallow: /search/
 Disallow: /search-index.json
 Disallow: /tags/
+Disallow: /listings/
 
 Sitemap: ${siteConfig.siteUrl}/sitemap.xml
 Sitemap: ${siteConfig.siteUrl}/sitemap-index.xml

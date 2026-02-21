@@ -9,7 +9,8 @@ const listings = getListings();
 const seo = buildSeo({
   path: "/listings/",
   title: "Service Listings in Malta",
-  description: clampMeta("Browse verified service listing profiles across Malta categories and localities.")
+  description: clampMeta("Independent sample listing profiles compiled from publicly available information."),
+  noindex: true
 });
 
 const breadcrumbs = [
@@ -22,8 +23,10 @@ const breadcrumbs = [
     <div class="container">
       <Breadcrumbs items={breadcrumbs} />
       <h1>Listings</h1>
-      <p class="lead">Directory profiles with category tags, locality context, and verification metadata.</p>
-      <div class="grid grid--cards" style="margin-top:1.5rem;">
+      <p class="lead">
+        These entries are sample directory records for demonstration. Details may change and should be confirmed directly with providers.
+      </p>
+      <div class="grid grid--cards mt-md">
         {listings.map((listing) => (
           <ListingCard listing={listing} />
         ))}

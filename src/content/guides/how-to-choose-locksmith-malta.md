@@ -12,7 +12,7 @@ Locksmith services are often urgent, so it helps to pre-qualify providers before
 
 ## Key factors
 
-- Verified service coverage in your locality.
+- Confirm service coverage in your locality directly with the provider.
 - Clear out-of-hours pricing policy.
 - Documentation for parts and warranties.
 - Respectful identity checks before lock changes.

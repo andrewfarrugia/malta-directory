@@ -29,7 +29,8 @@ const similarListings = getListings()
 const seo = buildSeo({
   path: `/listings/${listing.slug}/`,
   title: `${listing.name} in ${location?.name || "Malta"}`,
-  description: clampMeta(listing.shortDescription)
+  description: clampMeta(listing.shortDescription),
+  noindex: true
 });
 
 const breadcrumbs = [
@@ -45,7 +46,10 @@ const breadcrumbs = [
         <Breadcrumbs items={breadcrumbs} />
         <h1>{listing.name}</h1>
         <p>{listing.shortDescription}</p>
-        <p class="meta">Last verified: {new Date(listing.lastVerifiedDate).toLocaleDateString("en-MT")}</p>
+        <p class="meta">Last reviewed on {new Date(listing.lastVerifiedDate).toLocaleDateString("en-MT")}</p>
+        <p class="meta">
+          This listing is independently compiled. We recommend confirming details directly with the provider.
+        </p>
 
         <div>
           {categories.map((category) => (
@@ -74,6 +78,9 @@ const breadcrumbs = [
               Website: <a href={listing.website} rel="nofollow noopener" target="_blank" data-track="outbound-listing" data-track-label={listing.slug}>{listing.website}</a>
             </li>
           )}
+          {!listing.phone && !listing.email && !listing.website && (
+            <li>Contact details not available.</li>
+          )}
         </ul>
 
         {listing.openingHours && listing.openingHours.length > 0 && (
@@ -88,7 +95,7 @@ const breadcrumbs = [
         )}
 
         <h2>Gallery</h2>
-        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
+        <div class="grid grid--gallery">
           {listing.images.map((image, index) => (
             <img src={image} alt={`${listing.name} image ${index + 1}`} loading="lazy" />
           ))}

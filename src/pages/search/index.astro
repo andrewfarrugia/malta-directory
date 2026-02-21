@@ -22,19 +22,18 @@ const breadcrumbs = [
       <h1>Search</h1>
       <p class="meta">This utility page is excluded from search indexing.</p>
 
-      <form id="search-form" class="card" style="margin-top:1rem;">
-        <label for="query">Search term</label>
-        <input id="query" name="query" type="search" style="width:100%;padding:0.7rem;margin-top:0.4rem;" />
-        <label for="type" style="display:block;margin-top:0.8rem;">Type</label>
-        <select id="type" name="type" style="padding:0.6rem;margin-top:0.4rem;">
+      <form id="search-form" class="card mt-sm form-stack">
+        <label class="field-label" for="query">Search term</label>
+        <input class="input-control" id="query" name="query" type="search" />
+        <label class="field-label" for="type">Type</label>
+        <select class="input-control" id="type" name="type">
           <option value="all">All</option>
           <option value="category">Category</option>
           <option value="location">Location</option>
           <option value="combo">Combo</option>
           <option value="guide">Guide</option>
-          <option value="listing">Listing</option>
         </select>
-        <button class="btn btn--primary" type="submit" style="margin-top:0.8rem;">Search</button>
+        <button class="btn btn--primary" type="submit">Search</button>
       </form>
 
       <div id="results" class="search-results"></div>

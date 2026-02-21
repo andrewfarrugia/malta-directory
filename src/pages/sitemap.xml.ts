@@ -3,7 +3,6 @@ import { siteConfig } from "@/config/site";
 import {
   getCategories,
   getLocations,
-  getListings,
   getGuides
 } from "@/lib/data";
 import { getQualifiedCombos } from "@/lib/combo";
@@ -16,7 +15,6 @@ const withSlash = (path: string) => {
 export const GET: APIRoute = async () => {
   const categories = getCategories();
   const locations = getLocations();
-  const listings = getListings();
   const guides = await getGuides();
   const combos = getQualifiedCombos();
 
@@ -32,12 +30,10 @@ export const GET: APIRoute = async () => {
     "/cookies/",
     "/legal/",
     "/disclaimer/",
-    "/listings/",
     ...categories.map((category) => `/categories/${category.slug}/`),
     ...locations.map((location) => `/locations/${location.slug}/`),
     ...combos.map((combo) => `/categories/${combo.categorySlug}/${combo.locationSlug}/`),
-    ...guides.map((guide) => `/guides/${guide.slug}/`),
-    ...listings.map((listing) => `/listings/${listing.slug}/`)
+    ...guides.map((guide) => `/guides/${guide.slug}/`)
   ];
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>

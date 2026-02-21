@@ -1,6 +1,6 @@
 ---
 title: "How to Choose an Electrician in Malta"
-description: "A practical framework for choosing trusted electricians in Malta for home or business work."
+description: "A practical framework for choosing independent electricians in Malta for home or business work."
 datePublished: 2026-01-24
 dateUpdated: 2026-02-21
 categorySlugs:

@@ -8,7 +8,7 @@
 ## How to choose checklist
 1. Compare written scope
 2. Compare pricing model
-3. Verify warranty and follow-up
+3. Confirm warranty and follow-up terms directly with each provider
 
 ## Price guidance
 - Typical low/high ranges
@@ -20,3 +20,6 @@
 ## Internal links
 - 6-12 locations
 - 3-6 guides
+
+Compliance note:
+- Use independent directory language and avoid endorsement claims.
