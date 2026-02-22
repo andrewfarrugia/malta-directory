@@ -3,44 +3,48 @@ import BrandWordmark from "@/components/BrandWordmark.astro";
 const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
+  <div class="container footer-top">
+    <BrandWordmark compact={true} />
+    <p>Speak to our expert at <a href="tel:+35620101010">+356 20 101 010</a></p>
+    <p class="meta">Follow us</p>
+  </div>
   <div class="container footer-grid">
-    <section class="footer-cta">
-      <BrandWordmark compact={true} />
-      <p class="meta">
-        Independent Malta services directory with practical guidance, locality context, and structured provider discovery.
-      </p>
-      <a class="btn btn--primary" href="/search/">Start searching</a>
-      <button type="button" class="btn btn--secondary" data-open-consent>
-        Cookie preferences
-      </button>
+    <section class="footer-column">
+      <h3>Contact</h3>
+      <p class="meta">Valletta, Malta</p>
+      <p class="meta"><a href="mailto:hello@maltaservicehub.com">hello@maltaservicehub.com</a></p>
+      <button type="button" class="btn btn--secondary" data-open-consent>Cookie preferences</button>
     </section>
-    <section>
-      <h3>Explore</h3>
-      <ul class="inline-list">
-        <li><a href="/categories/">Categories</a></li>
-        <li><a href="/locations/">Locations</a></li>
-        <li><a href="/guides/">Guides</a></li>
-        <li><a href="/listings/">Listings</a></li>
-      </ul>
-    </section>
-    <section>
-      <h3>Support</h3>
-      <ul class="inline-list">
-        <li><a href="/about/">About</a></li>
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/search/">Search</a></li>
+    <section class="footer-column">
+      <h3>Company</h3>
+      <ul class="footer-links">
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/guides/">Travel guides</a></li>
+        <li><a href="/contact/">Contact us</a></li>
+        <li><a href="/privacy/">Data policy</a></li>
+        <li><a href="/cookies/">Cookie policy</a></li>
+        <li><a href="/legal/">Legal</a></li>
         <li><a href="/sitemap.xml">Sitemap</a></li>
       </ul>
     </section>
-    <section>
-      <h3>Legal</h3>
-      <ul class="inline-list">
-        <li><a href="/privacy/">Privacy</a></li>
-        <li><a href="/cookies/">Cookies</a></li>
-        <li><a href="/terms/">Terms</a></li>
-        <li><a href="/legal/">Legal notice</a></li>
-        <li><a href="/disclaimer/">Disclaimer</a></li>
+    <section class="footer-column">
+      <h3>Support</h3>
+      <ul class="footer-links">
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/categories/">Categories</a></li>
+        <li><a href="/locations/">Locations</a></li>
+        <li><a href="/listings/">Listings</a></li>
       </ul>
+    </section>
+    <section class="footer-column">
+      <h3>Newsletter</h3>
+      <p class="meta">Subscribe to get practical Malta service updates.</p>
+      <form class="footer-newsletter" action="/search/" method="get">
+        <label class="sr-only" for="newsletter-email">Email address</label>
+        <input id="newsletter-email" type="email" name="email" placeholder="Your email address" />
+        <button type="submit">Send</button>
+      </form>
+      <p class="meta footer-apps"><a href="/guides/">iOS App</a> · <a href="/guides/">Android App</a></p>
     </section>
   </div>
   <div class="container footer-legal">

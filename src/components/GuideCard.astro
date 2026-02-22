@@ -8,14 +8,32 @@ interface Props {
   href: string;
   dateUpdated?: string;
   image?: LocalPexelsImage;
+  variant?: "default" | "tour";
+  density?: "comfortable" | "compact";
+  mediaShape?: "rounded" | "circle";
+  sectionTone?: "light" | "muted";
+  showMetaRow?: boolean;
+  showCTA?: boolean;
 }
 
-const { title, description, href, dateUpdated, image } = Astro.props as Props;
+const {
+  title,
+  description,
+  href,
+  dateUpdated,
+  image,
+  variant = "default",
+  density = "comfortable",
+  mediaShape = "rounded",
+  sectionTone = "light",
+  showMetaRow = true,
+  showCTA = false
+} = Astro.props as Props;
 const picture = image ? toPictureData(image) : null;
 ---
-<article class="card media-card">
+<article class={`card media-card media-card--${variant} media-card--${density} media-card--${sectionTone}`}>
   {picture && (
-    <a class="media-card-image" href={href}>
+    <a class={`media-card-image media-card-image--${mediaShape}`} href={href}>
       <picture>
         {picture.hasWebp && <source type="image/webp" srcset={picture.webpSrcset} />}
         <source type="image/jpeg" srcset={picture.jpgSrcset} />
@@ -25,5 +43,6 @@ const picture = image ? toPictureData(image) : null;
   )}
   <h3><a href={href}>{title}</a></h3>
   <p>{description}</p>
-  {dateUpdated && <p class="meta">Updated {new Date(dateUpdated).toLocaleDateString("en-MT")}</p>}
+  {showMetaRow && dateUpdated && <p class="meta">Updated {new Date(dateUpdated).toLocaleDateString("en-MT")}</p>}
+  {showCTA && <a class="btn btn--secondary" href={href}>Read guide</a>}
 </article>

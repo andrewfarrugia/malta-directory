@@ -10,6 +10,7 @@ interface Props {
   score?: string;
   volume?: string;
   testimonial?: Testimonial;
+  variant?: "default" | "light";
 }
 
 const {
@@ -20,10 +21,11 @@ const {
     quote: "The locality context and category guides make shortlisting much faster.",
     name: "Editorial QA",
     role: "Independent review"
-  }
+  },
+  variant = "default"
 } = Astro.props as Props;
 ---
-<section class="section testimonial-band">
+<section class={`section testimonial-band testimonial-band--${variant}`}>
   <div class="container testimonial-grid">
     <div>
       <h2>{title}</h2>

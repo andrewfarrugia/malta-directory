@@ -1,22 +1,22 @@
 :root {
-  --bg-page: #f4f2ec;
-  --bg-soft: #ece8de;
-  --surface-1: #f8f6f1;
+  --bg-page: #ffffff;
+  --bg-soft: #f7f7f7;
+  --surface-1: #ffffff;
   --surface-2: #ffffff;
 
-  --text-strong: #151512;
-  --text-body: #2f2f2a;
-  --text-muted: #6f6f66;
+  --text-strong: #05073c;
+  --text-body: #20224d;
+  --text-muted: #6b7280;
 
-  --border-soft: #d8d3c8;
-  --border-subtle: #e6e1d8;
+  --border-soft: #e5e7eb;
+  --border-subtle: #f0f2f5;
 
-  --accent-olive: #4f6425;
-  --accent-olive-strong: #3e4f1d;
-  --accent-olive-soft: #a6b28b;
+  --accent-olive: #eb662b;
+  --accent-olive-strong: #cc5222;
+  --accent-olive-soft: #ffd2bf;
 
-  --font-sans: "Manrope", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-serif: "Cormorant Garamond", "Iowan Old Style", "Times New Roman", serif;
+  --font-sans: "Inter", "Manrope", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
   --step--1: clamp(0.82rem, 0.81rem + 0.08vw, 0.9rem);
   --step-0: clamp(0.98rem, 0.96rem + 0.2vw, 1.1rem);
@@ -40,5 +40,5 @@
 
   --shadow-soft: 0 8px 20px rgba(18, 17, 12, 0.05);
 
-  --container: min(1160px, 94vw);
+  --container: min(1320px, 92vw);
 }

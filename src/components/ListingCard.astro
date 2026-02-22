@@ -4,15 +4,29 @@ import { getPexelsImage, toPictureData } from "@/lib/pexelsImagePipeline";
 
 interface Props {
   listing: Listing;
+  variant?: "default" | "tour";
+  density?: "comfortable" | "compact";
+  mediaShape?: "rounded" | "circle";
+  sectionTone?: "light" | "muted";
+  showMetaRow?: boolean;
+  showCTA?: boolean;
 }
 
-const { listing } = Astro.props as Props;
+const {
+  listing,
+  variant = "default",
+  density = "comfortable",
+  mediaShape = "rounded",
+  sectionTone = "light",
+  showMetaRow = true,
+  showCTA = false
+} = Astro.props as Props;
 const image = toPictureData(
   getPexelsImage(`category-${listing.categorySlugs[0] || "plumbers"}-tile-1`, `${listing.name} in Malta`)
 );
 ---
-<article class="card media-card">
-  <a class="media-card-image" href={`/listings/${listing.slug}/`}>
+<article class={`card media-card media-card--${variant} media-card--${density} media-card--${sectionTone}`}>
+  <a class={`media-card-image media-card-image--${mediaShape}`} href={`/listings/${listing.slug}/`}>
     <picture>
       {image.hasWebp && <source type="image/webp" srcset={image.webpSrcset} />}
       <source type="image/jpeg" srcset={image.jpgSrcset} />
@@ -21,10 +35,11 @@ const image = toPictureData(
   </a>
   <h3><a href={`/listings/${listing.slug}/`}>{listing.name}</a></h3>
   <p>{listing.shortDescription}</p>
-  <p class="meta">{listing.address.locality} · Independent sample directory entry</p>
+  {showMetaRow && <p class="meta">{listing.address.locality} · Independent sample directory entry</p>}
   <div>
     {listing.categorySlugs.map((slug) => (
       <span class="chip">{slug.replaceAll("-", " ")}</span>
     ))}
   </div>
+  {showCTA && <a class="btn btn--secondary" href={`/listings/${listing.slug}/`}>View listing</a>}
 </article>

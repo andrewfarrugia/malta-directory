@@ -50,13 +50,15 @@ const seo = buildSeo({
 });
 ---
 <BaseLayout seo={seo}>
-  <main class="home-shell">
+  <main class="template-main home-shell">
     <section class="home-block home-block--hero">
       <PageMastheadMedia
         kicker="Independent Malta directory"
         title="Browse everything."
         description="Find trusted local service pathways across Malta with visual hubs, practical guides, and locality-first comparison journeys."
         image={getPexelsImage("featured-location-valletta", "Valletta locality context in Malta")}
+        variant="hero"
+        showMetaRow={true}
         actions={[
           { href: "/categories/", label: "Browse categories" },
           { href: "/locations/", label: "Explore locations", variant: "secondary" }
@@ -88,8 +90,45 @@ const seo = buildSeo({
       <FeatureIconStrip title="Popular services to browse" seeAllHref="/categories/" items={iconStripItems} />
     </section>
 
+    <section class="home-block home-block--chips section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Trending destinations</h2>
+          <a class="meta" href="/locations/">See all</a>
+        </div>
+        <div class="destinations-chip-row">
+          {topLocations.slice(0, 8).map((location) => (
+            <a class="destination-chip" href={`/locations/${location.slug}/`}>
+              <img
+                src={getPexelsImage(`featured-location-${location.slug}`, `${location.name} locality in Malta`).variants[0].jpg}
+                alt={`${location.name} in Malta`}
+                loading="lazy"
+              />
+              <strong>{location.name}</strong>
+              <span>100+ tours</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
     <section class="home-block home-block--split">
       <FeaturedServiceCards title="Featured locality hubs" items={featuredItems} />
+    </section>
+
+    <section class="home-block home-block--promo section">
+      <div class="container promo-band">
+        <div class="promo-copy">
+          <p class="meta">Special release</p>
+          <h2>Grab up to 35% off on your favorite destination</h2>
+          <a class="btn btn--primary" href="/search/">Book now</a>
+        </div>
+        <img
+          src={getPexelsImage("page-about-hero", "Travel promotion Malta").variants[0].jpg}
+          alt="Promotional travel scene"
+          loading="lazy"
+        />
+      </div>
     </section>
 
     <section class="home-block home-block--image-wide">
@@ -113,7 +152,22 @@ const seo = buildSeo({
     </section>
 
     <section class="home-block home-block--credibility">
-      <TestimonialBand />
+      <TestimonialBand title="Customer reviews" variant="light" />
+    </section>
+
+    <section class="home-block home-block--app section">
+      <div class="container app-promo-band">
+        <div class="app-promo-copy">
+          <p class="meta">Get 5% off your first app booking</p>
+          <h2>Plan and compare services on the go</h2>
+          <a class="btn btn--secondary" href="/search/">Get started</a>
+        </div>
+        <img
+          src={getPexelsImage("page-search-hero", "App booking scene in Malta").variants[0].jpg}
+          alt="Mobile planning view"
+          loading="lazy"
+        />
+      </div>
     </section>
 
     <section class="home-block home-block--centered home-block--divider">
@@ -135,6 +189,8 @@ const seo = buildSeo({
               description={category.intro}
               href={`/categories/${category.slug}/`}
               chips={category.synonyms.slice(0, 3)}
+              variant="tour"
+              showCTA={true}
               image={getPexelsImage(`category-${category.slug}-tile-1`, `${category.pluralName} service tools in Malta`)}
             />
           ))}
@@ -152,6 +208,8 @@ const seo = buildSeo({
               description={location.intro}
               href={`/locations/${location.slug}/`}
               chips={location.region ? [location.region] : []}
+              variant="tour"
+              showCTA={true}
               image={getPexelsImage(`featured-location-${location.slug}`, `${location.name} locality in Malta`)}
             />
           ))}
@@ -169,6 +227,8 @@ const seo = buildSeo({
               description={guide.data.description}
               href={`/guides/${guide.slug}/`}
               dateUpdated={guide.data.dateUpdated.toISOString()}
+              variant="tour"
+              showCTA={true}
               image={getPexelsImage(`guide-${guide.data.categorySlugs[0] || "plumbers"}`, `${guide.data.title} in Malta`)}
             />
           ))}

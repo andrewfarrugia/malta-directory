@@ -12,18 +12,20 @@ interface ContextRailItem {
 interface Props {
   title: string;
   items: ContextRailItem[];
+  variant?: "default" | "chips";
+  sectionTone?: "light" | "muted";
 }
 
-const { title, items } = Astro.props as Props;
+const { title, items, variant = "default", sectionTone = "muted" } = Astro.props as Props;
 ---
-<section class="section section--muted">
+<section class={`section section--${sectionTone}`}>
   <div class="container">
     <h2>{title}</h2>
-    <div class="context-rail">
+    <div class={`context-rail context-rail--${variant}`}>
       {items.map((item) => {
         const image = toPictureData(item.image);
         return (
-          <a class="context-rail-card" href={item.href}>
+          <a class={`context-rail-card context-rail-card--${variant}`} href={item.href}>
             <picture>
               {image.hasWebp && <source type="image/webp" srcset={image.webpSrcset} />}
               <source type="image/jpeg" srcset={image.jpgSrcset} />

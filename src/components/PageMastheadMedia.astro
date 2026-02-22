@@ -14,14 +14,30 @@ interface Props {
   kicker?: string;
   image: LocalPexelsImage;
   actions?: MastheadAction[];
+  variant?: "default" | "hero" | "compact";
+  density?: "comfortable" | "compact";
+  mediaShape?: "rounded" | "pill";
+  sectionTone?: "light" | "muted";
+  showMetaRow?: boolean;
 }
 
-const { title, description, kicker, image, actions = [] } = Astro.props as Props;
+const {
+  title,
+  description,
+  kicker,
+  image,
+  actions = [],
+  variant = "default",
+  density = "comfortable",
+  mediaShape = "rounded",
+  sectionTone = "light",
+  showMetaRow = false
+} = Astro.props as Props;
 const picture = toPictureData(image);
 ---
-<section class="section masthead-media">
+<section class={`section masthead-media masthead-media--${variant} masthead-media--${density} masthead-media--${sectionTone}`}>
   <div class="container">
-    <article class="masthead-card">
+    <article class={`masthead-card masthead-card--${variant} masthead-card--${mediaShape}`}>
       <div class="masthead-content">
         {kicker && <p class="meta masthead-kicker">{kicker}</p>}
         <h1>{title}</h1>
@@ -47,5 +63,13 @@ const picture = toPictureData(image);
         )}
       </figure>
     </article>
+    {showMetaRow && (
+      <div class="masthead-meta-row" aria-label="Quick search controls">
+        <div><strong>Where</strong><span>Search destinations</span></div>
+        <div><strong>When</strong><span>February 05 - March 14</span></div>
+        <div><strong>Tour type</strong><span>All tour</span></div>
+        <a class="btn btn--primary" href="/search/">Search</a>
+      </div>
+    )}
   </div>
 </section>

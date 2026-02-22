@@ -3,14 +3,25 @@ import BrandWordmark from "@/components/BrandWordmark.astro";
 ---
 <header class="site-header">
   <div class="container header-inner">
-    <BrandWordmark />
-    <nav class="nav" aria-label="Main navigation">
-      <a href="/categories/">Categories</a>
-      <a href="/locations/">Locations</a>
-      <a href="/guides/">Guides</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
-      <a class="nav-cta" href="/search/">Search</a>
-    </nav>
+    <div class="header-brand-wrap">
+      <BrandWordmark />
+      <form class="header-search" action="/search/" method="get" role="search">
+        <label class="sr-only" for="site-search">Search</label>
+        <input id="site-search" type="search" name="q" placeholder="Search destinations or services" />
+      </form>
+    </div>
+    <div class="header-nav-wrap">
+      <nav class="nav nav--primary" aria-label="Main navigation">
+        <a href="/categories/">Categories</a>
+        <a href="/locations/">Locations</a>
+        <a href="/guides/">Guides</a>
+        <a href="/listings/">Listings</a>
+      </nav>
+      <nav class="nav nav--utility" aria-label="Utility navigation">
+        <a href="/about/">About</a>
+        <a href="/contact/">Support</a>
+        <a class="nav-cta" href="/search/">Search</a>
+      </nav>
+    </div>
   </div>
 </header>

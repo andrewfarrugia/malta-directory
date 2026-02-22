@@ -62,7 +62,7 @@ const guideLinks = relatedGuides.map((guide) => ({ title: guide.data.title, href
 const bodyParagraphs = combo.body.split(/\n\n+/).map((part) => part.trim()).filter(Boolean);
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[faqSchema(combo.faqs)]}>
-  <main>
+  <main class="template-main">
     <PageMastheadMedia
       kicker="Qualified locality hub"
       title={title}
