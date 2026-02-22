@@ -13,9 +13,9 @@ import { getTopCategories, getTopLocations, getGuides } from "@/lib/data";
 import { buildSeo, clampMeta } from "@/lib/seo";
 import { getPexelsComponentMap, getPexelsImage } from "@/lib/pexelsImagePipeline";
 
-const topCategories = getTopCategories(12);
-const topLocations = getTopLocations(12);
-const guides = (await getGuides()).slice(0, 10);
+const topCategories = getTopCategories(6);
+const topLocations = getTopLocations(6);
+const guides = (await getGuides()).slice(0, 6);
 const map = getPexelsComponentMap();
 
 const iconStripItems = map.homeIconStrip;
@@ -97,7 +97,7 @@ const seo = buildSeo({
           <a class="meta" href="/locations/">See all</a>
         </div>
         <div class="destinations-chip-row">
-          {topLocations.slice(0, 8).map((location) => (
+          {topLocations.map((location) => (
             <a class="destination-chip" href={`/locations/${location.slug}/`}>
               <img
                 src={getPexelsImage(`featured-location-${location.slug}`, `${location.name} locality in Malta`).variants[0].jpg}
@@ -119,13 +119,13 @@ const seo = buildSeo({
     <section class="home-block home-block--promo section">
       <div class="container promo-band">
         <div class="promo-copy">
-          <p class="meta">Special release</p>
-          <h2>Grab up to 35% off on your favorite destination</h2>
-          <a class="btn btn--primary" href="/search/">Book now</a>
+          <p class="meta">Start here</p>
+          <h2>Find the right Malta service pathway in minutes</h2>
+          <a class="btn btn--primary" href="/search/">Search the directory</a>
         </div>
         <img
-          src={getPexelsImage("page-about-hero", "Travel promotion Malta").variants[0].jpg}
-          alt="Promotional travel scene"
+          src={getPexelsImage("page-about-hero", "Malta planning scene").variants[0].jpg}
+          alt="Planning service options in Malta"
           loading="lazy"
         />
       </div>
@@ -153,21 +153,6 @@ const seo = buildSeo({
 
     <section class="home-block home-block--credibility">
       <TestimonialBand title="Customer reviews" variant="light" />
-    </section>
-
-    <section class="home-block home-block--app section">
-      <div class="container app-promo-band">
-        <div class="app-promo-copy">
-          <p class="meta">Get 5% off your first app booking</p>
-          <h2>Plan and compare services on the go</h2>
-          <a class="btn btn--secondary" href="/search/">Get started</a>
-        </div>
-        <img
-          src={getPexelsImage("page-search-hero", "App booking scene in Malta").variants[0].jpg}
-          alt="Mobile planning view"
-          loading="lazy"
-        />
-      </div>
     </section>
 
     <section class="home-block home-block--centered home-block--divider">
@@ -239,7 +224,7 @@ const seo = buildSeo({
     <section class="home-block home-block--cta">
       <div class="container home-cta-wrap">
         <h2>Connect with us</h2>
-        <a class="btn btn--primary" href="/contact/">Start your request</a>
+        <a class="btn btn--primary" href="/search/">Search the directory</a>
       </div>
     </section>
   </main>

@@ -10,7 +10,6 @@ import {
   getLocations,
   getLocationBySlug,
   getTopCategories,
-  getNearbyLocations,
   getGuidesByLocation
 } from "@/lib/data";
 import { isQualifiedCombo } from "@/lib/combo";
@@ -28,7 +27,6 @@ if (!location) {
 }
 
 const topCategories = getTopCategories(12);
-const nearbyLocations = getNearbyLocations(location);
 const guides = await getGuidesByLocation(location.slug, 6);
 
 const localFaqs = [
@@ -69,10 +67,6 @@ const categoryLinks = topCategories.map((category) => ({
     : `/categories/${category.slug}/`
 }));
 
-const nearbyLinks = nearbyLocations.map((item) => ({
-  title: item.name,
-  href: `/locations/${item.slug}/`
-}));
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[faqSchema(localFaqs)]}>
   <main class="template-main">
@@ -108,8 +102,7 @@ const nearbyLinks = nearbyLocations.map((item) => ({
       }))}
     />
 
-    <RelatedLinks title={`Popular services in ${location.name}`} links={categoryLinks.slice(0, 12)} />
-    <RelatedLinks title="Nearby locations" links={nearbyLinks.slice(0, 6)} />
+    <RelatedLinks title={`Popular services in ${location.name}`} links={categoryLinks.slice(0, 8)} />
 
     <section class="section section--muted">
       <div class="container">

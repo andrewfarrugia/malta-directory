@@ -6,7 +6,7 @@ import ContextRail from "@/components/ContextRail.astro";
 import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import { render } from "astro:content";
 import { getGuides } from "@/lib/data";
-import { getCategoryBySlug, getLocationBySlug } from "@/lib/data";
+import { getCategoryBySlug } from "@/lib/data";
 import { getPexelsImage, toPictureData } from "@/lib/pexelsImagePipeline";
 import { buildSeo, clampMeta } from "@/lib/seo";
 import { estimateReadTime } from "@/lib/utils";
@@ -44,14 +44,6 @@ const relatedServices = guide.data.categorySlugs
   .map((category) => ({
     title: `${category!.pluralName} in Malta`,
     href: `/categories/${category!.slug}/`
-  }));
-
-const relatedLocations = (guide.data.locationSlugs || [])
-  .map((slug) => getLocationBySlug(slug))
-  .filter(Boolean)
-  .map((location) => ({
-    title: `Services in ${location!.name}`,
-    href: `/locations/${location!.slug}/`
   }));
 
 const readTime = estimateReadTime(guide.body);
@@ -162,6 +154,5 @@ const guidePickTwo = toPictureData(
     />
 
     <RelatedLinks title="Related services" links={relatedServices} />
-    <RelatedLinks title="Related locations" links={relatedLocations} />
   </main>
 </BaseLayout>

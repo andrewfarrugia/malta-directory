@@ -54,10 +54,6 @@ const locationLinks = topLocations.map((location) => {
   };
 });
 
-const relatedGuideLinks = guides.map((guide) => ({
-  title: guide.data.title,
-  href: `/guides/${guide.slug}/`
-}));
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[faqSchema(category.faq)]}>
   <main class="template-main">
@@ -137,6 +133,5 @@ const relatedGuideLinks = guides.map((guide) => ({
     </section>
 
     <FAQBlock faqs={category.faq} />
-    <RelatedLinks title="Related guides" links={relatedGuideLinks} />
   </main>
 </BaseLayout>
