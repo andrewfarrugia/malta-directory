@@ -207,6 +207,7 @@
   "slotIntents": {
     "home-icon-plumbers": {
       "intentType": "service",
+      "slotIntentClass": "service",
       "mustInclude": [
         "plumbers"
       ],
@@ -219,6 +220,7 @@
     },
     "home-icon-electricians": {
       "intentType": "service",
+      "slotIntentClass": "service",
       "mustInclude": [
         "electricians"
       ],
@@ -231,6 +233,7 @@
     },
     "home-icon-cleaning": {
       "intentType": "service",
+      "slotIntentClass": "service",
       "mustInclude": [
         "cleaning"
       ],
@@ -243,6 +246,7 @@
     },
     "home-icon-movers": {
       "intentType": "service",
+      "slotIntentClass": "service",
       "mustInclude": [
         "movers"
       ],
@@ -255,6 +259,7 @@
     },
     "home-icon-locksmiths": {
       "intentType": "service",
+      "slotIntentClass": "service",
       "mustInclude": [
         "locksmiths"
       ],
@@ -267,6 +272,7 @@
     },
     "home-icon-it-support": {
       "intentType": "service",
+      "slotIntentClass": "service",
       "mustInclude": [
         "it"
       ],
@@ -279,7 +285,12 @@
     },
     "home-feature-plumbers-sliema": {
       "intentType": "service",
+      "slotIntentClass": "hybrid",
       "locationContext": "Sliema, Malta",
+      "requiredLocalityTokens": [
+        "sliema",
+        "malta"
+      ],
       "mustInclude": [
         "service",
         "plumbers"
@@ -292,7 +303,12 @@
     },
     "home-feature-electricians-valletta": {
       "intentType": "service",
+      "slotIntentClass": "hybrid",
       "locationContext": "Valletta, Malta",
+      "requiredLocalityTokens": [
+        "valletta",
+        "malta"
+      ],
       "mustInclude": [
         "service",
         "electricians"
@@ -305,7 +321,12 @@
     },
     "home-feature-cleaning-st-julians": {
       "intentType": "service",
+      "slotIntentClass": "hybrid",
       "locationContext": "St Julian's, Malta",
+      "requiredLocalityTokens": [
+        "st julian",
+        "malta"
+      ],
       "mustInclude": [
         "service",
         "cleaning"
@@ -318,7 +339,12 @@
     },
     "home-feature-hvac-birkirkara": {
       "intentType": "service",
+      "slotIntentClass": "hybrid",
       "locationContext": "Birkirkara, Malta",
+      "requiredLocalityTokens": [
+        "birkirkara",
+        "malta"
+      ],
       "mustInclude": [
         "service",
         "hvac"
@@ -331,7 +357,12 @@
     },
     "home-mosaic-valletta": {
       "intentType": "locality",
+      "slotIntentClass": "locality",
       "locationContext": "Valletta",
+      "requiredLocalityTokens": [
+        "valletta",
+        "malta"
+      ],
       "mustInclude": [
         "malta",
         "valletta"
@@ -343,7 +374,12 @@
     },
     "home-mosaic-sliema": {
       "intentType": "locality",
+      "slotIntentClass": "locality",
       "locationContext": "Sliema",
+      "requiredLocalityTokens": [
+        "sliema",
+        "malta"
+      ],
       "mustInclude": [
         "malta",
         "sliema"
@@ -355,7 +391,12 @@
     },
     "home-mosaic-st-julians": {
       "intentType": "locality",
+      "slotIntentClass": "locality",
       "locationContext": "St Julian's",
+      "requiredLocalityTokens": [
+        "st julian",
+        "malta"
+      ],
       "mustInclude": [
         "malta",
         "st julian's"
@@ -367,7 +408,12 @@
     },
     "home-mosaic-birkirkara": {
       "intentType": "locality",
+      "slotIntentClass": "locality",
       "locationContext": "Birkirkara",
+      "requiredLocalityTokens": [
+        "birkirkara",
+        "malta"
+      ],
       "mustInclude": [
         "malta",
         "birkirkara"
@@ -379,7 +425,12 @@
     },
     "home-mosaic-mosta": {
       "intentType": "locality",
+      "slotIntentClass": "locality",
       "locationContext": "Mosta",
+      "requiredLocalityTokens": [
+        "mosta",
+        "malta"
+      ],
       "mustInclude": [
         "malta",
         "mosta"
@@ -391,7 +442,13 @@
     },
     "home-mosaic-gozo": {
       "intentType": "locality",
+      "slotIntentClass": "locality",
       "locationContext": "Victoria, Gozo",
+      "requiredLocalityTokens": [
+        "gozo",
+        "victoria",
+        "malta"
+      ],
       "mustInclude": [
         "malta",
         "victoria"

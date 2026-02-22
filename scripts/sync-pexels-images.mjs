@@ -20,10 +20,10 @@ const placeholderPath = "/images/placeholder.jpg";
 const targetWidths = [640, 960, 1280];
 const jpgQuality = 78;
 const webpQuality = 75;
-const minScoreByIntent = {
-  service: 48,
-  locality: 44,
-  guide: 42
+const minScoreByIntentClass = {
+  service: 38,
+  locality: 46,
+  hybrid: 42
 };
 const perPage = 10;
 
@@ -37,18 +37,18 @@ const readManifest = async () => {
   }
 };
 
-const slugToWords = (value) => value.replaceAll("-", " ").toLowerCase().trim();
 const tokenize = (value) =>
   (value || "")
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, " ")
     .split(/\s+/)
     .filter(Boolean);
-const asStringArray = (value) => (Array.isArray(value) ? value.filter(Boolean) : value ? [value] : []);
 
+const asStringArray = (value) => (Array.isArray(value) ? value.filter(Boolean) : value ? [value] : []);
 const normalizeToken = (token) => token.toLowerCase().replace(/[^a-z0-9]/g, "");
 const singularize = (token) => token.replace(/s$/, "");
 const pluralize = (token) => (token.endsWith("s") ? token : `${token}s`);
+
 const tokenVariants = (token) => {
   const normalized = normalizeToken(token);
   if (!normalized) return [];
@@ -57,7 +57,17 @@ const tokenVariants = (token) => {
   if (normalized === "service") variants.add("services");
   return [...variants];
 };
+
 const hasTokenMatch = (haystackSet, token) => tokenVariants(token).some((variant) => haystackSet.has(variant));
+const stopTokens = new Set(["service", "services", "professional", "malta", "in", "local", "home"]);
+
+const flattenTokens = (values) =>
+  values
+    .flatMap((value) => tokenize(value))
+    .map(normalizeToken)
+    .filter(Boolean);
+
+const uniqueTokens = (values) => [...new Set(values)];
 
 const getLocationName = (slug) => locations.find((location) => location.slug === slug)?.name || slug;
 
@@ -68,6 +78,38 @@ const fillTemplate = (template, values) =>
     .replaceAll("{categoryPlural}", values.categoryPlural || "")
     .replaceAll("{location}", values.location || "");
 
+const inferSlotIntentClass = (slotId) => {
+  if (slotId.startsWith("home-mosaic-")) return "locality";
+  if (slotId.startsWith("home-feature-")) return "hybrid";
+  if (slotId.startsWith("featured-location-")) return "locality";
+  return "service";
+};
+
+const resolveIntent = (slotId, baseIntent = {}) => {
+  const slotIntentClass = baseIntent.slotIntentClass || inferSlotIntentClass(slotId);
+  const requiredLocalityTokens = uniqueTokens(flattenTokens(asStringArray(baseIntent.requiredLocalityTokens)));
+  return {
+    ...baseIntent,
+    slotIntentClass,
+    requiredLocalityTokens
+  };
+};
+
+const extractServiceToken = (slot) => {
+  const required = asStringArray(slot.intent?.mustInclude);
+  const normalized = uniqueTokens(flattenTokens(required)).filter((token) => !stopTokens.has(token));
+  return normalized[0] || "service";
+};
+
+const extractLocalityToken = (slot) => {
+  const fromRequired = uniqueTokens(flattenTokens(asStringArray(slot.intent?.requiredLocalityTokens))).find(
+    (token) => token !== "malta"
+  );
+  if (fromRequired) return fromRequired;
+  const contextTokens = uniqueTokens(flattenTokens(asStringArray(slot.intent?.locationContext)));
+  return contextTokens.find((token) => token !== "malta") || "malta";
+};
+
 const getSlots = () => {
   const slots = [];
 
@@ -75,7 +117,7 @@ const getSlots = () => {
     slots.push({
       id: item.id,
       queries: asStringArray(componentMap.queries[item.id]),
-      intent: componentMap.slotIntents[item.id],
+      intent: resolveIntent(item.id, componentMap.slotIntents[item.id]),
       alt: componentMap.slotIntents[item.id]?.altTemplate || `${item.title} service support in Malta`
     });
   }
@@ -84,7 +126,7 @@ const getSlots = () => {
     slots.push({
       id: item.id,
       queries: asStringArray(componentMap.queries[item.id]),
-      intent: componentMap.slotIntents[item.id],
+      intent: resolveIntent(item.id, componentMap.slotIntents[item.id]),
       alt: componentMap.slotIntents[item.id]?.altTemplate || `${item.title} in ${item.locality}`
     });
   }
@@ -93,7 +135,7 @@ const getSlots = () => {
     slots.push({
       id: item.id,
       queries: asStringArray(componentMap.queries[item.id]),
-      intent: componentMap.slotIntents[item.id],
+      intent: resolveIntent(item.id, componentMap.slotIntents[item.id]),
       alt: componentMap.slotIntents[item.id]?.altTemplate || `${item.title} locality context in Malta`
     });
   }
@@ -104,42 +146,48 @@ const getSlots = () => {
       categorySingular: category.singularName,
       categoryPlural: category.pluralName
     };
+
     slots.push({
       id: `category-${category.slug}-hero`,
       queries: asStringArray(fillTemplate(componentMap.queryTemplates.categoryHero, values)),
-      intent: {
+      intent: resolveIntent(`category-${category.slug}-hero`, {
         ...componentMap.intentTemplates.categoryHero,
+        slotIntentClass: "service",
         mustInclude: componentMap.intentTemplates.categoryHero.mustInclude.map((token) => fillTemplate(token, values))
-      },
+      }),
       alt: fillTemplate(componentMap.intentTemplates.categoryHero.altTemplate, values)
     });
+
     slots.push({
       id: `category-${category.slug}-tile-1`,
       queries: asStringArray(fillTemplate(componentMap.queryTemplates.categoryTileOne, values)),
-      intent: {
+      intent: resolveIntent(`category-${category.slug}-tile-1`, {
         ...componentMap.intentTemplates.categoryTileOne,
+        slotIntentClass: "service",
         mustInclude: componentMap.intentTemplates.categoryTileOne.mustInclude.map((token) => fillTemplate(token, values))
-      },
+      }),
       alt: fillTemplate(componentMap.intentTemplates.categoryTileOne.altTemplate, values)
     });
+
     slots.push({
       id: `category-${category.slug}-tile-2`,
       queries: asStringArray(fillTemplate(componentMap.queryTemplates.categoryTileTwo, values)),
-      intent: {
+      intent: resolveIntent(`category-${category.slug}-tile-2`, {
         ...componentMap.intentTemplates.categoryTileTwo,
+        slotIntentClass: "service",
         mustInclude: componentMap.intentTemplates.categoryTileTwo.mustInclude.map((token) => fillTemplate(token, values))
-      },
+      }),
       alt: fillTemplate(componentMap.intentTemplates.categoryTileTwo.altTemplate, values)
     });
+
     slots.push({
       id: `guide-${category.slug}`,
-      queries: asStringArray(
-        componentMap.queries[`guide-${category.slug}`] || `${category.singularName} guidance Malta`
-      ),
-      intent: {
+      queries: asStringArray(componentMap.queries[`guide-${category.slug}`] || `${category.singularName} guidance Malta`),
+      intent: resolveIntent(`guide-${category.slug}`, {
         ...componentMap.intentTemplates.guide,
+        slotIntentClass: "service",
         mustInclude: componentMap.intentTemplates.guide.mustInclude.map((token) => fillTemplate(token, values))
-      },
+      }),
       alt: fillTemplate(componentMap.intentTemplates.guide.altTemplate, values)
     });
   }
@@ -151,12 +199,14 @@ const getSlots = () => {
     slots.push({
       id: `featured-location-${locationSlug}`,
       queries: asStringArray(`${locationName} Malta neighborhood and services`),
-      intent: {
+      intent: resolveIntent(`featured-location-${locationSlug}`, {
         ...componentMap.intentTemplates.featuredLocation,
+        slotIntentClass: "locality",
         mustInclude: componentMap.intentTemplates.featuredLocation.mustInclude.map((token) =>
           fillTemplate(token, { location: locationName })
-        )
-      },
+        ),
+        requiredLocalityTokens: [locationName, "malta"]
+      }),
       alt: fillTemplate(componentMap.intentTemplates.featuredLocation.altTemplate, { location: locationName })
     });
   }
@@ -216,22 +266,46 @@ const fetchPexelsPhotos = async (query) => {
   }
 };
 
+const candidateHaystack = (candidate) => {
+  const tokens = tokenize(`${candidate.alt} ${candidate.photoUrl} ${candidate.photographerUrl} ${candidate.photographer}`);
+  return new Set(tokens.map(normalizeToken).filter(Boolean));
+};
+
+const candidateMatchesLocality = (slot, candidate) => {
+  const requiredLocalityTokens = asStringArray(slot.intent?.requiredLocalityTokens);
+  if (requiredLocalityTokens.length === 0) return false;
+  const haystack = candidateHaystack(candidate);
+  return requiredLocalityTokens.some((token) => hasTokenMatch(haystack, token));
+};
+
+const candidateMatchesService = (slot, candidate) => {
+  const requiredServiceTokens = uniqueTokens(flattenTokens(asStringArray(slot.intent?.mustInclude))).filter(
+    (token) => !stopTokens.has(token)
+  );
+  if (requiredServiceTokens.length === 0) return true;
+  const haystack = candidateHaystack(candidate);
+  return requiredServiceTokens.some((token) => hasTokenMatch(haystack, token));
+};
+
 const scoreCandidate = (slot, candidate) => {
   const reasons = [];
   let score = 0;
-  const haystackTokens = tokenize(`${candidate.alt} ${candidate.photoUrl} ${candidate.photographerUrl} ${candidate.photographer}`);
-  const haystack = new Set(haystackTokens.map(normalizeToken).filter(Boolean));
+  const intentClass = slot.intent?.slotIntentClass || "service";
+  const haystack = candidateHaystack(candidate);
 
-  const required = (slot.intent?.mustInclude || []).map((token) => token.toLowerCase()).filter(Boolean);
-  const banned = (slot.intent?.mustNotInclude || []).map((token) => token.toLowerCase()).filter(Boolean);
-  const locationContext = slot.intent?.locationContext ? tokenize(slot.intent.locationContext) : [];
+  const required = asStringArray(slot.intent?.mustInclude).map((token) => token.toLowerCase()).filter(Boolean);
+  const banned = asStringArray(slot.intent?.mustNotInclude).map((token) => token.toLowerCase()).filter(Boolean);
+  const locationContext = asStringArray(slot.intent?.requiredLocalityTokens).flatMap((token) => tokenize(token));
+
+  const requiredBoost = intentClass === "service" ? 10 : 14;
+  const missingPenalty = intentClass === "service" ? 4 : 9;
 
   for (const token of required) {
     if (hasTokenMatch(haystack, token)) {
-      score += 14;
+      score += requiredBoost;
       reasons.push(`mustInclude:${token}`);
     } else {
-      score -= 8;
+      score -= missingPenalty;
       reasons.push(`missing:${token}`);
     }
   }
@@ -245,7 +319,7 @@ const scoreCandidate = (slot, candidate) => {
 
   for (const token of locationContext) {
     if (hasTokenMatch(haystack, token)) {
-      score += 6;
+      score += 7;
       reasons.push(`location:${token}`);
     }
   }
@@ -266,22 +340,26 @@ const scoreCandidate = (slot, candidate) => {
 };
 
 const getIntentThreshold = (slot) => {
-  const intentType = slot.intent?.intentType || "service";
-  return minScoreByIntent[intentType] ?? 45;
+  const intentClass = slot.intent?.slotIntentClass || "service";
+  return minScoreByIntentClass[intentClass] ?? 42;
 };
 
 const buildQueryCandidates = (slot) => {
   const uniqueQueries = new Set(asStringArray(slot.queries).map((q) => q.trim()).filter(Boolean));
-  const mustInclude = asStringArray(slot.intent?.mustInclude).join(" ").trim();
+  const intentClass = slot.intent?.slotIntentClass || "service";
+  const serviceToken = extractServiceToken(slot);
+  const localityToken = extractLocalityToken(slot);
 
-  if (mustInclude) {
-    uniqueQueries.add(`${mustInclude} malta`.replace(/\s+/g, " ").trim());
+  if (intentClass === "service") {
+    uniqueQueries.add(`${serviceToken} professional at work`);
+    uniqueQueries.add("home service technician tools");
+  } else if (intentClass === "locality") {
+    uniqueQueries.add(`${localityToken} Malta streets cityscape`);
+    uniqueQueries.add(`${localityToken} Malta urban architecture`);
+  } else {
+    uniqueQueries.add(`${serviceToken} ${localityToken} Malta`);
+    uniqueQueries.add(`${serviceToken} in Malta`);
   }
-
-  const intentType = slot.intent?.intentType || "service";
-  if (intentType === "service") uniqueQueries.add("home service technician tools malta");
-  if (intentType === "locality") uniqueQueries.add("malta city street architecture");
-  if (intentType === "guide") uniqueQueries.add("professional service checklist tools");
 
   return [...uniqueQueries].slice(0, 3);
 };
@@ -299,6 +377,16 @@ const selectBestCandidate = (slot, candidates) => {
   return selected;
 };
 
+const enforceIntentRules = (slot, candidate, queryIndex) => {
+  const intentClass = slot.intent?.slotIntentClass || "service";
+  if (intentClass === "service") return candidateMatchesService(slot, candidate);
+  if (intentClass === "locality") return candidateMatchesLocality(slot, candidate);
+  const serviceOk = candidateMatchesService(slot, candidate);
+  if (!serviceOk) return false;
+  if (queryIndex < 2) return candidateMatchesLocality(slot, candidate);
+  return true;
+};
+
 const ensureDir = async (dirPath) => {
   await fs.mkdir(dirPath, { recursive: true });
 };
@@ -310,6 +398,8 @@ const buildFallbackEntry = (slot, reason) => ({
   alt: slot.alt,
   fallback: true,
   status: "fallback",
+  intentClass: slot.intent?.slotIntentClass || "service",
+  sourceMode: "fallback",
   score: 0,
   selectedFrom: 0,
   reasons: [reason],
@@ -352,14 +442,18 @@ const syncSlot = async ({ slot, sharp, existingEntry }) => {
   const queries = buildQueryCandidates(slot);
   let best = null;
   let selectedQuery = "";
-  for (const query of queries) {
+
+  for (let i = 0; i < queries.length; i += 1) {
+    const query = queries[i];
     const candidates = await fetchPexelsPhotos(query);
-    best = selectBestCandidate(slot, candidates);
+    const filtered = candidates.filter((candidate) => enforceIntentRules(slot, candidate, i));
+    best = selectBestCandidate(slot, filtered);
     if (best) {
       selectedQuery = query;
       break;
     }
   }
+
   if (!best) {
     return buildFallbackEntry(slot, apiKey ? "no-candidate-over-threshold" : "missing-api-key");
   }
@@ -403,6 +497,8 @@ const syncSlot = async ({ slot, sharp, existingEntry }) => {
       photoUrl: best.photoUrl,
       fallback: false,
       status: "selected",
+      intentClass: slot.intent?.slotIntentClass || "service",
+      sourceMode: "direct",
       score: best.score,
       selectedFrom: best.rank,
       reasons: best.reasons,
@@ -426,6 +522,8 @@ const main = async () => {
 
   for (const slot of slots) {
     const entry = await syncSlot({ slot, sharp, existingEntry: images[slot.id] });
+    entry.intentClass = entry.intentClass || slot.intent?.slotIntentClass || inferSlotIntentClass(slot.id);
+    entry.sourceMode = entry.sourceMode || (entry.fallback ? "fallback" : "direct");
     images[slot.id] = entry;
     if (entry.fallback) fallbackCount += 1;
     else selectedCount += 1;
