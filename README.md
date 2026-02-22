@@ -73,6 +73,48 @@ npm run images:sync -- --all
   - `PUBLIC_CF_BEACON_TOKEN=<optional-token>`
   - `PUBLIC_PLAUSIBLE_DOMAIN=<optional-domain>`
 
+### Cloudflare API Automation (Local)
+
+This repo includes local Cloudflare API scripts so you can manage Pages environment variables and trigger production deployments without using the dashboard for every change.
+
+1. Copy `.env.cloudflare.example` to `.env.cloudflare`.
+2. Fill required values:
+   - `CLOUDFLARE_API_TOKEN`
+   - `CLOUDFLARE_ACCOUNT_ID`
+   - `CLOUDFLARE_PAGES_PROJECT=malta-directory`
+3. `.env.cloudflare` is ignored by git.
+
+Minimum token scope recommendation:
+
+- Account-level access for Pages project read/update.
+- Permission to create/read Pages deployments.
+- Do not grant unrelated zone-wide write scopes unless required for your setup.
+
+Available commands:
+
+```bash
+# show production + preview env vars (table output)
+npm run cf:env:get
+
+# machine-readable output
+npm run cf:env:get -- --json
+
+# set a variable on production/preview
+npm run cf:env:set -- --env production --key IMAGE_QUALITY_FAIL_ON_WARN --value false
+
+# remove a variable from production/preview
+npm run cf:env:unset -- --env production --key IMAGE_QUALITY_FAIL_ON_WARN
+
+# preview payload without mutating Cloudflare
+npm run cf:env:set -- --env production --key IMAGE_QUALITY_FAIL_ON_WARN --value false --dry-run
+
+# trigger production deployment (main)
+npm run cf:deploy:prod
+
+# trigger and wait for final deployment status
+npm run cf:deploy:prod -- --wait
+```
+
 ### Preview vs Production Image Gate Policy
 
 `images:validate` is strict only on production by default:
@@ -90,6 +132,17 @@ Recommended Cloudflare setup:
 
 - **Production env:** `IMAGE_QUALITY_STRICT=true`
 - **Preview env:** `IMAGE_QUALITY_STRICT=false`
+
+Emergency unblock runbook (production only):
+
+1. Set temporary override:
+   - `npm run cf:env:set -- --env production --key IMAGE_QUALITY_FAIL_ON_WARN --value false`
+2. Trigger deploy:
+   - `npm run cf:deploy:prod -- --wait`
+3. Verify values:
+   - `npm run cf:env:get`
+4. After image coverage remediation, restore strict gate:
+   - `npm run cf:env:unset -- --env production --key IMAGE_QUALITY_FAIL_ON_WARN`
 
 ## Production Image Refresh Runbook
 
