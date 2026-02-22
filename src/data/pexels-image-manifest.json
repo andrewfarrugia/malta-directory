@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-22T02:02:26.439Z",
+  "generatedAt": "2026-02-22T02:30:50.540Z",
   "images": {
     "home-icon-plumbers": {
       "id": "home-icon-plumbers",
@@ -379,15 +379,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:25.296Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.538Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -1020,15 +1020,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:25.382Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -1279,15 +1279,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:25.466Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -1399,15 +1399,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:25.702Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -1519,15 +1519,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:25.902Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -2056,15 +2056,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:26.083Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -2130,15 +2130,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:26.167Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -2158,15 +2158,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:26.347Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -2462,15 +2462,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:25.561Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -2490,15 +2490,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:25.814Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -2518,15 +2518,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:25.989Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -2684,15 +2684,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:26.254Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -2712,15 +2712,15 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "no-candidate-over-threshold"
+        "missing-api-key"
       ],
-      "lastCheckedAt": "2026-02-22T02:02:26.438Z",
+      "lastCheckedAt": "2026-02-22T02:30:50.540Z",
       "variants": [
         {
           "width": 1200,
           "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     },
@@ -2914,6 +2914,370 @@
           "height": 627,
           "jpg": "/images/pexels/featured-location-birkirkara/featured-location-birkirkara-940.jpg",
           "webp": "/images/pexels/featured-location-birkirkara/featured-location-birkirkara-940.webp"
+        }
+      ]
+    },
+    "page-categories-index-hero": {
+      "id": "page-categories-index-hero",
+      "query": "Malta city service professionals overview",
+      "triedQueries": [
+        "Malta city service professionals overview",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "categories index visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-locations-index-hero": {
+      "id": "page-locations-index-hero",
+      "query": "Malta localities urban skyline",
+      "triedQueries": [
+        "Malta localities urban skyline",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "locations index visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-guides-index-hero": {
+      "id": "page-guides-index-hero",
+      "query": "Malta professional service planning desk",
+      "triedQueries": [
+        "Malta professional service planning desk",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "guides index visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-listings-index-hero": {
+      "id": "page-listings-index-hero",
+      "query": "Malta business district office exterior",
+      "triedQueries": [
+        "Malta business district office exterior",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "listings index visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-about-hero": {
+      "id": "page-about-hero",
+      "query": "Malta city administration building",
+      "triedQueries": [
+        "Malta city administration building",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "about visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-contact-hero": {
+      "id": "page-contact-hero",
+      "query": "Malta office support desk",
+      "triedQueries": [
+        "Malta office support desk",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "contact visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-search-hero": {
+      "id": "page-search-hero",
+      "query": "person searching on laptop workspace",
+      "triedQueries": [
+        "person searching on laptop workspace",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "search visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-privacy-hero": {
+      "id": "page-privacy-hero",
+      "query": "secure data privacy lock computer",
+      "triedQueries": [
+        "secure data privacy lock computer",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "privacy visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-terms-hero": {
+      "id": "page-terms-hero",
+      "query": "contract document on desk",
+      "triedQueries": [
+        "contract document on desk",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "terms visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-cookies-hero": {
+      "id": "page-cookies-hero",
+      "query": "website analytics dashboard screen",
+      "triedQueries": [
+        "website analytics dashboard screen",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "cookies visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-legal-hero": {
+      "id": "page-legal-hero",
+      "query": "legal documents and city office",
+      "triedQueries": [
+        "legal documents and city office",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "legal visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-disclaimer-hero": {
+      "id": "page-disclaimer-hero",
+      "query": "terms notice document closeup",
+      "triedQueries": [
+        "terms notice document closeup",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "disclaimer visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
+        }
+      ]
+    },
+    "page-404-hero": {
+      "id": "page-404-hero",
+      "query": "Maltese street sign and map",
+      "triedQueries": [
+        "Maltese street sign and map",
+        "malta Malta streets cityscape",
+        "malta Malta urban architecture"
+      ],
+      "alt": "404 visual context in Malta",
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "locality",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
+      "reasons": [
+        "missing-api-key"
+      ],
+      "lastCheckedAt": "2026-02-22T02:30:50.539Z",
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder-malta.webp",
+          "jpg": "/images/placeholder-malta.jpg"
         }
       ]
     }

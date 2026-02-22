@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import { buildSeo } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const breadcrumbs = [
   { name: "Home", url: "/" },
@@ -15,19 +18,35 @@ const seo = buildSeo({
 });
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
-  <main class="section">
-    <div class="container prose">
-      <Breadcrumbs items={breadcrumbs} />
-      <h1>Terms and Conditions (Draft)</h1>
-      <p class="notice">This draft does not constitute legal advice and requires legal review.</p>
-      <h2>Use of the site</h2>
-      <p>Users may browse content for informational purposes. Unauthorized scraping, misuse, or unlawful use is prohibited.</p>
-      <h2>Listings and guide content</h2>
-      <p>Information is provided on an "as-is" basis and may change. Users should independently verify provider suitability.</p>
-      <h2>Limitation of liability</h2>
-      <p>To the maximum extent permitted by law, Malta Service Hub is not liable for indirect or consequential losses arising from site use.</p>
-      <h2>Governing law</h2>
-      <p>These terms are governed by Maltese law unless otherwise required by applicable law.</p>
-    </div>
+  <main>
+    <PageMastheadMedia
+      kicker="Legal"
+      title="Terms and Conditions (Draft)"
+      description="Draft terms for informational use. Legal review required before launch."
+      image={getPexelsImage("page-terms-hero", "Terms and conditions")}
+    />
+    <section class="section">
+      <div class="container prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <p class="notice">This draft does not constitute legal advice and requires legal review.</p>
+        <h2>Use of the site</h2>
+        <p>Users may browse content for informational purposes. Unauthorized scraping, misuse, or unlawful use is prohibited.</p>
+        <h2>Listings and guide content</h2>
+        <p>Information is provided on an "as-is" basis and may change. Users should independently verify provider suitability.</p>
+        <h2>Limitation of liability</h2>
+        <p>To the maximum extent permitted by law, Malta Service Hub is not liable for indirect or consequential losses arising from site use.</p>
+        <h2>Governing law</h2>
+        <p>These terms are governed by Maltese law unless otherwise required by applicable law.</p>
+      </div>
+    </section>
+    <ContextRail
+      title="Legal resources"
+      items={[
+        { title: "Privacy policy", href: "/privacy/", meta: "Data handling", image: getPexelsImage("page-privacy-hero", "Privacy policy") },
+        { title: "Cookie policy", href: "/cookies/", meta: "Consent settings", image: getPexelsImage("page-cookies-hero", "Cookie policy") },
+        { title: "Legal notice", href: "/legal/", meta: "Entity details", image: getPexelsImage("page-legal-hero", "Legal notice") },
+        { title: "Contact", href: "/contact/", meta: "Request updates", image: getPexelsImage("page-contact-hero", "Contact support") }
+      ]}
+    />
   </main>
 </BaseLayout>

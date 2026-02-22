@@ -6,6 +6,9 @@ import FeatureIconStrip from "@/components/FeatureIconStrip.astro";
 import FeaturedServiceCards from "@/components/FeaturedServiceCards.astro";
 import TrendingLocalitiesMosaic from "@/components/TrendingLocalitiesMosaic.astro";
 import EditorialArticleCards from "@/components/EditorialArticleCards.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
+import TestimonialBand from "@/components/TestimonialBand.astro";
 import { getTopCategories, getTopLocations, getGuides } from "@/lib/data";
 import { buildSeo, clampMeta } from "@/lib/seo";
 import { getPexelsComponentMap, getPexelsImage } from "@/lib/pexelsImagePipeline";
@@ -48,17 +51,20 @@ const seo = buildSeo({
 ---
 <BaseLayout seo={seo}>
   <main>
-    <section class="hero">
+    <PageMastheadMedia
+      kicker="Independent Malta directory"
+      title="Find trusted local service pathways across Malta"
+      description="Navigate categories, localities, and practical buying guides through a clearer, more visual discovery journey."
+      image={getPexelsImage("featured-location-valletta", "Valletta locality context in Malta")}
+      actions={[
+        { href: "/categories/", label: "Browse categories" },
+        { href: "/locations/", label: "Explore locations", variant: "secondary" }
+      ]}
+    />
+
+    <section class="section hero--compact">
       <div class="container">
-        <h1>Browse independent service guides and locality hubs across Malta</h1>
-        <p class="lead">
-          Malta Service Hub is an independently curated directory and guide resource. Information is compiled from publicly available sources and may change over time.
-        </p>
-        <div class="consent-actions mt-sm">
-          <a class="btn btn--primary" href="/categories/">Browse categories</a>
-          <a class="btn btn--secondary" href="/locations/">Explore locations</a>
-        </div>
-        <div class="kpi-list mt-md">
+        <div class="kpi-list">
           <div class="kpi-item"><strong>12</strong><br />Service categories</div>
           <div class="kpi-item"><strong>12</strong><br />Malta localities</div>
           <div class="kpi-item"><strong>34+</strong><br />Editorial guides</div>
@@ -70,7 +76,19 @@ const seo = buildSeo({
     <FeatureIconStrip title="Popular services to browse" seeAllHref="/categories/" items={iconStripItems} />
     <FeaturedServiceCards title="Featured locality hubs" items={featuredItems} />
     <TrendingLocalitiesMosaic title="Trending localities" seeAllHref="/locations/" items={mosaicItems} />
+
+    <ContextRail
+      title="Jump directly into high-demand hubs"
+      items={topCategories.slice(0, 4).map((category) => ({
+        title: `${category.pluralName} in Malta`,
+        href: `/categories/${category.slug}/`,
+        meta: category.synonyms[0] || "Category hub",
+        image: getPexelsImage(`category-${category.slug}-hero`, `${category.pluralName} in Malta`)
+      }))}
+    />
+
     <EditorialArticleCards title="Latest practical guides" seeAllHref="/guides/" items={editorialItems} />
+    <TestimonialBand />
 
     <section class="section">
       <div class="container">
@@ -82,6 +100,7 @@ const seo = buildSeo({
               description={category.intro}
               href={`/categories/${category.slug}/`}
               chips={category.synonyms.slice(0, 3)}
+              image={getPexelsImage(`category-${category.slug}-tile-1`, `${category.pluralName} service tools in Malta`)}
             />
           ))}
         </div>
@@ -98,6 +117,7 @@ const seo = buildSeo({
               description={location.intro}
               href={`/locations/${location.slug}/`}
               chips={location.region ? [location.region] : []}
+              image={getPexelsImage(`featured-location-${location.slug}`, `${location.name} locality in Malta`)}
             />
           ))}
         </div>
@@ -114,6 +134,7 @@ const seo = buildSeo({
               description={guide.data.description}
               href={`/guides/${guide.slug}/`}
               dateUpdated={guide.data.dateUpdated.toISOString()}
+              image={getPexelsImage(`guide-${guide.data.categorySlugs[0] || "plumbers"}`, `${guide.data.title} in Malta`)}
             />
           ))}
         </div>

@@ -4,6 +4,8 @@ import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import FAQBlock from "@/components/FAQBlock.astro";
 import GuideCard from "@/components/GuideCard.astro";
 import RelatedLinks from "@/components/RelatedLinks.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import {
   getLocations,
   getLocationBySlug,
@@ -14,6 +16,7 @@ import {
 import { isQualifiedCombo } from "@/lib/combo";
 import { buildSeo, clampMeta } from "@/lib/seo";
 import { faqSchema } from "@/lib/schema";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 export const getStaticPaths = () => getLocations().map((location) => ({ params: { locationSlug: location.slug } }));
 
@@ -73,28 +76,40 @@ const nearbyLinks = nearbyLocations.map((item) => ({
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[faqSchema(localFaqs)]}>
   <main>
+    <PageMastheadMedia
+      kicker="Locality hub"
+      title={`Services in ${location.name}`}
+      description={location.intro}
+      image={getPexelsImage(`featured-location-${location.slug}`, `${location.name} locality context in Malta`)}
+      actions={[
+        { href: "/categories/", label: "Browse categories" },
+        { href: "/guides/", label: "Read guides", variant: "secondary" }
+      ]}
+    />
+
     <section class="section">
       <div class="container prose">
         <Breadcrumbs items={breadcrumbs} />
-        <h1>Services in {location.name}</h1>
-        <p class="lead">{location.intro}</p>
         <p>
           This locality hub connects you to high-priority service categories, nearby areas, and practical guides that reflect local demand conditions.
         </p>
       </div>
     </section>
 
+    <ContextRail
+      title={`Popular services in ${location.name}`}
+      items={topCategories.slice(0, 4).map((category) => ({
+        title: `${category.pluralName} in ${location.name}`,
+        href: isQualifiedCombo(category.slug, location.slug)
+          ? `/categories/${category.slug}/${location.slug}/`
+          : `/categories/${category.slug}/`,
+        meta: "Category + locality path",
+        image: getPexelsImage(`category-${category.slug}-hero`, `${category.pluralName} service work in Malta`)
+      }))}
+    />
+
     <RelatedLinks title={`Popular services in ${location.name}`} links={categoryLinks.slice(0, 12)} />
     <RelatedLinks title="Nearby locations" links={nearbyLinks.slice(0, 6)} />
-
-    <section class="section">
-      <div class="container">
-        <h2>Directory notes for {location.name}</h2>
-        <p class="prose">
-          Public listing records for this locality are currently excluded from indexed directory pages. Please confirm current provider details directly before making a booking decision.
-        </p>
-      </div>
-    </section>
 
     <section class="section section--muted">
       <div class="container">
@@ -106,6 +121,7 @@ const nearbyLinks = nearbyLocations.map((item) => ({
               description={guide.data.description}
               href={`/guides/${guide.slug}/`}
               dateUpdated={guide.data.dateUpdated.toISOString()}
+              image={getPexelsImage(`guide-${guide.data.categorySlugs[0] || "plumbers"}`, `${guide.data.title} in Malta`)}
             />
           ))}
         </div>

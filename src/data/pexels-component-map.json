@@ -142,7 +142,20 @@
     "guide-movers": "home moving team carrying boxes",
     "guide-photographers": "photographer camera setup portrait",
     "guide-wedding-planners": "event planner organizing wedding table",
-    "guide-it-support": "it support specialist office diagnostics"
+    "guide-it-support": "it support specialist office diagnostics",
+    "page-categories-index-hero": "Malta city service professionals overview",
+    "page-locations-index-hero": "Malta localities urban skyline",
+    "page-guides-index-hero": "Malta professional service planning desk",
+    "page-listings-index-hero": "Malta business district office exterior",
+    "page-about-hero": "Malta city administration building",
+    "page-contact-hero": "Malta office support desk",
+    "page-search-hero": "person searching on laptop workspace",
+    "page-privacy-hero": "secure data privacy lock computer",
+    "page-terms-hero": "contract document on desk",
+    "page-cookies-hero": "website analytics dashboard screen",
+    "page-legal-hero": "legal documents and city office",
+    "page-disclaimer-hero": "terms notice document closeup",
+    "page-404-hero": "Maltese street sign and map"
   },
   "intentTemplates": {
     "categoryHero": {
@@ -457,6 +470,242 @@
         "indoor closeup"
       ],
       "altTemplate": "Victoria, Gozo locality context in Malta"
+    },
+    "page-categories-index-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "categories index visual context in Malta"
+    },
+    "page-locations-index-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "locations index visual context in Malta"
+    },
+    "page-guides-index-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "guides index visual context in Malta"
+    },
+    "page-listings-index-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "listings index visual context in Malta"
+    },
+    "page-about-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "about visual context in Malta"
+    },
+    "page-contact-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "contact visual context in Malta"
+    },
+    "page-search-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "search visual context in Malta"
+    },
+    "page-privacy-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "privacy visual context in Malta"
+    },
+    "page-terms-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "terms visual context in Malta"
+    },
+    "page-cookies-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "cookies visual context in Malta"
+    },
+    "page-legal-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "legal visual context in Malta"
+    },
+    "page-disclaimer-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "disclaimer visual context in Malta"
+    },
+    "page-404-hero": {
+      "intentType": "locality",
+      "slotIntentClass": "locality",
+      "mustInclude": [
+        "malta"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "404 visual context in Malta"
     }
-  }
+  },
+  "pageMastheads": [
+    {
+      "id": "page-categories-index-hero",
+      "title": "Service categories in Malta",
+      "href": "/categories/"
+    },
+    {
+      "id": "page-locations-index-hero",
+      "title": "Malta locations directory",
+      "href": "/locations/"
+    },
+    {
+      "id": "page-guides-index-hero",
+      "title": "Practical service guides in Malta",
+      "href": "/guides/"
+    },
+    {
+      "id": "page-listings-index-hero",
+      "title": "Sample provider listings in Malta",
+      "href": "/listings/"
+    },
+    {
+      "id": "page-about-hero",
+      "title": "About Malta Service Hub",
+      "href": "/about/"
+    },
+    {
+      "id": "page-contact-hero",
+      "title": "Contact Malta Service Hub",
+      "href": "/contact/"
+    },
+    {
+      "id": "page-search-hero",
+      "title": "Search Malta Service Hub",
+      "href": "/search/"
+    },
+    {
+      "id": "page-privacy-hero",
+      "title": "Privacy policy",
+      "href": "/privacy/"
+    },
+    {
+      "id": "page-terms-hero",
+      "title": "Terms and conditions",
+      "href": "/terms/"
+    },
+    {
+      "id": "page-cookies-hero",
+      "title": "Cookie policy",
+      "href": "/cookies/"
+    },
+    {
+      "id": "page-legal-hero",
+      "title": "Legal notice",
+      "href": "/legal/"
+    },
+    {
+      "id": "page-disclaimer-hero",
+      "title": "Disclaimer",
+      "href": "/disclaimer/"
+    },
+    {
+      "id": "page-404-hero",
+      "title": "Page not found",
+      "href": "/404/"
+    }
+  ]
 }

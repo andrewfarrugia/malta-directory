@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import { buildSeo, clampMeta } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const breadcrumbs = [
   { name: "Home", url: "/" },
@@ -17,23 +20,36 @@ const seo = buildSeo({
 });
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
-  <main class="section">
-    <div class="container prose">
-      <Breadcrumbs items={breadcrumbs} />
-      <h1>About Malta Service Hub</h1>
-      <p>
-        Malta Service Hub is a local-first directory and editorial platform built to help users compare service providers with more confidence. We focus on transparent structure, practical checklists, and useful locality context.
-      </p>
-      <h2>How we curate</h2>
-      <p>
-        We collect publicly available provider information, map services to categories and localities, and record source notes. Combined category-location pages are published only when they meet quality thresholds for utility.
-      </p>
-      <h2>Editorial principles</h2>
-      <ul>
-        <li>Practical guidance over generic keyword copy.</li>
-        <li>Clear internal linking for discovery and context.</li>
-        <li>Ongoing updates to improve accuracy and depth.</li>
-      </ul>
-    </div>
+  <main>
+    <PageMastheadMedia
+      kicker="About"
+      title="How Malta Service Hub works"
+      description="Local-first directory and editorial workflows focused on practical user decisions, not surface-level ranking lists."
+      image={getPexelsImage("page-about-hero", "About Malta Service Hub")}
+    />
+    <section class="section">
+      <div class="container prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <h2>How we curate</h2>
+        <p>
+          We collect publicly available provider information, map services to categories and localities, and record source notes. Combined category-location pages are published only when they meet quality thresholds for utility.
+        </p>
+        <h2>Editorial principles</h2>
+        <ul>
+          <li>Practical guidance over generic keyword copy.</li>
+          <li>Clear internal linking for discovery and context.</li>
+          <li>Ongoing updates to improve accuracy and depth.</li>
+        </ul>
+      </div>
+    </section>
+    <ContextRail
+      title="Explore the site"
+      items={[
+        { title: "Category index", href: "/categories/", meta: "Service pathways", image: getPexelsImage("page-categories-index-hero", "Service categories in Malta") },
+        { title: "Location index", href: "/locations/", meta: "Local hubs", image: getPexelsImage("page-locations-index-hero", "Malta localities") },
+        { title: "Guides", href: "/guides/", meta: "Practical advice", image: getPexelsImage("page-guides-index-hero", "Guide library") },
+        { title: "Contact", href: "/contact/", meta: "Corrections and requests", image: getPexelsImage("page-contact-hero", "Contact Malta Service Hub") }
+      ]}
+    />
   </main>
 </BaseLayout>

@@ -2,10 +2,14 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import ListingCard from "@/components/ListingCard.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
-import { getListings } from "@/lib/data";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import { getListings, getTopLocations } from "@/lib/data";
 import { buildSeo, clampMeta } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const listings = getListings();
+const topLocations = getTopLocations(4);
 const seo = buildSeo({
   path: "/listings/",
   title: "Service Listings in Malta",
@@ -19,18 +23,32 @@ const breadcrumbs = [
 ];
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
-  <main class="section">
-    <div class="container">
-      <Breadcrumbs items={breadcrumbs} />
-      <h1>Listings</h1>
-      <p class="lead">
-        These entries are sample directory records for demonstration. Details may change and should be confirmed directly with providers.
-      </p>
-      <div class="grid grid--cards mt-md">
-        {listings.map((listing) => (
-          <ListingCard listing={listing} />
-        ))}
+  <main>
+    <PageMastheadMedia
+      kicker="Directory sample records"
+      title="Listings"
+      description="Sample directory records for demonstration. Always confirm details directly with providers before booking."
+      image={getPexelsImage("page-listings-index-hero", "Provider listings in Malta")}
+      actions={[{ href: "/categories/", label: "Browse categories", variant: "secondary" }]}
+    />
+    <section class="section">
+      <div class="container">
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="grid grid--cards mt-md">
+          {listings.map((listing) => (
+            <ListingCard listing={listing} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
+    <ContextRail
+      title="Locality hubs"
+      items={topLocations.map((location) => ({
+        title: `Services in ${location.name}`,
+        href: `/locations/${location.slug}/`,
+        meta: location.region || "Location hub",
+        image: getPexelsImage(`featured-location-${location.slug}`, `${location.name} in Malta`)
+      }))}
+    />
   </main>
 </BaseLayout>

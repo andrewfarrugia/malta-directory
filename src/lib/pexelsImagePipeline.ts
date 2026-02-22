@@ -32,10 +32,10 @@ interface Manifest {
 const manifest = manifestRaw as Manifest;
 
 const placeholderVariant: LocalPexelsVariant = {
-  width: 1200,
-  height: 800,
-  webp: "/images/placeholder.jpg",
-  jpg: "/images/placeholder.jpg"
+  width: 867,
+  height: 541,
+  webp: "/images/placeholder-malta.webp",
+  jpg: "/images/placeholder-malta.jpg"
 };
 
 export const getPexelsImage = (id: string, altFallback = "Service photo in Malta"): LocalPexelsImage => {

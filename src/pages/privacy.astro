@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import { buildSeo, clampMeta } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const breadcrumbs = [
   { name: "Home", url: "/" },
@@ -15,25 +18,37 @@ const seo = buildSeo({
 });
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
-  <main class="section">
-    <div class="container prose">
-      <Breadcrumbs items={breadcrumbs} />
-      <h1>Privacy Policy (Draft)</h1>
-      <p class="notice">This draft policy is a template and must be reviewed by legal counsel before production use.</p>
-      <h2>1. Data controller</h2>
-      <p>Malta Service Hub, contact: privacy@maltaservicehub.com.</p>
-      <h2>2. Data we process</h2>
-      <p>We process contact details submitted through forms, event analytics subject to consent, and technical logs required for security and operations.</p>
-      <h2>3. Legal bases</h2>
-      <p>Contractual necessity, legitimate interests, legal obligations, and consent where required.</p>
-      <h2>4. Your rights under GDPR</h2>
-      <p>You can request access, correction, deletion, restriction, portability, and object to certain processing. You can withdraw consent at any time.</p>
-      <h2>5. Data retention</h2>
-      <p>Retention periods depend on processing purpose and legal obligations. We keep data no longer than necessary.</p>
-      <h2>6. International transfers</h2>
-      <p>Where transfers outside the EEA occur, appropriate safeguards will be applied.</p>
-      <h2>7. Contact and complaints</h2>
-      <p>Contact privacy@maltaservicehub.com for rights requests. You may also contact the relevant supervisory authority.</p>
-    </div>
+  <main>
+    <PageMastheadMedia
+      kicker="Legal"
+      title="Privacy Policy (Draft)"
+      description="Template privacy policy for Malta Service Hub. Requires legal review before production use."
+      image={getPexelsImage("page-privacy-hero", "Privacy policy in Malta")}
+    />
+    <section class="section">
+      <div class="container prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <p class="notice">This draft policy is a template and must be reviewed by legal counsel before production use.</p>
+        <h2>1. Data controller</h2>
+        <p>Malta Service Hub, contact: privacy@maltaservicehub.com.</p>
+        <h2>2. Data we process</h2>
+        <p>We process contact details submitted through forms, event analytics subject to consent, and technical logs required for security and operations.</p>
+        <h2>3. Legal bases</h2>
+        <p>Contractual necessity, legitimate interests, legal obligations, and consent where required.</p>
+        <h2>4. Your rights under GDPR</h2>
+        <p>You can request access, correction, deletion, restriction, portability, and object to certain processing. You can withdraw consent at any time.</p>
+        <h2>5. Data retention</h2>
+        <p>Retention periods depend on processing purpose and legal obligations. We keep data no longer than necessary.</p>
+      </div>
+    </section>
+    <ContextRail
+      title="Related legal pages"
+      items={[
+        { title: "Cookie policy", href: "/cookies/", meta: "Consent controls", image: getPexelsImage("page-cookies-hero", "Cookie policy") },
+        { title: "Terms", href: "/terms/", meta: "Usage conditions", image: getPexelsImage("page-terms-hero", "Terms and conditions") },
+        { title: "Legal notice", href: "/legal/", meta: "Entity details", image: getPexelsImage("page-legal-hero", "Legal notice") },
+        { title: "Disclaimer", href: "/disclaimer/", meta: "Scope and liability", image: getPexelsImage("page-disclaimer-hero", "Disclaimer") }
+      ]}
+    />
   </main>
 </BaseLayout>

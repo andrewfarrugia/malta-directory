@@ -15,7 +15,8 @@ const rootDir = process.cwd();
 const publicDir = path.join(rootDir, "public");
 const manifestPath = path.join(rootDir, "src/data/pexels-image-manifest.json");
 const pexelsDir = path.join(publicDir, "images/pexels");
-const placeholderPath = "/images/placeholder.jpg";
+const placeholderJpgPath = "/images/placeholder-malta.jpg";
+const placeholderWebpPath = "/images/placeholder-malta.webp";
 
 const targetWidths = [640, 960, 1280];
 const jpgQuality = 78;
@@ -137,6 +138,15 @@ const getSlots = () => {
       queries: asStringArray(componentMap.queries[item.id]),
       intent: resolveIntent(item.id, componentMap.slotIntents[item.id]),
       alt: componentMap.slotIntents[item.id]?.altTemplate || `${item.title} locality context in Malta`
+    });
+  }
+
+  for (const item of componentMap.pageMastheads || []) {
+    slots.push({
+      id: item.id,
+      queries: asStringArray(componentMap.queries[item.id] || `${item.title} Malta`),
+      intent: resolveIntent(item.id, componentMap.slotIntents[item.id]),
+      alt: componentMap.slotIntents[item.id]?.altTemplate || `${item.title} visual context in Malta`
     });
   }
 
@@ -408,8 +418,8 @@ const buildFallbackEntry = (slot, reason) => ({
     {
       width: 1200,
       height: 800,
-      webp: placeholderPath,
-      jpg: placeholderPath
+      webp: placeholderWebpPath,
+      jpg: placeholderJpgPath
     }
   ]
 });

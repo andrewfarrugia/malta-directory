@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import { buildSeo, clampMeta } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const breadcrumbs = [
   { name: "Home", url: "/" },
@@ -17,27 +20,40 @@ const seo = buildSeo({
 });
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
-  <main class="section">
-    <div class="container prose">
-      <Breadcrumbs items={breadcrumbs} />
-      <h1>Contact</h1>
-      <p>
-        For listing updates, correction requests, data-rights requests, or business submissions, contact us through the channels below.
-      </p>
-      <ul>
-        <li>Email: <a href="mailto:privacy@maltaservicehub.com" data-track="email-click" data-track-label="privacy email">privacy@maltaservicehub.com</a></li>
-        <li>General: <a href="mailto:hello@maltaservicehub.com" data-track="email-click" data-track-label="general email">hello@maltaservicehub.com</a></li>
-        <li>Phone: <a href="tel:+35620101010" data-track="phone-click" data-track-label="main phone">+356 20 101 010</a></li>
-      </ul>
+  <main>
+    <PageMastheadMedia
+      kicker="Support"
+      title="Contact"
+      description="Reach us for listing corrections, data-rights requests, business submissions, and legal inquiries."
+      image={getPexelsImage("page-contact-hero", "Contact Malta Service Hub")}
+    />
+    <section class="section">
+      <div class="container prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <ul>
+          <li>Email: <a href="mailto:privacy@maltaservicehub.com" data-track="email-click" data-track-label="privacy email">privacy@maltaservicehub.com</a></li>
+          <li>General: <a href="mailto:hello@maltaservicehub.com" data-track="email-click" data-track-label="general email">hello@maltaservicehub.com</a></li>
+          <li>Phone: <a href="tel:+35620101010" data-track="phone-click" data-track-label="main phone">+356 20 101 010</a></li>
+        </ul>
 
-      <h2>Business submissions</h2>
-      <p>Use the draft form below. In production, connect this to your preferred processing endpoint.</p>
-      <form class="card form-stack" onsubmit="window.mshTrackEvent && window.mshTrackEvent('contact-submit', { form: 'business-submission' })">
-        <label class="field-label">Name<input class="input-control" type="text" required /></label>
-        <label class="field-label">Email<input class="input-control" type="email" required /></label>
-        <label class="field-label">Message<textarea class="input-control input-control--textarea" required></textarea></label>
-        <button class="btn btn--primary" type="submit" data-track="contact-submit" data-track-label="contact form">Send request</button>
-      </form>
-    </div>
+        <h2>Business submissions</h2>
+        <p>Use the draft form below. In production, connect this to your preferred processing endpoint.</p>
+        <form class="card form-stack" onsubmit="window.mshTrackEvent && window.mshTrackEvent('contact-submit', { form: 'business-submission' })">
+          <label class="field-label">Name<input class="input-control" type="text" required /></label>
+          <label class="field-label">Email<input class="input-control" type="email" required /></label>
+          <label class="field-label">Message<textarea class="input-control input-control--textarea" required></textarea></label>
+          <button class="btn btn--primary" type="submit" data-track="contact-submit" data-track-label="contact form">Send request</button>
+        </form>
+      </div>
+    </section>
+    <ContextRail
+      title="Need a faster path?"
+      items={[
+        { title: "Search directory", href: "/search/", meta: "Find pages quickly", image: getPexelsImage("page-search-hero", "Search Malta services") },
+        { title: "Category hubs", href: "/categories/", meta: "Compare options", image: getPexelsImage("page-categories-index-hero", "Service categories") },
+        { title: "Location hubs", href: "/locations/", meta: "Local context", image: getPexelsImage("page-locations-index-hero", "Malta localities") },
+        { title: "Guides", href: "/guides/", meta: "Practical checklists", image: getPexelsImage("page-guides-index-hero", "Guide index") }
+      ]}
+    />
   </main>
 </BaseLayout>

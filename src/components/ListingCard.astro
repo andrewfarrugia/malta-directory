@@ -1,14 +1,25 @@
 ---
 import type { Listing } from "@/lib/types";
+import { getPexelsImage, toPictureData } from "@/lib/pexelsImagePipeline";
 
 interface Props {
   listing: Listing;
 }
 
 const { listing } = Astro.props as Props;
+const image = toPictureData(
+  getPexelsImage(`category-${listing.categorySlugs[0] || "plumbers"}-tile-1`, `${listing.name} in Malta`)
+);
 ---
-<article class="card">
-  <h3>{listing.name}</h3>
+<article class="card media-card">
+  <a class="media-card-image" href={`/listings/${listing.slug}/`}>
+    <picture>
+      {image.hasWebp && <source type="image/webp" srcset={image.webpSrcset} />}
+      <source type="image/jpeg" srcset={image.jpgSrcset} />
+      <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" />
+    </picture>
+  </a>
+  <h3><a href={`/listings/${listing.slug}/`}>{listing.name}</a></h3>
   <p>{listing.shortDescription}</p>
   <p class="meta">{listing.address.locality} · Independent sample directory entry</p>
   <div>

@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import { buildSeo } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const breadcrumbs = [
   { name: "Home", url: "/" },
@@ -15,18 +18,34 @@ const seo = buildSeo({
 });
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
-  <main class="section">
-    <div class="container prose">
-      <Breadcrumbs items={breadcrumbs} />
-      <h1>Legal Notice</h1>
-      <p class="notice">Information may change over time. Please contact us directly for the latest legal details.</p>
-      <h2>Company information</h2>
-      <p>Company name: Malta Service Hub</p>
-      <p>Registered address: Available on request.</p>
-      <p>Registration number: Available on request.</p>
-      <p>VAT number: Available on request.</p>
-      <h2>Contact</h2>
-      <p>Email: legal@maltaservicehub.com</p>
-    </div>
+  <main>
+    <PageMastheadMedia
+      kicker="Legal"
+      title="Legal Notice"
+      description="Company and legal information for Malta Service Hub."
+      image={getPexelsImage("page-legal-hero", "Legal notice in Malta")}
+    />
+    <section class="section">
+      <div class="container prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <p class="notice">Information may change over time. Please contact us directly for the latest legal details.</p>
+        <h2>Company information</h2>
+        <p>Company name: Malta Service Hub</p>
+        <p>Registered address: Available on request.</p>
+        <p>Registration number: Available on request.</p>
+        <p>VAT number: Available on request.</p>
+        <h2>Contact</h2>
+        <p>Email: legal@maltaservicehub.com</p>
+      </div>
+    </section>
+    <ContextRail
+      title="Related documents"
+      items={[
+        { title: "Terms", href: "/terms/", meta: "Site terms", image: getPexelsImage("page-terms-hero", "Terms") },
+        { title: "Privacy", href: "/privacy/", meta: "Data handling", image: getPexelsImage("page-privacy-hero", "Privacy") },
+        { title: "Cookies", href: "/cookies/", meta: "Consent", image: getPexelsImage("page-cookies-hero", "Cookies") },
+        { title: "Disclaimer", href: "/disclaimer/", meta: "Liability scope", image: getPexelsImage("page-disclaimer-hero", "Disclaimer") }
+      ]}
+    />
   </main>
 </BaseLayout>

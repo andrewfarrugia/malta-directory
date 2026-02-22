@@ -2,6 +2,8 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import ListingCard from "@/components/ListingCard.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import { getListings, getListingBySlug, getCategoryBySlug, getLocationBySlug } from "@/lib/data";
 import { getPexelsImage, toPictureData } from "@/lib/pexelsImagePipeline";
 import { buildSeo, clampMeta } from "@/lib/seo";
@@ -45,11 +47,20 @@ const breadcrumbs = [
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[localBusinessSchema(listing)]}>
   <main>
+    <PageMastheadMedia
+      kicker="Listing profile"
+      title={listing.name}
+      description={listing.shortDescription}
+      image={getPexelsImage(`category-${listing.categorySlugs[0] || "plumbers"}-hero`, `${listing.name} service visual in Malta`)}
+      actions={[
+        { href: "/listings/", label: "All listings", variant: "secondary" },
+        { href: `/categories/${listing.categorySlugs[0] || "plumbers"}/`, label: "Category hub" }
+      ]}
+    />
+
     <section class="section">
       <div class="container prose">
         <Breadcrumbs items={breadcrumbs} />
-        <h1>{listing.name}</h1>
-        <p>{listing.shortDescription}</p>
         <p class="meta">Last reviewed on {new Date(listing.lastVerifiedDate).toLocaleDateString("en-MT")}</p>
         <p class="meta">
           This listing is independently compiled. We recommend confirming details directly with the provider.
@@ -116,11 +127,38 @@ const breadcrumbs = [
             <img src={image} alt={`${listing.name} image ${index + 1}`} loading="lazy" />
           ))}
         </div>
-
-        <h2>Data provenance</h2>
-        <p>{listing.sourceNotes}</p>
       </div>
     </section>
+
+    <ContextRail
+      title="Continue your research"
+      items={[
+        {
+          title: "All listings",
+          href: "/listings/",
+          meta: "Directory index",
+          image: getPexelsImage("page-listings-index-hero", "Listing directory in Malta")
+        },
+        {
+          title: `Services in ${location?.name || "Malta"}`,
+          href: location ? `/locations/${location.slug}/` : "/locations/",
+          meta: "Locality hub",
+          image: getPexelsImage(`featured-location-${location?.slug || "valletta"}`, `${location?.name || "Malta"} in Malta`)
+        },
+        {
+          title: "Category guides",
+          href: "/guides/",
+          meta: "Editorial support",
+          image: getPexelsImage(`guide-${listing.categorySlugs[0] || "plumbers"}`, "Service guide in Malta")
+        },
+        {
+          title: "Search",
+          href: "/search/",
+          meta: "Find alternatives",
+          image: getPexelsImage("page-search-hero", "Search service providers")
+        }
+      ]}
+    />
 
     <section class="section section--muted">
       <div class="container">

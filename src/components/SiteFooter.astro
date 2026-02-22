@@ -4,11 +4,12 @@ const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
   <div class="container footer-grid">
-    <section>
+    <section class="footer-cta">
       <BrandWordmark compact={true} />
-      <p class="meta mt-sm">
-        Independent Malta services directory and practical local guidance.
+      <p class="meta">
+        Independent Malta services directory with practical guidance, locality context, and structured provider discovery.
       </p>
+      <a class="btn btn--primary" href="/search/">Start searching</a>
       <button type="button" class="btn btn--secondary" data-open-consent>
         Cookie preferences
       </button>
@@ -19,6 +20,16 @@ const year = new Date().getFullYear();
         <li><a href="/categories/">Categories</a></li>
         <li><a href="/locations/">Locations</a></li>
         <li><a href="/guides/">Guides</a></li>
+        <li><a href="/listings/">Listings</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Support</h3>
+      <ul class="inline-list">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
       </ul>
     </section>
     <section>

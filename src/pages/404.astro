@@ -1,6 +1,9 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
+import ContextRail from "@/components/ContextRail.astro";
 import { buildSeo } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const seo = buildSeo({
   path: "/404/",
@@ -10,11 +13,22 @@ const seo = buildSeo({
 });
 ---
 <BaseLayout seo={seo}>
-  <main class="section">
-    <div class="container">
-      <h1>Page not found</h1>
-      <p>The page you requested is not available.</p>
-      <a class="btn btn--primary" href="/">Back to home</a>
-    </div>
+  <main>
+    <PageMastheadMedia
+      kicker="Error"
+      title="Page not found"
+      description="The page you requested is not available. Use one of the navigation routes below to continue browsing."
+      image={getPexelsImage("page-404-hero", "Page not found in Malta Service Hub")}
+      actions={[{ href: "/", label: "Back to home" }]}
+    />
+    <ContextRail
+      title="Popular destinations"
+      items={[
+        { title: "Categories", href: "/categories/", meta: "Browse services", image: getPexelsImage("page-categories-index-hero", "Categories") },
+        { title: "Locations", href: "/locations/", meta: "Browse localities", image: getPexelsImage("page-locations-index-hero", "Locations") },
+        { title: "Guides", href: "/guides/", meta: "Read advice", image: getPexelsImage("page-guides-index-hero", "Guides") },
+        { title: "Search", href: "/search/", meta: "Find quickly", image: getPexelsImage("page-search-hero", "Search") }
+      ]}
+    />
   </main>
 </BaseLayout>

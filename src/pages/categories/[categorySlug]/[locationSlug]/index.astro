@@ -3,6 +3,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import FAQBlock from "@/components/FAQBlock.astro";
 import RelatedLinks from "@/components/RelatedLinks.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
+import ContextRail from "@/components/ContextRail.astro";
 import {
   getCategoryBySlug,
   getLocationBySlug,
@@ -12,6 +14,7 @@ import {
 import { getQualifiedCombos, getQualifiedComboEditorial } from "@/lib/combo";
 import { buildSeo, clampMeta } from "@/lib/seo";
 import { faqSchema } from "@/lib/schema";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 export const getStaticPaths = () =>
   getQualifiedCombos().map((combo) => ({
@@ -60,10 +63,20 @@ const bodyParagraphs = combo.body.split(/\n\n+/).map((part) => part.trim()).filt
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[faqSchema(combo.faqs)]}>
   <main>
+    <PageMastheadMedia
+      kicker="Qualified locality hub"
+      title={title}
+      description={description}
+      image={getPexelsImage(`featured-location-${location.slug}`, `${location.name} service locality in Malta`)}
+      actions={[
+        { href: `/categories/${category.slug}/`, label: `More ${category.pluralName}` },
+        { href: `/locations/${location.slug}/`, label: `About ${location.name}`, variant: "secondary" }
+      ]}
+    />
+
     <section class="section">
       <div class="container prose">
         <Breadcrumbs items={breadcrumbs} />
-        <h1>{title}</h1>
         <p class="lead">{combo.uniqueIntro}</p>
         {combo.priceRange && (
           <div class="notice">
@@ -74,33 +87,41 @@ const bodyParagraphs = combo.body.split(/\n\n+/).map((part) => part.trim()).filt
         {bodyParagraphs.map((paragraph) => (
           <p>{paragraph}</p>
         ))}
-        <h2>Local pitfalls to avoid</h2>
-        <ul>
-          <li>Choosing only by lowest headline price without written scope.</li>
-          <li>Skipping timeline confirmation for follow-up visits.</li>
-          <li>Ignoring locality access constraints that impact final pricing.</li>
-        </ul>
       </div>
     </section>
 
-    <section class="section section--muted">
-      <div class="container">
-        <h2>Directory note for this locality</h2>
-        <p class="prose">
-          Listing records for this category and locality pair are currently excluded from indexed directory pages. Details should be confirmed directly with providers before engagement.
-        </p>
-      </div>
-    </section>
+    <ContextRail
+      title="Visual pathways"
+      items={[
+        {
+          title: `${category.pluralName} in Malta`,
+          href: `/categories/${category.slug}/`,
+          meta: "Category hub",
+          image: getPexelsImage(`category-${category.slug}-hero`, `${category.pluralName} in Malta`)
+        },
+        {
+          title: `Services in ${location.name}`,
+          href: `/locations/${location.slug}/`,
+          meta: "Location hub",
+          image: getPexelsImage(`featured-location-${location.slug}`, `${location.name} in Malta`)
+        },
+        {
+          title: `Guide: ${category.pluralName}`,
+          href: `/guides/`,
+          meta: "Editorial library",
+          image: getPexelsImage(`guide-${category.slug}`, `${category.pluralName} guide visual in Malta`)
+        },
+        {
+          title: "Browse all categories",
+          href: "/categories/",
+          meta: "Directory index",
+          image: getPexelsImage("page-categories-index-hero", "Category index in Malta")
+        }
+      ]}
+    />
 
     <FAQBlock faqs={combo.faqs} title={`FAQs: ${category.pluralName} in ${location.name}`} />
 
     <RelatedLinks title="Related guides" links={guideLinks} />
-    <RelatedLinks
-      title="Explore more"
-      links={[
-        { title: `${category.pluralName} in Malta`, href: `/categories/${category.slug}/` },
-        { title: `Services in ${location.name}`, href: `/locations/${location.slug}/` }
-      ]}
-    />
   </main>
 </BaseLayout>

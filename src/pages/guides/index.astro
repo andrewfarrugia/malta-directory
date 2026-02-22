@@ -2,10 +2,14 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import GuideCard from "@/components/GuideCard.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
-import { getGuides } from "@/lib/data";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import { getGuides, getTopCategories } from "@/lib/data";
 import { buildSeo, clampMeta } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const guides = await getGuides();
+const topCategories = getTopCategories(4);
 const seo = buildSeo({
   path: "/guides/",
   title: "Service Guides for Malta",
@@ -18,21 +22,38 @@ const breadcrumbs = [
 ];
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
-  <main class="section">
-    <div class="container">
-      <Breadcrumbs items={breadcrumbs} />
-      <h1>Guides</h1>
-      <p class="lead">Evergreen pricing and decision guides designed for local-intent service queries in Malta.</p>
-      <div class="grid grid--cards mt-md">
-        {guides.map((guide) => (
-          <GuideCard
-            title={guide.data.title}
-            description={guide.data.description}
-            href={`/guides/${guide.slug}/`}
-            dateUpdated={guide.data.dateUpdated.toISOString()}
-          />
-        ))}
+  <main>
+    <PageMastheadMedia
+      kicker="Editorial library"
+      title="Practical Guides"
+      description="Evergreen pricing and decision guides for local-intent service queries in Malta."
+      image={getPexelsImage("page-guides-index-hero", "Service guide planning in Malta")}
+      actions={[{ href: "/categories/", label: "Browse categories" }]}
+    />
+    <section class="section">
+      <div class="container">
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="grid grid--cards mt-md">
+          {guides.map((guide) => (
+            <GuideCard
+              title={guide.data.title}
+              description={guide.data.description}
+              href={`/guides/${guide.slug}/`}
+              dateUpdated={guide.data.dateUpdated.toISOString()}
+              image={getPexelsImage(`guide-${guide.data.categorySlugs[0] || "plumbers"}`, `${guide.data.title} in Malta`)}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
+    <ContextRail
+      title="Start from a category"
+      items={topCategories.map((category) => ({
+        title: category.pluralName,
+        href: `/categories/${category.slug}/`,
+        meta: "Compare providers",
+        image: getPexelsImage(`category-${category.slug}-tile-2`, `${category.pluralName} in Malta`)
+      }))}
+    />
   </main>
 </BaseLayout>

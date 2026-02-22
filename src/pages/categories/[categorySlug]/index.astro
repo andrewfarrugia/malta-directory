@@ -4,13 +4,15 @@ import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import FAQBlock from "@/components/FAQBlock.astro";
 import GuideCard from "@/components/GuideCard.astro";
 import RelatedLinks from "@/components/RelatedLinks.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import {
   getCategories,
   getCategoryBySlug,
   getTopLocations,
   getGuidesByCategory
 } from "@/lib/data";
-import { getPexelsImages, toPictureData } from "@/lib/pexelsImagePipeline";
+import { getPexelsImages, toPictureData, getPexelsImage } from "@/lib/pexelsImagePipeline";
 import { isQualifiedCombo } from "@/lib/combo";
 import { buildSeo, clampMeta } from "@/lib/seo";
 import { faqSchema } from "@/lib/schema";
@@ -59,10 +61,20 @@ const relatedGuideLinks = guides.map((guide) => ({
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs} extraSchemas={[faqSchema(category.faq)]}>
   <main>
+    <PageMastheadMedia
+      kicker="Category hub"
+      title={`${category.pluralName} in Malta`}
+      description={category.intro}
+      image={getPexelsImage(`category-${category.slug}-hero`, `${category.pluralName} in Malta`)}
+      actions={[
+        { href: "/locations/", label: "Browse locations", variant: "secondary" },
+        { href: "/guides/", label: "Read guides" }
+      ]}
+    />
+
     <section class="section">
       <div class="container prose">
         <Breadcrumbs items={breadcrumbs} />
-        <h1>{category.pluralName} in Malta</h1>
         <div class="visual-rail mt-sm">
           {visualRail.map((image) => (
             <figure>
@@ -79,7 +91,6 @@ const relatedGuideLinks = guides.map((guide) => ({
             Photo by <a href={visualRail[0].photographerUrl} target="_blank" rel="noopener nofollow">{visualRail[0].photographer}</a> on Pexels
           </p>
         )}
-        <p class="lead">{category.intro}</p>
         <p>
           Malta Service Hub helps you compare providers with practical criteria, not just ranking position. For this category, focus on service scope, response times, and clear cost breakdowns before you commit.
         </p>
@@ -94,30 +105,19 @@ const relatedGuideLinks = guides.map((guide) => ({
       </div>
     </section>
 
+    <ContextRail
+      title="Top localities for this category"
+      items={topLocations.slice(0, 4).map((location) => ({
+        title: `${category.pluralName} in ${location.name}`,
+        href: isQualifiedCombo(category.slug, location.slug)
+          ? `/categories/${category.slug}/${location.slug}/`
+          : `/locations/${location.slug}/`,
+        meta: "Local comparison hub",
+        image: getPexelsImage(`featured-location-${location.slug}`, `${location.name} in Malta`)
+      }))}
+    />
+
     <RelatedLinks title="Top areas in Malta" links={locationLinks.slice(0, 12)} />
-
-    <section class="section section--muted">
-      <div class="container">
-        <h2>Local highlights</h2>
-        <div class="highlights-grid">
-          {locationLinks.slice(0, 3).map((item) => (
-            <article class="highlight-card">
-              <h3><a href={item.href}>{item.title}</a></h3>
-              <p class="meta">Locality-focused comparison guidance and internal links.</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>Directory notes for this category</h2>
-        <p class="prose">
-          Public listing records for this category are currently excluded from indexed directory pages. Use the guides and locality hubs above, then confirm provider details directly before booking.
-        </p>
-      </div>
-    </section>
 
     <section class="section section--muted">
       <div class="container">
@@ -129,6 +129,7 @@ const relatedGuideLinks = guides.map((guide) => ({
               description={guide.data.description}
               href={`/guides/${guide.slug}/`}
               dateUpdated={guide.data.dateUpdated.toISOString()}
+              image={getPexelsImage(`guide-${category.slug}`, `${guide.data.title} in Malta`)}
             />
           ))}
         </div>
@@ -136,7 +137,6 @@ const relatedGuideLinks = guides.map((guide) => ({
     </section>
 
     <FAQBlock faqs={category.faq} />
-
     <RelatedLinks title="Related guides" links={relatedGuideLinks} />
   </main>
 </BaseLayout>

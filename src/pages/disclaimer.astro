@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import { buildSeo } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const breadcrumbs = [
   { name: "Home", url: "/" },
@@ -15,17 +18,33 @@ const seo = buildSeo({
 });
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
-  <main class="section">
-    <div class="container prose">
-      <Breadcrumbs items={breadcrumbs} />
-      <h1>Disclaimer (Draft)</h1>
-      <p class="notice">Legal review required before publication.</p>
-      <p>
-        Malta Service Hub provides informational content and directory listings. We do not guarantee that every provider will meet individual user requirements. Users should carry out their own due diligence before engaging any business.
-      </p>
-      <p>
-        Pricing ranges are indicative and may vary by scope, urgency, and provider policy.
-      </p>
-    </div>
+  <main>
+    <PageMastheadMedia
+      kicker="Legal"
+      title="Disclaimer (Draft)"
+      description="Scope and liability guidance for directory and editorial content."
+      image={getPexelsImage("page-disclaimer-hero", "Disclaimer page")}
+    />
+    <section class="section">
+      <div class="container prose">
+        <Breadcrumbs items={breadcrumbs} />
+        <p class="notice">Legal review required before publication.</p>
+        <p>
+          Malta Service Hub provides informational content and directory listings. We do not guarantee that every provider will meet individual user requirements. Users should carry out their own due diligence before engaging any business.
+        </p>
+        <p>
+          Pricing ranges are indicative and may vary by scope, urgency, and provider policy.
+        </p>
+      </div>
+    </section>
+    <ContextRail
+      title="Legal references"
+      items={[
+        { title: "Legal notice", href: "/legal/", meta: "Entity details", image: getPexelsImage("page-legal-hero", "Legal notice") },
+        { title: "Terms", href: "/terms/", meta: "Conditions", image: getPexelsImage("page-terms-hero", "Terms") },
+        { title: "Privacy", href: "/privacy/", meta: "Data rights", image: getPexelsImage("page-privacy-hero", "Privacy") },
+        { title: "Contact", href: "/contact/", meta: "Request updates", image: getPexelsImage("page-contact-hero", "Contact") }
+      ]}
+    />
   </main>
 </BaseLayout>

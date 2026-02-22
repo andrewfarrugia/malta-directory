@@ -1,7 +1,9 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
 import { buildSeo } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const seo = buildSeo({
   path: "/search/",
@@ -16,28 +18,35 @@ const breadcrumbs = [
 ];
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
-  <main class="section">
-    <div class="container">
-      <Breadcrumbs items={breadcrumbs} />
-      <h1>Search</h1>
-      <p class="meta">This utility page is excluded from search indexing.</p>
+  <main>
+    <PageMastheadMedia
+      kicker="Search utility"
+      title="Search"
+      description="Search categories, locations, guides, and listings from one place. This utility page is excluded from indexing."
+      image={getPexelsImage("page-search-hero", "Search Malta services")}
+    />
 
-      <form id="search-form" class="card mt-sm form-stack">
-        <label class="field-label" for="query">Search term</label>
-        <input class="input-control" id="query" name="query" type="search" />
-        <label class="field-label" for="type">Type</label>
-        <select class="input-control" id="type" name="type">
-          <option value="all">All</option>
-          <option value="category">Category</option>
-          <option value="location">Location</option>
-          <option value="combo">Combo</option>
-          <option value="guide">Guide</option>
-        </select>
-        <button class="btn btn--primary" type="submit">Search</button>
-      </form>
+    <section class="section">
+      <div class="container">
+        <Breadcrumbs items={breadcrumbs} />
 
-      <div id="results" class="search-results"></div>
-    </div>
+        <form id="search-form" class="card mt-sm form-stack">
+          <label class="field-label" for="query">Search term</label>
+          <input class="input-control" id="query" name="query" type="search" />
+          <label class="field-label" for="type">Type</label>
+          <select class="input-control" id="type" name="type">
+            <option value="all">All</option>
+            <option value="category">Category</option>
+            <option value="location">Location</option>
+            <option value="combo">Combo</option>
+            <option value="guide">Guide</option>
+          </select>
+          <button class="btn btn--primary" type="submit">Search</button>
+        </form>
+
+        <div id="results" class="search-results"></div>
+      </div>
+    </section>
   </main>
 
   <script is:inline>

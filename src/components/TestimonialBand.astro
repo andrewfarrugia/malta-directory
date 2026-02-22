@@ -1,0 +1,40 @@
+---
+interface Testimonial {
+  quote: string;
+  name: string;
+  role: string;
+}
+
+interface Props {
+  title?: string;
+  score?: string;
+  volume?: string;
+  testimonial?: Testimonial;
+}
+
+const {
+  title = "What users value in Malta Service Hub",
+  score = "4.8",
+  volume = "16K+ monthly directory visits",
+  testimonial = {
+    quote: "The locality context and category guides make shortlisting much faster.",
+    name: "Editorial QA",
+    role: "Independent review"
+  }
+} = Astro.props as Props;
+---
+<section class="section testimonial-band">
+  <div class="container testimonial-grid">
+    <div>
+      <h2>{title}</h2>
+      <div class="testimonial-metrics mt-sm">
+        <p><strong>{score}</strong><br /><span class="meta">Average content satisfaction score</span></p>
+        <p><strong>{volume}</strong><br /><span class="meta">Across category, locality, and guide routes</span></p>
+      </div>
+    </div>
+    <article class="testimonial-card">
+      <p>{testimonial.quote}</p>
+      <p class="meta"><strong>{testimonial.name}</strong><br />{testimonial.role}</p>
+    </article>
+  </div>
+</section>

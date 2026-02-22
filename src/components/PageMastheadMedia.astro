@@ -1,0 +1,51 @@
+---
+import type { LocalPexelsImage } from "@/lib/pexelsImagePipeline";
+import { toPictureData } from "@/lib/pexelsImagePipeline";
+
+interface MastheadAction {
+  href: string;
+  label: string;
+  variant?: "primary" | "secondary";
+}
+
+interface Props {
+  title: string;
+  description: string;
+  kicker?: string;
+  image: LocalPexelsImage;
+  actions?: MastheadAction[];
+}
+
+const { title, description, kicker, image, actions = [] } = Astro.props as Props;
+const picture = toPictureData(image);
+---
+<section class="section masthead-media">
+  <div class="container">
+    <article class="masthead-card">
+      <div class="masthead-content">
+        {kicker && <p class="meta masthead-kicker">{kicker}</p>}
+        <h1>{title}</h1>
+        <p class="lead">{description}</p>
+        {actions.length > 0 && (
+          <div class="consent-actions mt-sm">
+            {actions.map((action) => (
+              <a class={`btn ${action.variant === "secondary" ? "btn--secondary" : "btn--primary"}`} href={action.href}>{action.label}</a>
+            ))}
+          </div>
+        )}
+      </div>
+      <figure class="masthead-figure">
+        <picture>
+          {picture.hasWebp && <source type="image/webp" srcset={picture.webpSrcset} />}
+          <source type="image/jpeg" srcset={picture.jpgSrcset} />
+          <img src={picture.src} alt={picture.alt} width={picture.width} height={picture.height} />
+        </picture>
+        {picture.photographer && picture.photographerUrl && (
+          <figcaption class="meta">
+            Photo by <a href={picture.photographerUrl} rel="noopener nofollow" target="_blank">{picture.photographer}</a> on Pexels
+          </figcaption>
+        )}
+      </figure>
+    </article>
+  </div>
+</section>

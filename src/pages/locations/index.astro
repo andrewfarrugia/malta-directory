@@ -2,10 +2,14 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import HubCard from "@/components/HubCard.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
-import { getLocations } from "@/lib/data";
+import PageMastheadMedia from "@/components/PageMastheadMedia.astro";
+import ContextRail from "@/components/ContextRail.astro";
+import { getLocations, getTopCategories } from "@/lib/data";
 import { buildSeo, clampMeta } from "@/lib/seo";
+import { getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const locations = getLocations().sort((a, b) => a.name.localeCompare(b.name));
+const categories = getTopCategories(4);
 const seo = buildSeo({
   path: "/locations/",
   title: "Malta Locations We Cover",
@@ -18,26 +22,38 @@ const breadcrumbs = [
 ];
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
-  <main class="section">
-    <div class="container">
-      <Breadcrumbs items={breadcrumbs} />
-      <h1>Locations in Malta</h1>
-      <p class="lead">
-        Browse major localities with local context, nearby links, and category-specific service options.
-      </p>
-      <div class="grid grid--cards mt-md">
-        {locations.map((location) => (
-          <HubCard
-            title={location.name}
-            description={location.intro}
-            href={`/locations/${location.slug}/`}
-            chips={location.region ? [location.region] : []}
-          />
-        ))}
+  <main>
+    <PageMastheadMedia
+      kicker="Location directory"
+      title="Locations in Malta"
+      description="Browse high-priority localities with category pathways, nearby alternatives, and relevant practical guidance."
+      image={getPexelsImage("page-locations-index-hero", "Malta localities")}
+      actions={[{ href: "/categories/", label: "Browse categories", variant: "secondary" }]}
+    />
+    <section class="section">
+      <div class="container">
+        <Breadcrumbs items={breadcrumbs} />
+        <div class="grid grid--cards mt-md">
+          {locations.map((location) => (
+            <HubCard
+              title={location.name}
+              description={location.intro}
+              href={`/locations/${location.slug}/`}
+              chips={location.region ? [location.region] : []}
+              image={getPexelsImage(`featured-location-${location.slug}`, `${location.name} in Malta`)}
+            />
+          ))}
+        </div>
       </div>
-      <p class="mt-md">
-        Continue to <a href="/categories/">category index</a> or read <a href="/guides/">guides</a>.
-      </p>
-    </div>
+    </section>
+    <ContextRail
+      title="High-demand categories"
+      items={categories.map((category) => ({
+        title: category.pluralName,
+        href: `/categories/${category.slug}/`,
+        meta: category.synonyms[0] || "Category hub",
+        image: getPexelsImage(`category-${category.slug}-hero`, `${category.pluralName} in Malta`)
+      }))}
+    />
   </main>
 </BaseLayout>

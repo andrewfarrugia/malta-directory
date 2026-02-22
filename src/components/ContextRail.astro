@@ -1,0 +1,41 @@
+---
+import type { LocalPexelsImage } from "@/lib/pexelsImagePipeline";
+import { toPictureData } from "@/lib/pexelsImagePipeline";
+
+interface ContextRailItem {
+  title: string;
+  href: string;
+  meta?: string;
+  image: LocalPexelsImage;
+}
+
+interface Props {
+  title: string;
+  items: ContextRailItem[];
+}
+
+const { title, items } = Astro.props as Props;
+---
+<section class="section section--muted">
+  <div class="container">
+    <h2>{title}</h2>
+    <div class="context-rail">
+      {items.map((item) => {
+        const image = toPictureData(item.image);
+        return (
+          <a class="context-rail-card" href={item.href}>
+            <picture>
+              {image.hasWebp && <source type="image/webp" srcset={image.webpSrcset} />}
+              <source type="image/jpeg" srcset={image.jpgSrcset} />
+              <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" />
+            </picture>
+            <span>
+              <strong>{item.title}</strong>
+              {item.meta && <small>{item.meta}</small>}
+            </span>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</section>

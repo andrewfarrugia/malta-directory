@@ -1,14 +1,28 @@
 ---
+import type { LocalPexelsImage } from "@/lib/pexelsImagePipeline";
+import { toPictureData } from "@/lib/pexelsImagePipeline";
+
 interface Props {
   title: string;
   description: string;
   href: string;
   chips?: string[];
+  image?: LocalPexelsImage;
 }
 
-const { title, description, href, chips = [] } = Astro.props as Props;
+const { title, description, href, chips = [], image } = Astro.props as Props;
+const picture = image ? toPictureData(image) : null;
 ---
-<article class="card">
+<article class="card media-card">
+  {picture && (
+    <a class="media-card-image" href={href}>
+      <picture>
+        {picture.hasWebp && <source type="image/webp" srcset={picture.webpSrcset} />}
+        <source type="image/jpeg" srcset={picture.jpgSrcset} />
+        <img src={picture.src} alt={picture.alt} width={picture.width} height={picture.height} loading="lazy" />
+      </picture>
+    </a>
+  )}
   <h3><a href={href}>{title}</a></h3>
   <p>{description}</p>
   <div>
