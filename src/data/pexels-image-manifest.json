@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-02-22T01:58:16.146Z",
+  "generatedAt": "2026-02-22T02:02:26.439Z",
   "images": {
     "home-icon-plumbers": {
       "id": "home-icon-plumbers",
       "query": "plumber tools service vehicle",
       "triedQueries": [
         "plumber tools service vehicle",
-        "plumbers malta",
-        "home service technician tools malta"
+        "plumbers professional at work",
+        "home service technician tools"
       ],
       "alt": "Plumbers service support in Malta",
       "photographer": "Heiko Ruth",
@@ -15,14 +15,16 @@
       "photoUrl": "https://www.pexels.com/photo/plumber-repairing-power-source-7859953/",
       "fallback": false,
       "status": "selected",
-      "score": 52,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 48,
       "selectedFrom": 2,
       "reasons": [
         "mustInclude:plumbers",
         "landscape-fit",
         "rank:2"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:30.518Z",
+      "lastCheckedAt": "2026-02-22T02:02:04.535Z",
       "variants": [
         {
           "width": 640,
@@ -42,17 +44,15 @@
           "jpg": "/images/pexels/home-icon-plumbers/home-icon-plumbers-940.jpg",
           "webp": "/images/pexels/home-icon-plumbers/home-icon-plumbers-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "home-icon-electricians": {
       "id": "home-icon-electricians",
       "query": "electrician toolkit and wiring",
       "triedQueries": [
         "electrician toolkit and wiring",
-        "electricians malta",
-        "home service technician tools malta"
+        "electricians professional at work",
+        "home service technician tools"
       ],
       "alt": "Electricians service support in Malta",
       "photographer": "ranjeet .",
@@ -60,14 +60,16 @@
       "photoUrl": "https://www.pexels.com/photo/a-man-is-working-on-an-electrical-panel-27928762/",
       "fallback": false,
       "status": "selected",
-      "score": 50,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 46,
       "selectedFrom": 3,
       "reasons": [
         "mustInclude:electricians",
         "landscape-fit",
         "rank:3"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:30.757Z",
+      "lastCheckedAt": "2026-02-22T02:02:04.715Z",
       "variants": [
         {
           "width": 640,
@@ -87,17 +89,15 @@
           "jpg": "/images/pexels/home-icon-electricians/home-icon-electricians-867.jpg",
           "webp": "/images/pexels/home-icon-electricians/home-icon-electricians-867.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "home-icon-cleaning": {
       "id": "home-icon-cleaning",
       "query": "cleaning service supplies and gloves",
       "triedQueries": [
         "cleaning service supplies and gloves",
-        "cleaning malta",
-        "home service technician tools malta"
+        "cleaning professional at work",
+        "home service technician tools"
       ],
       "alt": "Cleaning service support in Malta",
       "photographer": "Matilda Wormwood",
@@ -105,14 +105,16 @@
       "photoUrl": "https://www.pexels.com/photo/person-in-blue-gloves-cleaning-white-sink-4098762/",
       "fallback": false,
       "status": "selected",
-      "score": 54,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 50,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:cleaning",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:30.954Z",
+      "lastCheckedAt": "2026-02-22T02:02:04.864Z",
       "variants": [
         {
           "width": 640,
@@ -132,17 +134,15 @@
           "jpg": "/images/pexels/home-icon-cleaning/home-icon-cleaning-940.jpg",
           "webp": "/images/pexels/home-icon-cleaning/home-icon-cleaning-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "home-icon-movers": {
       "id": "home-icon-movers",
-      "query": "movers malta",
+      "query": "movers professional at work",
       "triedQueries": [
         "moving boxes home relocation",
-        "movers malta",
-        "home service technician tools malta"
+        "movers professional at work",
+        "home service technician tools"
       ],
       "alt": "Movers service support in Malta",
       "photographer": "RDNE Stock project",
@@ -150,14 +150,16 @@
       "photoUrl": "https://www.pexels.com/photo/man-couple-woman-friends-7464721/",
       "fallback": false,
       "status": "selected",
-      "score": 54,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 50,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:movers",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:31.605Z",
+      "lastCheckedAt": "2026-02-22T02:02:05.468Z",
       "variants": [
         {
           "width": 640,
@@ -177,17 +179,15 @@
           "jpg": "/images/pexels/home-icon-movers/home-icon-movers-940.jpg",
           "webp": "/images/pexels/home-icon-movers/home-icon-movers-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "home-icon-locksmiths": {
       "id": "home-icon-locksmiths",
       "query": "locksmith tools and key cutting",
       "triedQueries": [
         "locksmith tools and key cutting",
-        "locksmiths malta",
-        "home service technician tools malta"
+        "locksmiths professional at work",
+        "home service technician tools"
       ],
       "alt": "Locksmiths service support in Malta",
       "photographer": "My Car Key Hero",
@@ -195,14 +195,16 @@
       "photoUrl": "https://www.pexels.com/photo/lockpick-in-car-17124737/",
       "fallback": false,
       "status": "selected",
-      "score": 54,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 50,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:locksmiths",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:31.813Z",
+      "lastCheckedAt": "2026-02-22T02:02:05.643Z",
       "variants": [
         {
           "width": 640,
@@ -222,17 +224,15 @@
           "jpg": "/images/pexels/home-icon-locksmiths/home-icon-locksmiths-940.jpg",
           "webp": "/images/pexels/home-icon-locksmiths/home-icon-locksmiths-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "home-icon-it-support": {
       "id": "home-icon-it-support",
       "query": "it technician laptop support",
       "triedQueries": [
         "it technician laptop support",
-        "it malta",
-        "home service technician tools malta"
+        "it professional at work",
+        "home service technician tools"
       ],
       "alt": "IT Support service support in Malta",
       "photographer": "IT services  EU",
@@ -240,14 +240,16 @@
       "photoUrl": "https://www.pexels.com/photo/a-man-fixing-a-laptop-7639370/",
       "fallback": false,
       "status": "selected",
-      "score": 54,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 50,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:it",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:32.042Z",
+      "lastCheckedAt": "2026-02-22T02:02:05.827Z",
       "variants": [
         {
           "width": 640,
@@ -267,63 +269,97 @@
           "jpg": "/images/pexels/home-icon-it-support/home-icon-it-support-940.jpg",
           "webp": "/images/pexels/home-icon-it-support/home-icon-it-support-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "home-feature-plumbers-sliema": {
       "id": "home-feature-plumbers-sliema",
-      "query": "plumber repairing sink in apartment",
+      "query": "plumbers in Malta",
       "triedQueries": [
         "plumber repairing sink in apartment",
         "plumbers sliema Malta",
         "plumbers in Malta"
       ],
       "alt": "Plumbers for urgent repairs in Sliema in Sliema, Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Kindel Media",
+      "photographerUrl": "https://www.pexels.com/@kindelmedia",
+      "photoUrl": "https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486928/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "hybrid",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 45,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:service",
+        "mustInclude:plumbers",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.145Z",
+      "lastCheckedAt": "2026-02-22T02:02:07.050Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 480,
+          "jpg": "/images/pexels/home-feature-plumbers-sliema/home-feature-plumbers-sliema-640.jpg",
+          "webp": "/images/pexels/home-feature-plumbers-sliema/home-feature-plumbers-sliema-640.webp"
+        },
+        {
+          "width": 867,
+          "height": 650,
+          "jpg": "/images/pexels/home-feature-plumbers-sliema/home-feature-plumbers-sliema-867.jpg",
+          "webp": "/images/pexels/home-feature-plumbers-sliema/home-feature-plumbers-sliema-867.webp"
+        },
+        {
+          "width": 867,
+          "height": 650,
+          "jpg": "/images/pexels/home-feature-plumbers-sliema/home-feature-plumbers-sliema-867.jpg",
+          "webp": "/images/pexels/home-feature-plumbers-sliema/home-feature-plumbers-sliema-867.webp"
         }
       ]
     },
     "home-feature-electricians-valletta": {
       "id": "home-feature-electricians-valletta",
-      "query": "electrician checking electrical panel",
+      "query": "electricians in Malta",
       "triedQueries": [
         "electrician checking electrical panel",
         "electricians valletta Malta",
         "electricians in Malta"
       ],
       "alt": "Electricians in Valletta for home and retail in Valletta, Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "ranjeet .",
+      "photographerUrl": "https://www.pexels.com/@ranjeet-860714737",
+      "photoUrl": "https://www.pexels.com/photo/a-man-is-working-on-an-electrical-panel-27928762/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "hybrid",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 45,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:service",
+        "mustInclude:electricians",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.145Z",
+      "lastCheckedAt": "2026-02-22T02:02:08.230Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 480,
+          "jpg": "/images/pexels/home-feature-electricians-valletta/home-feature-electricians-valletta-640.jpg",
+          "webp": "/images/pexels/home-feature-electricians-valletta/home-feature-electricians-valletta-640.webp"
+        },
+        {
+          "width": 867,
+          "height": 650,
+          "jpg": "/images/pexels/home-feature-electricians-valletta/home-feature-electricians-valletta-867.jpg",
+          "webp": "/images/pexels/home-feature-electricians-valletta/home-feature-electricians-valletta-867.webp"
+        },
+        {
+          "width": 867,
+          "height": 650,
+          "jpg": "/images/pexels/home-feature-electricians-valletta/home-feature-electricians-valletta-867.jpg",
+          "webp": "/images/pexels/home-feature-electricians-valletta/home-feature-electricians-valletta-867.webp"
         }
       ]
     },
@@ -343,9 +379,9 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "missing-api-key"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.145Z",
+      "lastCheckedAt": "2026-02-22T02:02:25.296Z",
       "variants": [
         {
           "width": 1200,
@@ -357,29 +393,47 @@
     },
     "home-feature-hvac-birkirkara": {
       "id": "home-feature-hvac-birkirkara",
-      "query": "air conditioning technician maintenance",
+      "query": "hvac in Malta",
       "triedQueries": [
         "air conditioning technician maintenance",
         "hvac birkirkara Malta",
         "hvac in Malta"
       ],
       "alt": "HVAC technicians serving Birkirkara in Birkirkara, Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Jay Brand",
+      "photographerUrl": "https://www.pexels.com/@jay-brand-1763356224",
+      "photoUrl": "https://www.pexels.com/photo/industrial-hvac-unit-in-black-and-white-29452977/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "hybrid",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 45,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:service",
+        "mustInclude:hvac",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.145Z",
+      "lastCheckedAt": "2026-02-22T02:02:10.057Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/home-feature-hvac-birkirkara/home-feature-hvac-birkirkara-640.jpg",
+          "webp": "/images/pexels/home-feature-hvac-birkirkara/home-feature-hvac-birkirkara-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/home-feature-hvac-birkirkara/home-feature-hvac-birkirkara-940.jpg",
+          "webp": "/images/pexels/home-feature-hvac-birkirkara/home-feature-hvac-birkirkara-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/home-feature-hvac-birkirkara/home-feature-hvac-birkirkara-940.jpg",
+          "webp": "/images/pexels/home-feature-hvac-birkirkara/home-feature-hvac-birkirkara-940.webp"
         }
       ]
     },
@@ -388,8 +442,8 @@
       "query": "Valletta Malta architecture street",
       "triedQueries": [
         "Valletta Malta architecture street",
-        "malta valletta malta",
-        "malta city street architecture"
+        "valletta Malta streets cityscape",
+        "valletta Malta urban architecture"
       ],
       "alt": "Valletta locality context in Malta",
       "photographer": "Andreas Figurski",
@@ -397,16 +451,19 @@
       "photoUrl": "https://www.pexels.com/photo/charming-street-in-valletta-malta-with-traditional-architecture-30388299/",
       "fallback": false,
       "status": "selected",
-      "score": 74,
+      "intentClass": "locality",
+      "sourceMode": "direct",
+      "score": 82,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:malta",
         "mustInclude:valletta",
         "location:valletta",
+        "location:malta",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:35.437Z",
+      "lastCheckedAt": "2026-02-22T02:02:10.245Z",
       "variants": [
         {
           "width": 640,
@@ -426,17 +483,15 @@
           "jpg": "/images/pexels/home-mosaic-valletta/home-mosaic-valletta-867.jpg",
           "webp": "/images/pexels/home-mosaic-valletta/home-mosaic-valletta-867.webp"
         }
-      ],
-      "intentClass": "locality",
-      "sourceMode": "direct"
+      ]
     },
     "home-mosaic-sliema": {
       "id": "home-mosaic-sliema",
       "query": "Sliema Malta seafront buildings",
       "triedQueries": [
         "Sliema Malta seafront buildings",
-        "malta sliema malta",
-        "malta city street architecture"
+        "sliema Malta streets cityscape",
+        "sliema Malta urban architecture"
       ],
       "alt": "Sliema locality context in Malta",
       "photographer": "Stev3 Cassar",
@@ -444,16 +499,19 @@
       "photoUrl": "https://www.pexels.com/photo/the-lombard-bank-building-in-sliema-malta-4122021/",
       "fallback": false,
       "status": "selected",
-      "score": 72,
+      "intentClass": "locality",
+      "sourceMode": "direct",
+      "score": 80,
       "selectedFrom": 2,
       "reasons": [
         "mustInclude:malta",
         "mustInclude:sliema",
         "location:sliema",
+        "location:malta",
         "landscape-fit",
         "rank:2"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:36.178Z",
+      "lastCheckedAt": "2026-02-22T02:02:10.425Z",
       "variants": [
         {
           "width": 640,
@@ -473,17 +531,15 @@
           "jpg": "/images/pexels/home-mosaic-sliema/home-mosaic-sliema-940.jpg",
           "webp": "/images/pexels/home-mosaic-sliema/home-mosaic-sliema-940.webp"
         }
-      ],
-      "intentClass": "locality",
-      "sourceMode": "direct"
+      ]
     },
     "home-mosaic-st-julians": {
       "id": "home-mosaic-st-julians",
       "query": "St Julians Malta bay view",
       "triedQueries": [
         "St Julians Malta bay view",
-        "malta st julian's malta",
-        "malta city street architecture"
+        "st Malta streets cityscape",
+        "st Malta urban architecture"
       ],
       "alt": "St Julian's locality context in Malta",
       "photographer": "Matthew Padilla",
@@ -491,18 +547,20 @@
       "photoUrl": "https://www.pexels.com/photo/aerial-view-of-st-julian-s-malta-at-dusk-32439377/",
       "fallback": false,
       "status": "selected",
-      "score": 64,
+      "intentClass": "locality",
+      "sourceMode": "direct",
+      "score": 66,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:malta",
         "missing:st julian's",
         "location:st",
         "location:julian",
-        "location:s",
+        "location:malta",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:37.266Z",
+      "lastCheckedAt": "2026-02-22T02:02:10.607Z",
       "variants": [
         {
           "width": 640,
@@ -522,17 +580,15 @@
           "jpg": "/images/pexels/home-mosaic-st-julians/home-mosaic-st-julians-862.jpg",
           "webp": "/images/pexels/home-mosaic-st-julians/home-mosaic-st-julians-862.webp"
         }
-      ],
-      "intentClass": "locality",
-      "sourceMode": "direct"
+      ]
     },
     "home-mosaic-birkirkara": {
       "id": "home-mosaic-birkirkara",
       "query": "Malta residential neighborhood street",
       "triedQueries": [
         "Malta residential neighborhood street",
-        "malta birkirkara malta",
-        "malta city street architecture"
+        "birkirkara Malta streets cityscape",
+        "birkirkara Malta urban architecture"
       ],
       "alt": "Birkirkara locality context in Malta",
       "photographer": "Tom Fisk",
@@ -540,15 +596,18 @@
       "photoUrl": "https://www.pexels.com/photo/quaint-maltese-alley-with-rustic-architecture-30485918/",
       "fallback": false,
       "status": "selected",
-      "score": 46,
+      "intentClass": "locality",
+      "sourceMode": "direct",
+      "score": 52,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:malta",
         "missing:birkirkara",
+        "location:malta",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:38.294Z",
+      "lastCheckedAt": "2026-02-22T02:02:10.800Z",
       "variants": [
         {
           "width": 640,
@@ -568,17 +627,15 @@
           "jpg": "/images/pexels/home-mosaic-birkirkara/home-mosaic-birkirkara-940.jpg",
           "webp": "/images/pexels/home-mosaic-birkirkara/home-mosaic-birkirkara-940.webp"
         }
-      ],
-      "intentClass": "locality",
-      "sourceMode": "direct"
+      ]
     },
     "home-mosaic-mosta": {
       "id": "home-mosaic-mosta",
       "query": "Mosta Malta dome cityscape",
       "triedQueries": [
         "Mosta Malta dome cityscape",
-        "malta mosta malta",
-        "malta city street architecture"
+        "mosta Malta streets cityscape",
+        "mosta Malta urban architecture"
       ],
       "alt": "Mosta locality context in Malta",
       "photographer": "Pho Tomass",
@@ -586,16 +643,19 @@
       "photoUrl": "https://www.pexels.com/photo/dome-of-mosta-church-with-maltese-cityscape-31585892/",
       "fallback": false,
       "status": "selected",
-      "score": 74,
+      "intentClass": "locality",
+      "sourceMode": "direct",
+      "score": 82,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:malta",
         "mustInclude:mosta",
         "location:mosta",
+        "location:malta",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:38.522Z",
+      "lastCheckedAt": "2026-02-22T02:02:10.980Z",
       "variants": [
         {
           "width": 640,
@@ -615,52 +675,56 @@
           "jpg": "/images/pexels/home-mosaic-mosta/home-mosaic-mosta-940.jpg",
           "webp": "/images/pexels/home-mosaic-mosta/home-mosaic-mosta-940.webp"
         }
-      ],
-      "intentClass": "locality",
-      "sourceMode": "direct"
+      ]
     },
     "home-mosaic-gozo": {
       "id": "home-mosaic-gozo",
       "query": "Victoria Gozo Malta old town",
+      "triedQueries": [
+        "Victoria Gozo Malta old town",
+        "gozo Malta streets cityscape",
+        "gozo Malta urban architecture"
+      ],
       "alt": "Victoria, Gozo locality context in Malta",
-      "photographer": "id23",
-      "photographerUrl": "https://www.pexels.com/@id23-1442770",
-      "photoUrl": "https://www.pexels.com/photo/ancient-stone-fortification-under-blue-sky-14094602/",
+      "photographer": "Dariusz Staniszewski",
+      "photographerUrl": "https://www.pexels.com/@dariusz-staniszewski-1425290",
+      "photoUrl": "https://www.pexels.com/photo/historic-citadel-in-victoria-gozo-malta-32391604/",
       "fallback": false,
       "status": "selected",
-      "score": 72,
-      "selectedFrom": 1,
+      "intentClass": "locality",
+      "sourceMode": "direct",
+      "score": 87,
+      "selectedFrom": 2,
       "reasons": [
         "mustInclude:malta",
         "mustInclude:victoria",
-        "location:victoria",
         "location:gozo",
+        "location:victoria",
+        "location:malta",
         "landscape-fit",
-        "rank:1"
+        "rank:2"
       ],
-      "lastCheckedAt": "2026-02-22T01:39:10.073Z",
+      "lastCheckedAt": "2026-02-22T02:02:11.221Z",
       "variants": [
         {
           "width": 640,
-          "height": 427,
+          "height": 360,
           "jpg": "/images/pexels/home-mosaic-gozo/home-mosaic-gozo-640.jpg",
           "webp": "/images/pexels/home-mosaic-gozo/home-mosaic-gozo-640.webp"
         },
         {
           "width": 940,
-          "height": 627,
+          "height": 529,
           "jpg": "/images/pexels/home-mosaic-gozo/home-mosaic-gozo-940.jpg",
           "webp": "/images/pexels/home-mosaic-gozo/home-mosaic-gozo-940.webp"
         },
         {
           "width": 940,
-          "height": 627,
+          "height": 529,
           "jpg": "/images/pexels/home-mosaic-gozo/home-mosaic-gozo-940.jpg",
           "webp": "/images/pexels/home-mosaic-gozo/home-mosaic-gozo-940.webp"
         }
-      ],
-      "intentClass": "locality",
-      "sourceMode": "direct"
+      ]
     },
     "category-plumbers-hero": {
       "id": "category-plumbers-hero",
@@ -671,22 +735,41 @@
         "home service technician tools"
       ],
       "alt": "Plumbers service work in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Heiko Ruth",
+      "photographerUrl": "https://www.pexels.com/@heiko-ruth-53441229",
+      "photoUrl": "https://www.pexels.com/photo/plumber-repairing-power-source-7859953/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 42,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:plumber",
+        "missing:service",
+        "missing:malta",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.145Z",
+      "lastCheckedAt": "2026-02-22T02:02:11.381Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-plumbers-hero/category-plumbers-hero-640.jpg",
+          "webp": "/images/pexels/category-plumbers-hero/category-plumbers-hero-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-plumbers-hero/category-plumbers-hero-940.jpg",
+          "webp": "/images/pexels/category-plumbers-hero/category-plumbers-hero-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-plumbers-hero/category-plumbers-hero-940.jpg",
+          "webp": "/images/pexels/category-plumbers-hero/category-plumbers-hero-940.webp"
         }
       ]
     },
@@ -695,8 +778,8 @@
       "query": "plumber tools close up Malta",
       "triedQueries": [
         "plumber tools close up Malta",
-        "plumber tools malta",
-        "home service technician tools malta"
+        "plumber professional at work",
+        "home service technician tools"
       ],
       "alt": "Plumber equipment and setup in Malta",
       "photographer": "Sergei Starostin",
@@ -704,7 +787,9 @@
       "photoUrl": "https://www.pexels.com/photo/professional-plumber-installing-a-radiator-pipe-29226620/",
       "fallback": false,
       "status": "selected",
-      "score": 60,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 52,
       "selectedFrom": 5,
       "reasons": [
         "mustInclude:plumber",
@@ -712,7 +797,7 @@
         "landscape-fit",
         "rank:5"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:39.271Z",
+      "lastCheckedAt": "2026-02-22T02:02:11.551Z",
       "variants": [
         {
           "width": 640,
@@ -732,17 +817,15 @@
           "jpg": "/images/pexels/category-plumbers-tile-1/category-plumbers-tile-1-940.jpg",
           "webp": "/images/pexels/category-plumbers-tile-1/category-plumbers-tile-1-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "category-plumbers-tile-2": {
       "id": "category-plumbers-tile-2",
       "query": "plumber technician at work Malta",
       "triedQueries": [
         "plumber technician at work Malta",
-        "plumber technician malta",
-        "home service technician tools malta"
+        "plumber professional at work",
+        "home service technician tools"
       ],
       "alt": "Plumber on-site service in Malta",
       "photographer": "Kindel Media",
@@ -750,7 +833,9 @@
       "photoUrl": "https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486927/",
       "fallback": false,
       "status": "selected",
-      "score": 64,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 56,
       "selectedFrom": 3,
       "reasons": [
         "mustInclude:plumber",
@@ -758,7 +843,7 @@
         "landscape-fit",
         "rank:3"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:39.454Z",
+      "lastCheckedAt": "2026-02-22T02:02:11.706Z",
       "variants": [
         {
           "width": 640,
@@ -778,9 +863,7 @@
           "jpg": "/images/pexels/category-plumbers-tile-2/category-plumbers-tile-2-867.jpg",
           "webp": "/images/pexels/category-plumbers-tile-2/category-plumbers-tile-2-867.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "category-electricians-hero": {
       "id": "category-electricians-hero",
@@ -791,22 +874,41 @@
         "home service technician tools"
       ],
       "alt": "Electricians service work in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Anete Lusina",
+      "photographerUrl": "https://www.pexels.com/@anete-lusina",
+      "photoUrl": "https://www.pexels.com/photo/man-screwing-light-bulb-into-lamp-4792521/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 42,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:electrician",
+        "missing:service",
+        "missing:malta",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.145Z",
+      "lastCheckedAt": "2026-02-22T02:02:12.457Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 428,
+          "jpg": "/images/pexels/category-electricians-hero/category-electricians-hero-640.jpg",
+          "webp": "/images/pexels/category-electricians-hero/category-electricians-hero-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 628,
+          "jpg": "/images/pexels/category-electricians-hero/category-electricians-hero-940.jpg",
+          "webp": "/images/pexels/category-electricians-hero/category-electricians-hero-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 628,
+          "jpg": "/images/pexels/category-electricians-hero/category-electricians-hero-940.jpg",
+          "webp": "/images/pexels/category-electricians-hero/category-electricians-hero-940.webp"
         }
       ]
     },
@@ -819,22 +921,40 @@
         "home service technician tools"
       ],
       "alt": "Electrician equipment and setup in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "MART  PRODUCTION",
+      "photographerUrl": "https://www.pexels.com/@mart-production",
+      "photoUrl": "https://www.pexels.com/photo/a-light-box-in-a-tool-box-7640990/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:electrician",
+        "mustInclude:tools",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.145Z",
+      "lastCheckedAt": "2026-02-22T02:02:12.697Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-electricians-tile-1/category-electricians-tile-1-640.jpg",
+          "webp": "/images/pexels/category-electricians-tile-1/category-electricians-tile-1-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-electricians-tile-1/category-electricians-tile-1-940.jpg",
+          "webp": "/images/pexels/category-electricians-tile-1/category-electricians-tile-1-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-electricians-tile-1/category-electricians-tile-1-940.jpg",
+          "webp": "/images/pexels/category-electricians-tile-1/category-electricians-tile-1-940.webp"
         }
       ]
     },
@@ -847,22 +967,40 @@
         "home service technician tools"
       ],
       "alt": "Electrician on-site service in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "photoUrl": "https://www.pexels.com/photo/electricians-inspecting-the-solar-panels-4254166/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:electrician",
+        "missing:technician",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.145Z",
+      "lastCheckedAt": "2026-02-22T02:02:12.937Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-electricians-tile-2/category-electricians-tile-2-640.jpg",
+          "webp": "/images/pexels/category-electricians-tile-2/category-electricians-tile-2-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-electricians-tile-2/category-electricians-tile-2-940.jpg",
+          "webp": "/images/pexels/category-electricians-tile-2/category-electricians-tile-2-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-electricians-tile-2/category-electricians-tile-2-940.jpg",
+          "webp": "/images/pexels/category-electricians-tile-2/category-electricians-tile-2-940.webp"
         }
       ]
     },
@@ -882,9 +1020,9 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "missing-api-key"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:25.382Z",
       "variants": [
         {
           "width": 1200,
@@ -903,50 +1041,86 @@
         "home service technician tools"
       ],
       "alt": "Cleaning Service equipment and setup in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "photoUrl": "https://www.pexels.com/photo/a-person-in-black-jacket-holding-a-spray-bottle-6873101/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:cleaning service",
+        "mustInclude:tools",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:14.282Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-cleaning-services-tile-1/category-cleaning-services-tile-1-640.jpg",
+          "webp": "/images/pexels/category-cleaning-services-tile-1/category-cleaning-services-tile-1-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-cleaning-services-tile-1/category-cleaning-services-tile-1-940.jpg",
+          "webp": "/images/pexels/category-cleaning-services-tile-1/category-cleaning-services-tile-1-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-cleaning-services-tile-1/category-cleaning-services-tile-1-940.jpg",
+          "webp": "/images/pexels/category-cleaning-services-tile-1/category-cleaning-services-tile-1-940.webp"
         }
       ]
     },
     "category-cleaning-services-tile-2": {
       "id": "category-cleaning-services-tile-2",
-      "query": "cleaning service technician at work Malta",
+      "query": "cleaning professional at work",
       "triedQueries": [
         "cleaning service technician at work Malta",
         "cleaning professional at work",
         "home service technician tools"
       ],
       "alt": "Cleaning Service on-site service in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Martin Ilunga",
+      "photographerUrl": "https://www.pexels.com/@mik007",
+      "photoUrl": "https://www.pexels.com/photo/worker-cleaning-carpet-with-brush-in-outdoor-setting-32155482/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 42,
+      "selectedFrom": 3,
       "reasons": [
-        "missing-api-key"
+        "missing:cleaning service",
+        "mustInclude:technician",
+        "landscape-fit",
+        "rank:3"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:14.558Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 426,
+          "jpg": "/images/pexels/category-cleaning-services-tile-2/category-cleaning-services-tile-2-640.jpg",
+          "webp": "/images/pexels/category-cleaning-services-tile-2/category-cleaning-services-tile-2-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 625,
+          "jpg": "/images/pexels/category-cleaning-services-tile-2/category-cleaning-services-tile-2-940.jpg",
+          "webp": "/images/pexels/category-cleaning-services-tile-2/category-cleaning-services-tile-2-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 625,
+          "jpg": "/images/pexels/category-cleaning-services-tile-2/category-cleaning-services-tile-2-940.jpg",
+          "webp": "/images/pexels/category-cleaning-services-tile-2/category-cleaning-services-tile-2-940.webp"
         }
       ]
     },
@@ -959,50 +1133,87 @@
         "home service technician tools"
       ],
       "alt": "Painters service work in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "photoUrl": "https://www.pexels.com/photo/faceless-house-painter-undercoating-wall-in-bright-room-5691471/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 42,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:painter",
+        "missing:service",
+        "missing:malta",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:15.010Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 428,
+          "jpg": "/images/pexels/category-painters-hero/category-painters-hero-640.jpg",
+          "webp": "/images/pexels/category-painters-hero/category-painters-hero-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 628,
+          "jpg": "/images/pexels/category-painters-hero/category-painters-hero-940.jpg",
+          "webp": "/images/pexels/category-painters-hero/category-painters-hero-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 628,
+          "jpg": "/images/pexels/category-painters-hero/category-painters-hero-940.jpg",
+          "webp": "/images/pexels/category-painters-hero/category-painters-hero-940.webp"
         }
       ]
     },
     "category-painters-tile-1": {
       "id": "category-painters-tile-1",
-      "query": "painter tools close up Malta",
+      "query": "painter professional at work",
       "triedQueries": [
         "painter tools close up Malta",
         "painter professional at work",
         "home service technician tools"
       ],
       "alt": "Painter equipment and setup in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "photoUrl": "https://www.pexels.com/photo/man-in-black-jacket-holding-black-rope-6474346/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:painter",
+        "missing:tools",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:15.576Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-painters-tile-1/category-painters-tile-1-640.jpg",
+          "webp": "/images/pexels/category-painters-tile-1/category-painters-tile-1-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-painters-tile-1/category-painters-tile-1-940.jpg",
+          "webp": "/images/pexels/category-painters-tile-1/category-painters-tile-1-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-painters-tile-1/category-painters-tile-1-940.jpg",
+          "webp": "/images/pexels/category-painters-tile-1/category-painters-tile-1-940.webp"
         }
       ]
     },
@@ -1015,22 +1226,40 @@
         "home service technician tools"
       ],
       "alt": "Painter on-site service in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Sergei Starostin",
+      "photographerUrl": "https://www.pexels.com/@sejio402",
+      "photoUrl": "https://www.pexels.com/photo/worker-painting-road-lines-during-daytime-29274527/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:painter",
+        "mustInclude:technician",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:15.925Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-painters-tile-2/category-painters-tile-2-640.jpg",
+          "webp": "/images/pexels/category-painters-tile-2/category-painters-tile-2-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-painters-tile-2/category-painters-tile-2-940.jpg",
+          "webp": "/images/pexels/category-painters-tile-2/category-painters-tile-2-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-painters-tile-2/category-painters-tile-2-940.jpg",
+          "webp": "/images/pexels/category-painters-tile-2/category-painters-tile-2-940.webp"
         }
       ]
     },
@@ -1050,9 +1279,9 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "missing-api-key"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:25.466Z",
       "variants": [
         {
           "width": 1200,
@@ -1064,29 +1293,47 @@
     },
     "category-pest-control-tile-1": {
       "id": "category-pest-control-tile-1",
-      "query": "pest control specialist tools close up Malta",
+      "query": "home service technician tools",
       "triedQueries": [
         "pest control specialist tools close up Malta",
         "pest professional at work",
         "home service technician tools"
       ],
       "alt": "Pest Control Specialist equipment and setup in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Found GHI",
+      "photographerUrl": "https://www.pexels.com/@found-ghi-2156772983",
+      "photoUrl": "https://www.pexels.com/photo/laptop-repair-and-maintenance-in-progress-34514242/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:pest control specialist",
+        "mustInclude:tools",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:16.884Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 360,
+          "jpg": "/images/pexels/category-pest-control-tile-1/category-pest-control-tile-1-640.jpg",
+          "webp": "/images/pexels/category-pest-control-tile-1/category-pest-control-tile-1-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 529,
+          "jpg": "/images/pexels/category-pest-control-tile-1/category-pest-control-tile-1-940.jpg",
+          "webp": "/images/pexels/category-pest-control-tile-1/category-pest-control-tile-1-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 529,
+          "jpg": "/images/pexels/category-pest-control-tile-1/category-pest-control-tile-1-940.jpg",
+          "webp": "/images/pexels/category-pest-control-tile-1/category-pest-control-tile-1-940.webp"
         }
       ]
     },
@@ -1099,22 +1346,40 @@
         "home service technician tools"
       ],
       "alt": "Pest Control Specialist on-site service in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "erkan",
+      "photographerUrl": "https://www.pexels.com/@erknaygrdu",
+      "photoUrl": "https://www.pexels.com/photo/pest-control-worker-in-protective-suit-fumigating-35303785/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:pest control specialist",
+        "mustInclude:technician",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:17.127Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 480,
+          "jpg": "/images/pexels/category-pest-control-tile-2/category-pest-control-tile-2-640.jpg",
+          "webp": "/images/pexels/category-pest-control-tile-2/category-pest-control-tile-2-640.webp"
+        },
+        {
+          "width": 866,
+          "height": 650,
+          "jpg": "/images/pexels/category-pest-control-tile-2/category-pest-control-tile-2-866.jpg",
+          "webp": "/images/pexels/category-pest-control-tile-2/category-pest-control-tile-2-866.webp"
+        },
+        {
+          "width": 866,
+          "height": 650,
+          "jpg": "/images/pexels/category-pest-control-tile-2/category-pest-control-tile-2-866.jpg",
+          "webp": "/images/pexels/category-pest-control-tile-2/category-pest-control-tile-2-866.webp"
         }
       ]
     },
@@ -1134,9 +1399,9 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "missing-api-key"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:25.702Z",
       "variants": [
         {
           "width": 1200,
@@ -1148,29 +1413,47 @@
     },
     "category-hvac-technicians-tile-1": {
       "id": "category-hvac-technicians-tile-1",
-      "query": "hvac technician tools close up Malta",
+      "query": "home service technician tools",
       "triedQueries": [
         "hvac technician tools close up Malta",
         "hvac professional at work",
         "home service technician tools"
       ],
       "alt": "HVAC Technician equipment and setup in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Found GHI",
+      "photographerUrl": "https://www.pexels.com/@found-ghi-2156772983",
+      "photoUrl": "https://www.pexels.com/photo/laptop-repair-and-maintenance-in-progress-34514242/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:hvac technician",
+        "mustInclude:tools",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:17.958Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 360,
+          "jpg": "/images/pexels/category-hvac-technicians-tile-1/category-hvac-technicians-tile-1-640.jpg",
+          "webp": "/images/pexels/category-hvac-technicians-tile-1/category-hvac-technicians-tile-1-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 529,
+          "jpg": "/images/pexels/category-hvac-technicians-tile-1/category-hvac-technicians-tile-1-940.jpg",
+          "webp": "/images/pexels/category-hvac-technicians-tile-1/category-hvac-technicians-tile-1-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 529,
+          "jpg": "/images/pexels/category-hvac-technicians-tile-1/category-hvac-technicians-tile-1-940.jpg",
+          "webp": "/images/pexels/category-hvac-technicians-tile-1/category-hvac-technicians-tile-1-940.webp"
         }
       ]
     },
@@ -1183,22 +1466,40 @@
         "home service technician tools"
       ],
       "alt": "HVAC Technician on-site service in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Richard Low Hong",
+      "photographerUrl": "https://www.pexels.com/@richard-low-hong-33206323",
+      "photoUrl": "https://www.pexels.com/photo/man-in-gray-t-shirt-fixing-the-aircon-7347538/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:hvac technician",
+        "mustInclude:technician",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:18.158Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-hvac-technicians-tile-2/category-hvac-technicians-tile-2-640.jpg",
+          "webp": "/images/pexels/category-hvac-technicians-tile-2/category-hvac-technicians-tile-2-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-hvac-technicians-tile-2/category-hvac-technicians-tile-2-940.jpg",
+          "webp": "/images/pexels/category-hvac-technicians-tile-2/category-hvac-technicians-tile-2-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-hvac-technicians-tile-2/category-hvac-technicians-tile-2-940.jpg",
+          "webp": "/images/pexels/category-hvac-technicians-tile-2/category-hvac-technicians-tile-2-940.webp"
         }
       ]
     },
@@ -1218,9 +1519,9 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "missing-api-key"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:25.902Z",
       "variants": [
         {
           "width": 1200,
@@ -1239,22 +1540,40 @@
         "home service technician tools"
       ],
       "alt": "Roofing Contractor equipment and setup in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Francesca Cinel",
+      "photographerUrl": "https://www.pexels.com/@francesca-cinel-114872900",
+      "photoUrl": "https://www.pexels.com/photo/man-building-house-9729554/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 44,
+      "selectedFrom": 2,
       "reasons": [
-        "missing-api-key"
+        "missing:roofing contractor",
+        "mustInclude:tools",
+        "landscape-fit",
+        "rank:2"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:18.989Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-roofing-contractors-tile-1/category-roofing-contractors-tile-1-640.jpg",
+          "webp": "/images/pexels/category-roofing-contractors-tile-1/category-roofing-contractors-tile-1-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-roofing-contractors-tile-1/category-roofing-contractors-tile-1-940.jpg",
+          "webp": "/images/pexels/category-roofing-contractors-tile-1/category-roofing-contractors-tile-1-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-roofing-contractors-tile-1/category-roofing-contractors-tile-1-940.jpg",
+          "webp": "/images/pexels/category-roofing-contractors-tile-1/category-roofing-contractors-tile-1-940.webp"
         }
       ]
     },
@@ -1267,22 +1586,40 @@
         "home service technician tools"
       ],
       "alt": "Roofing Contractor on-site service in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Antoni Shkraba Studio",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "photoUrl": "https://www.pexels.com/photo/man-in-white-t-shirt-doing-construction-work-4981772/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 44,
+      "selectedFrom": 2,
       "reasons": [
-        "missing-api-key"
+        "missing:roofing contractor",
+        "mustInclude:technician",
+        "landscape-fit",
+        "rank:2"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:19.155Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-roofing-contractors-tile-2/category-roofing-contractors-tile-2-640.jpg",
+          "webp": "/images/pexels/category-roofing-contractors-tile-2/category-roofing-contractors-tile-2-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-roofing-contractors-tile-2/category-roofing-contractors-tile-2-940.jpg",
+          "webp": "/images/pexels/category-roofing-contractors-tile-2/category-roofing-contractors-tile-2-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-roofing-contractors-tile-2/category-roofing-contractors-tile-2-940.jpg",
+          "webp": "/images/pexels/category-roofing-contractors-tile-2/category-roofing-contractors-tile-2-940.webp"
         }
       ]
     },
@@ -1295,22 +1632,41 @@
         "home service technician tools"
       ],
       "alt": "Locksmiths service work in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "My Car Key Hero",
+      "photographerUrl": "https://www.pexels.com/@my-car-key-hero-592675237",
+      "photoUrl": "https://www.pexels.com/photo/lockpick-in-car-17124737/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 42,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:locksmith",
+        "missing:service",
+        "missing:malta",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:19.415Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-locksmiths-hero/category-locksmiths-hero-640.jpg",
+          "webp": "/images/pexels/category-locksmiths-hero/category-locksmiths-hero-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-locksmiths-hero/category-locksmiths-hero-940.jpg",
+          "webp": "/images/pexels/category-locksmiths-hero/category-locksmiths-hero-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-locksmiths-hero/category-locksmiths-hero-940.jpg",
+          "webp": "/images/pexels/category-locksmiths-hero/category-locksmiths-hero-940.webp"
         }
       ]
     },
@@ -1319,8 +1675,8 @@
       "query": "locksmith tools close up Malta",
       "triedQueries": [
         "locksmith tools close up Malta",
-        "locksmith tools malta",
-        "home service technician tools malta"
+        "locksmith professional at work",
+        "home service technician tools"
       ],
       "alt": "Locksmith equipment and setup in Malta",
       "photographer": "My Car Key Hero",
@@ -1328,7 +1684,9 @@
       "photoUrl": "https://www.pexels.com/photo/lockpick-in-car-17124737/",
       "fallback": false,
       "status": "selected",
-      "score": 68,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 60,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:locksmith",
@@ -1336,7 +1694,7 @@
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:54.426Z",
+      "lastCheckedAt": "2026-02-22T02:02:19.578Z",
       "variants": [
         {
           "width": 640,
@@ -1356,9 +1714,7 @@
           "jpg": "/images/pexels/category-locksmiths-tile-1/category-locksmiths-tile-1-940.jpg",
           "webp": "/images/pexels/category-locksmiths-tile-1/category-locksmiths-tile-1-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "category-locksmiths-tile-2": {
       "id": "category-locksmiths-tile-2",
@@ -1369,22 +1725,40 @@
         "home service technician tools"
       ],
       "alt": "Locksmith on-site service in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Ferran Petit",
+      "photographerUrl": "https://www.pexels.com/@ferran-petit-1535908735",
+      "photoUrl": "https://www.pexels.com/photo/street-locksmith-working-with-key-machine-30413861/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:locksmith",
+        "missing:technician",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:19.873Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 480,
+          "jpg": "/images/pexels/category-locksmiths-tile-2/category-locksmiths-tile-2-640.jpg",
+          "webp": "/images/pexels/category-locksmiths-tile-2/category-locksmiths-tile-2-640.webp"
+        },
+        {
+          "width": 867,
+          "height": 650,
+          "jpg": "/images/pexels/category-locksmiths-tile-2/category-locksmiths-tile-2-867.jpg",
+          "webp": "/images/pexels/category-locksmiths-tile-2/category-locksmiths-tile-2-867.webp"
+        },
+        {
+          "width": 867,
+          "height": 650,
+          "jpg": "/images/pexels/category-locksmiths-tile-2/category-locksmiths-tile-2-867.jpg",
+          "webp": "/images/pexels/category-locksmiths-tile-2/category-locksmiths-tile-2-867.webp"
         }
       ]
     },
@@ -1397,22 +1771,41 @@
         "home service technician tools"
       ],
       "alt": "Movers service work in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "photoUrl": "https://www.pexels.com/photo/man-couple-woman-friends-7464721/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 42,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:mover",
+        "missing:service",
+        "missing:malta",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:20.204Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-movers-hero/category-movers-hero-640.jpg",
+          "webp": "/images/pexels/category-movers-hero/category-movers-hero-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-movers-hero/category-movers-hero-940.jpg",
+          "webp": "/images/pexels/category-movers-hero/category-movers-hero-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-movers-hero/category-movers-hero-940.jpg",
+          "webp": "/images/pexels/category-movers-hero/category-movers-hero-940.webp"
         }
       ]
     },
@@ -1425,22 +1818,40 @@
         "home service technician tools"
       ],
       "alt": "Mover equipment and setup in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "photoUrl": "https://www.pexels.com/photo/man-couple-woman-friends-7464721/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:mover",
+        "missing:tools",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:20.368Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-movers-tile-1/category-movers-tile-1-640.jpg",
+          "webp": "/images/pexels/category-movers-tile-1/category-movers-tile-1-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-movers-tile-1/category-movers-tile-1-940.jpg",
+          "webp": "/images/pexels/category-movers-tile-1/category-movers-tile-1-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-movers-tile-1/category-movers-tile-1-940.jpg",
+          "webp": "/images/pexels/category-movers-tile-1/category-movers-tile-1-940.webp"
         }
       ]
     },
@@ -1453,78 +1864,133 @@
         "home service technician tools"
       ],
       "alt": "Mover on-site service in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Kindel Media",
+      "photographerUrl": "https://www.pexels.com/@kindelmedia",
+      "photoUrl": "https://www.pexels.com/photo/handywoman-drilling-the-wall-8486921/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:mover",
+        "mustInclude:technician",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:20.572Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 480,
+          "jpg": "/images/pexels/category-movers-tile-2/category-movers-tile-2-640.jpg",
+          "webp": "/images/pexels/category-movers-tile-2/category-movers-tile-2-640.webp"
+        },
+        {
+          "width": 867,
+          "height": 650,
+          "jpg": "/images/pexels/category-movers-tile-2/category-movers-tile-2-867.jpg",
+          "webp": "/images/pexels/category-movers-tile-2/category-movers-tile-2-867.webp"
+        },
+        {
+          "width": 867,
+          "height": 650,
+          "jpg": "/images/pexels/category-movers-tile-2/category-movers-tile-2-867.jpg",
+          "webp": "/images/pexels/category-movers-tile-2/category-movers-tile-2-867.webp"
         }
       ]
     },
     "category-photographers-hero": {
       "id": "category-photographers-hero",
-      "query": "photographer services Malta professional work",
+      "query": "photographer professional at work",
       "triedQueries": [
         "photographer services Malta professional work",
         "photographer professional at work",
         "home service technician tools"
       ],
       "alt": "Photographers service work in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Anton Gofman",
+      "photographerUrl": "https://www.pexels.com/@vali",
+      "photoUrl": "https://www.pexels.com/photo/man-taking-picture-of-person-s-left-arm-1391786/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 42,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:photographer",
+        "missing:service",
+        "missing:malta",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:21.457Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-photographers-hero/category-photographers-hero-640.jpg",
+          "webp": "/images/pexels/category-photographers-hero/category-photographers-hero-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-photographers-hero/category-photographers-hero-940.jpg",
+          "webp": "/images/pexels/category-photographers-hero/category-photographers-hero-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-photographers-hero/category-photographers-hero-940.jpg",
+          "webp": "/images/pexels/category-photographers-hero/category-photographers-hero-940.webp"
         }
       ]
     },
     "category-photographers-tile-1": {
       "id": "category-photographers-tile-1",
-      "query": "photographer tools close up Malta",
+      "query": "photographer professional at work",
       "triedQueries": [
         "photographer tools close up Malta",
         "photographer professional at work",
         "home service technician tools"
       ],
       "alt": "Photographer equipment and setup in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Anton Gofman",
+      "photographerUrl": "https://www.pexels.com/@vali",
+      "photoUrl": "https://www.pexels.com/photo/man-taking-picture-of-person-s-left-arm-1391786/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "mustInclude:photographer",
+        "missing:tools",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:21.641Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-photographers-tile-1/category-photographers-tile-1-640.jpg",
+          "webp": "/images/pexels/category-photographers-tile-1/category-photographers-tile-1-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-photographers-tile-1/category-photographers-tile-1-940.jpg",
+          "webp": "/images/pexels/category-photographers-tile-1/category-photographers-tile-1-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-photographers-tile-1/category-photographers-tile-1-940.jpg",
+          "webp": "/images/pexels/category-photographers-tile-1/category-photographers-tile-1-940.webp"
         }
       ]
     },
@@ -1537,22 +2003,40 @@
         "home service technician tools"
       ],
       "alt": "Photographer on-site service in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Los Muertos Crew",
+      "photographerUrl": "https://www.pexels.com/@cristian-rojas",
+      "photoUrl": "https://www.pexels.com/photo/selective-focus-on-maintenance-man-installing-solar-panel-8853537/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:photographer",
+        "mustInclude:technician",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:21.854Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 428,
+          "jpg": "/images/pexels/category-photographers-tile-2/category-photographers-tile-2-640.jpg",
+          "webp": "/images/pexels/category-photographers-tile-2/category-photographers-tile-2-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 628,
+          "jpg": "/images/pexels/category-photographers-tile-2/category-photographers-tile-2-940.jpg",
+          "webp": "/images/pexels/category-photographers-tile-2/category-photographers-tile-2-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 628,
+          "jpg": "/images/pexels/category-photographers-tile-2/category-photographers-tile-2-940.jpg",
+          "webp": "/images/pexels/category-photographers-tile-2/category-photographers-tile-2-940.webp"
         }
       ]
     },
@@ -1572,9 +2056,9 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "missing-api-key"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:26.083Z",
       "variants": [
         {
           "width": 1200,
@@ -1586,29 +2070,47 @@
     },
     "category-wedding-planners-tile-1": {
       "id": "category-wedding-planners-tile-1",
-      "query": "wedding planner tools close up Malta",
+      "query": "home service technician tools",
       "triedQueries": [
         "wedding planner tools close up Malta",
         "wedding professional at work",
         "home service technician tools"
       ],
       "alt": "Wedding Planner equipment and setup in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Found GHI",
+      "photographerUrl": "https://www.pexels.com/@found-ghi-2156772983",
+      "photoUrl": "https://www.pexels.com/photo/laptop-repair-and-maintenance-in-progress-34514242/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:wedding planner",
+        "mustInclude:tools",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:22.983Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 360,
+          "jpg": "/images/pexels/category-wedding-planners-tile-1/category-wedding-planners-tile-1-640.jpg",
+          "webp": "/images/pexels/category-wedding-planners-tile-1/category-wedding-planners-tile-1-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 529,
+          "jpg": "/images/pexels/category-wedding-planners-tile-1/category-wedding-planners-tile-1-940.jpg",
+          "webp": "/images/pexels/category-wedding-planners-tile-1/category-wedding-planners-tile-1-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 529,
+          "jpg": "/images/pexels/category-wedding-planners-tile-1/category-wedding-planners-tile-1-940.jpg",
+          "webp": "/images/pexels/category-wedding-planners-tile-1/category-wedding-planners-tile-1-940.webp"
         }
       ]
     },
@@ -1628,9 +2130,9 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "missing-api-key"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:26.167Z",
       "variants": [
         {
           "width": 1200,
@@ -1656,9 +2158,9 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "missing-api-key"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:26.347Z",
       "variants": [
         {
           "width": 1200,
@@ -1670,29 +2172,47 @@
     },
     "category-it-support-tile-1": {
       "id": "category-it-support-tile-1",
-      "query": "it support provider tools close up Malta",
+      "query": "home service technician tools",
       "triedQueries": [
         "it support provider tools close up Malta",
         "it professional at work",
         "home service technician tools"
       ],
       "alt": "IT Support Provider equipment and setup in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Found GHI",
+      "photographerUrl": "https://www.pexels.com/@found-ghi-2156772983",
+      "photoUrl": "https://www.pexels.com/photo/laptop-repair-and-maintenance-in-progress-34514242/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
-        "missing-api-key"
+        "missing:it support provider",
+        "mustInclude:tools",
+        "landscape-fit",
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:23.899Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 360,
+          "jpg": "/images/pexels/category-it-support-tile-1/category-it-support-tile-1-640.jpg",
+          "webp": "/images/pexels/category-it-support-tile-1/category-it-support-tile-1-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 529,
+          "jpg": "/images/pexels/category-it-support-tile-1/category-it-support-tile-1-940.jpg",
+          "webp": "/images/pexels/category-it-support-tile-1/category-it-support-tile-1-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 529,
+          "jpg": "/images/pexels/category-it-support-tile-1/category-it-support-tile-1-940.jpg",
+          "webp": "/images/pexels/category-it-support-tile-1/category-it-support-tile-1-940.webp"
         }
       ]
     },
@@ -1705,48 +2225,68 @@
         "home service technician tools"
       ],
       "alt": "IT Support Provider on-site service in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Richard Low Hong",
+      "photographerUrl": "https://www.pexels.com/@richard-low-hong-33206323",
+      "photoUrl": "https://www.pexels.com/photo/man-in-gray-t-shirt-fixing-the-aircon-7347538/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 42,
+      "selectedFrom": 3,
       "reasons": [
-        "missing-api-key"
+        "missing:it support provider",
+        "mustInclude:technician",
+        "landscape-fit",
+        "rank:3"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:24.054Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/category-it-support-tile-2/category-it-support-tile-2-640.jpg",
+          "webp": "/images/pexels/category-it-support-tile-2/category-it-support-tile-2-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-it-support-tile-2/category-it-support-tile-2-940.jpg",
+          "webp": "/images/pexels/category-it-support-tile-2/category-it-support-tile-2-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/category-it-support-tile-2/category-it-support-tile-2-940.jpg",
+          "webp": "/images/pexels/category-it-support-tile-2/category-it-support-tile-2-940.webp"
         }
       ]
     },
     "guide-plumbers": {
       "id": "guide-plumbers",
-      "query": "plumber professional malta",
+      "query": "plumber professional at work",
       "triedQueries": [
         "plumbing repair checklist workbench",
-        "plumber professional malta",
-        "professional service checklist tools"
+        "plumber professional at work",
+        "home service technician tools"
       ],
       "alt": "Plumbers guide visual in Malta",
-      "photographer": "Sergei Starostin",
-      "photographerUrl": "https://www.pexels.com/@sejio402",
-      "photoUrl": "https://www.pexels.com/photo/professional-plumber-installing-a-radiator-pipe-29226620/",
+      "photographer": "Heiko Ruth",
+      "photographerUrl": "https://www.pexels.com/@heiko-ruth-53441229",
+      "photoUrl": "https://www.pexels.com/photo/plumber-repairing-power-source-7859953/",
       "fallback": false,
       "status": "selected",
-      "score": 54,
-      "selectedFrom": 8,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 46,
+      "selectedFrom": 1,
       "reasons": [
         "mustInclude:plumber",
-        "mustInclude:professional",
+        "missing:professional",
         "landscape-fit",
-        "rank:8"
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:40.049Z",
+      "lastCheckedAt": "2026-02-22T02:02:12.279Z",
       "variants": [
         {
           "width": 640,
@@ -1766,17 +2306,15 @@
           "jpg": "/images/pexels/guide-plumbers/guide-plumbers-940.jpg",
           "webp": "/images/pexels/guide-plumbers/guide-plumbers-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "guide-electricians": {
       "id": "guide-electricians",
       "query": "electrical safety inspection tools",
       "triedQueries": [
         "electrical safety inspection tools",
-        "electrician professional malta",
-        "professional service checklist tools"
+        "electrician professional at work",
+        "home service technician tools"
       ],
       "alt": "Electricians guide visual in Malta",
       "photographer": "Sami  Abdullah",
@@ -1784,7 +2322,9 @@
       "photoUrl": "https://www.pexels.com/photo/an-electrician-inspecting-a-fuse-box-7359566/",
       "fallback": false,
       "status": "selected",
-      "score": 60,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 52,
       "selectedFrom": 5,
       "reasons": [
         "mustInclude:electrician",
@@ -1792,7 +2332,7 @@
         "landscape-fit",
         "rank:5"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:42.049Z",
+      "lastCheckedAt": "2026-02-22T02:02:13.120Z",
       "variants": [
         {
           "width": 640,
@@ -1812,45 +2352,61 @@
           "jpg": "/images/pexels/guide-electricians/guide-electricians-940.jpg",
           "webp": "/images/pexels/guide-electricians/guide-electricians-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "guide-cleaning-services": {
       "id": "guide-cleaning-services",
-      "query": "cleaning service checklist and tools",
+      "query": "cleaning professional at work",
       "triedQueries": [
         "cleaning service checklist and tools",
         "cleaning professional at work",
         "home service technician tools"
       ],
       "alt": "Cleaning Services guide visual in Malta",
-      "fallback": true,
-      "status": "fallback",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "photoUrl": "https://www.pexels.com/photo/man-wearing-an-orange-coveralls-6197123/",
+      "fallback": false,
+      "status": "selected",
       "intentClass": "service",
-      "sourceMode": "fallback",
-      "score": 0,
-      "selectedFrom": 0,
+      "sourceMode": "direct",
+      "score": 40,
+      "selectedFrom": 4,
       "reasons": [
-        "missing-api-key"
+        "missing:cleaning service",
+        "mustInclude:professional",
+        "landscape-fit",
+        "rank:4"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:14.790Z",
       "variants": [
         {
-          "width": 1200,
-          "height": 800,
-          "webp": "/images/placeholder.jpg",
-          "jpg": "/images/placeholder.jpg"
+          "width": 640,
+          "height": 427,
+          "jpg": "/images/pexels/guide-cleaning-services/guide-cleaning-services-640.jpg",
+          "webp": "/images/pexels/guide-cleaning-services/guide-cleaning-services-640.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/guide-cleaning-services/guide-cleaning-services-940.jpg",
+          "webp": "/images/pexels/guide-cleaning-services/guide-cleaning-services-940.webp"
+        },
+        {
+          "width": 940,
+          "height": 627,
+          "jpg": "/images/pexels/guide-cleaning-services/guide-cleaning-services-940.jpg",
+          "webp": "/images/pexels/guide-cleaning-services/guide-cleaning-services-940.webp"
         }
       ]
     },
     "guide-painters": {
       "id": "guide-painters",
-      "query": "painter professional malta",
+      "query": "painter professional at work",
       "triedQueries": [
         "professional house painter roller",
-        "painter professional malta",
-        "professional service checklist tools"
+        "painter professional at work",
+        "home service technician tools"
       ],
       "alt": "Painters guide visual in Malta",
       "photographer": "Tima Miroshnichenko",
@@ -1858,15 +2414,17 @@
       "photoUrl": "https://www.pexels.com/photo/man-in-black-jacket-holding-black-rope-6474346/",
       "fallback": false,
       "status": "selected",
-      "score": 64,
-      "selectedFrom": 3,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 60,
+      "selectedFrom": 1,
       "reasons": [
         "mustInclude:painter",
         "mustInclude:professional",
         "landscape-fit",
-        "rank:3"
+        "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:46.568Z",
+      "lastCheckedAt": "2026-02-22T02:02:16.129Z",
       "variants": [
         {
           "width": 640,
@@ -1886,9 +2444,7 @@
           "jpg": "/images/pexels/guide-painters/guide-painters-940.jpg",
           "webp": "/images/pexels/guide-painters/guide-painters-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "guide-pest-control": {
       "id": "guide-pest-control",
@@ -1906,9 +2462,9 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "missing-api-key"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:25.561Z",
       "variants": [
         {
           "width": 1200,
@@ -1934,9 +2490,9 @@
       "score": 0,
       "selectedFrom": 0,
       "reasons": [
-        "missing-api-key"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:58:16.146Z",
+      "lastCheckedAt": "2026-02-22T02:02:25.814Z",
       "variants": [
         {
           "width": 1200,
@@ -1948,57 +2504,39 @@
     },
     "guide-roofing-contractors": {
       "id": "guide-roofing-contractors",
-      "query": "roofing contractor professional malta",
+      "query": "roof repair contractor safety harness",
       "triedQueries": [
         "roof repair contractor safety harness",
-        "roofing contractor professional malta",
-        "professional service checklist tools"
+        "roofing professional at work",
+        "home service technician tools"
       ],
       "alt": "Roofing Contractors guide visual in Malta",
-      "photographer": "Ryan  Stephens",
-      "photographerUrl": "https://www.pexels.com/@rstephens",
-      "photoUrl": "https://www.pexels.com/photo/professional-roofer-installing-shingles-on-new-roof-33404248/",
-      "fallback": false,
-      "status": "selected",
-      "score": 46,
-      "selectedFrom": 1,
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "service",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
       "reasons": [
-        "missing:roofing contractor",
-        "mustInclude:professional",
-        "landscape-fit",
-        "rank:1"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:53.816Z",
+      "lastCheckedAt": "2026-02-22T02:02:25.989Z",
       "variants": [
         {
-          "width": 640,
-          "height": 427,
-          "jpg": "/images/pexels/guide-roofing-contractors/guide-roofing-contractors-640.jpg",
-          "webp": "/images/pexels/guide-roofing-contractors/guide-roofing-contractors-640.webp"
-        },
-        {
-          "width": 940,
-          "height": 627,
-          "jpg": "/images/pexels/guide-roofing-contractors/guide-roofing-contractors-940.jpg",
-          "webp": "/images/pexels/guide-roofing-contractors/guide-roofing-contractors-940.webp"
-        },
-        {
-          "width": 940,
-          "height": 627,
-          "jpg": "/images/pexels/guide-roofing-contractors/guide-roofing-contractors-940.jpg",
-          "webp": "/images/pexels/guide-roofing-contractors/guide-roofing-contractors-940.webp"
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "guide-locksmiths": {
       "id": "guide-locksmiths",
       "query": "locksmith replacing door lock",
       "triedQueries": [
         "locksmith replacing door lock",
-        "locksmith professional malta",
-        "professional service checklist tools"
+        "locksmith professional at work",
+        "home service technician tools"
       ],
       "alt": "Locksmiths guide visual in Malta",
       "photographer": "My Car Key Hero",
@@ -2006,6 +2544,8 @@
       "photoUrl": "https://www.pexels.com/photo/lockpick-in-car-17124737/",
       "fallback": false,
       "status": "selected",
+      "intentClass": "service",
+      "sourceMode": "direct",
       "score": 42,
       "selectedFrom": 3,
       "reasons": [
@@ -2014,7 +2554,7 @@
         "landscape-fit",
         "rank:3"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:55.028Z",
+      "lastCheckedAt": "2026-02-22T02:02:20.044Z",
       "variants": [
         {
           "width": 640,
@@ -2034,17 +2574,15 @@
           "jpg": "/images/pexels/guide-locksmiths/guide-locksmiths-940.jpg",
           "webp": "/images/pexels/guide-locksmiths/guide-locksmiths-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "guide-movers": {
       "id": "guide-movers",
       "query": "home moving team carrying boxes",
       "triedQueries": [
         "home moving team carrying boxes",
-        "mover professional malta",
-        "professional service checklist tools"
+        "mover professional at work",
+        "home service technician tools"
       ],
       "alt": "Movers guide visual in Malta",
       "photographer": "RDNE Stock project",
@@ -2052,7 +2590,9 @@
       "photoUrl": "https://www.pexels.com/photo/men-carrying-cardboard-boxes-while-having-a-conversation-7464244/",
       "fallback": false,
       "status": "selected",
-      "score": 64,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 56,
       "selectedFrom": 3,
       "reasons": [
         "mustInclude:mover",
@@ -2060,7 +2600,7 @@
         "landscape-fit",
         "rank:3"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:56.608Z",
+      "lastCheckedAt": "2026-02-22T02:02:20.743Z",
       "variants": [
         {
           "width": 640,
@@ -2080,17 +2620,15 @@
           "jpg": "/images/pexels/guide-movers/guide-movers-940.jpg",
           "webp": "/images/pexels/guide-movers/guide-movers-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "guide-photographers": {
       "id": "guide-photographers",
       "query": "photographer camera setup portrait",
       "triedQueries": [
         "photographer camera setup portrait",
-        "photographer professional malta",
-        "professional service checklist tools"
+        "photographer professional at work",
+        "home service technician tools"
       ],
       "alt": "Photographers guide visual in Malta",
       "photographer": "Aleksander",
@@ -2098,7 +2636,9 @@
       "photoUrl": "https://www.pexels.com/photo/professional-photographer-in-studio-with-equipment-33665110/",
       "fallback": false,
       "status": "selected",
-      "score": 68,
+      "intentClass": "service",
+      "sourceMode": "direct",
+      "score": 60,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:photographer",
@@ -2106,7 +2646,7 @@
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:46:58.801Z",
+      "lastCheckedAt": "2026-02-22T02:02:22.013Z",
       "variants": [
         {
           "width": 640,
@@ -2126,109 +2666,71 @@
           "jpg": "/images/pexels/guide-photographers/guide-photographers-940.jpg",
           "webp": "/images/pexels/guide-photographers/guide-photographers-940.webp"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "guide-wedding-planners": {
       "id": "guide-wedding-planners",
-      "query": "wedding planner professional malta",
+      "query": "event planner organizing wedding table",
       "triedQueries": [
         "event planner organizing wedding table",
-        "wedding planner professional malta",
-        "professional service checklist tools"
+        "wedding professional at work",
+        "home service technician tools"
       ],
       "alt": "Wedding Planners guide visual in Malta",
-      "photographer": "RDNE Stock project",
-      "photographerUrl": "https://www.pexels.com/@rdne",
-      "photoUrl": "https://www.pexels.com/photo/men-women-party-event-7648047/",
-      "fallback": false,
-      "status": "selected",
-      "score": 44,
-      "selectedFrom": 2,
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "service",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
       "reasons": [
-        "missing:wedding planner",
-        "mustInclude:professional",
-        "landscape-fit",
-        "rank:2"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:47:01.216Z",
+      "lastCheckedAt": "2026-02-22T02:02:26.254Z",
       "variants": [
         {
-          "width": 640,
-          "height": 427,
-          "jpg": "/images/pexels/guide-wedding-planners/guide-wedding-planners-640.jpg",
-          "webp": "/images/pexels/guide-wedding-planners/guide-wedding-planners-640.webp"
-        },
-        {
-          "width": 940,
-          "height": 627,
-          "jpg": "/images/pexels/guide-wedding-planners/guide-wedding-planners-940.jpg",
-          "webp": "/images/pexels/guide-wedding-planners/guide-wedding-planners-940.webp"
-        },
-        {
-          "width": 940,
-          "height": 627,
-          "jpg": "/images/pexels/guide-wedding-planners/guide-wedding-planners-940.jpg",
-          "webp": "/images/pexels/guide-wedding-planners/guide-wedding-planners-940.webp"
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "guide-it-support": {
       "id": "guide-it-support",
       "query": "it support specialist office diagnostics",
       "triedQueries": [
         "it support specialist office diagnostics",
-        "it support provider professional malta",
-        "professional service checklist tools"
+        "it professional at work",
+        "home service technician tools"
       ],
       "alt": "IT Support Providers guide visual in Malta",
-      "photographer": "cottonbro studio",
-      "photographerUrl": "https://www.pexels.com/@cottonbro",
-      "photoUrl": "https://www.pexels.com/photo/a-man-looking-at-an-x-ray-image-6502021/",
-      "fallback": false,
-      "status": "selected",
-      "score": 44,
-      "selectedFrom": 2,
+      "fallback": true,
+      "status": "fallback",
+      "intentClass": "service",
+      "sourceMode": "fallback",
+      "score": 0,
+      "selectedFrom": 0,
       "reasons": [
-        "missing:it support provider",
-        "mustInclude:professional",
-        "landscape-fit",
-        "rank:2"
+        "no-candidate-over-threshold"
       ],
-      "lastCheckedAt": "2026-02-22T01:47:03.859Z",
+      "lastCheckedAt": "2026-02-22T02:02:26.438Z",
       "variants": [
         {
-          "width": 640,
-          "height": 427,
-          "jpg": "/images/pexels/guide-it-support/guide-it-support-640.jpg",
-          "webp": "/images/pexels/guide-it-support/guide-it-support-640.webp"
-        },
-        {
-          "width": 940,
-          "height": 627,
-          "jpg": "/images/pexels/guide-it-support/guide-it-support-940.jpg",
-          "webp": "/images/pexels/guide-it-support/guide-it-support-940.webp"
-        },
-        {
-          "width": 940,
-          "height": 627,
-          "jpg": "/images/pexels/guide-it-support/guide-it-support-940.jpg",
-          "webp": "/images/pexels/guide-it-support/guide-it-support-940.webp"
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
         }
-      ],
-      "intentClass": "service",
-      "sourceMode": "direct"
+      ]
     },
     "featured-location-sliema": {
       "id": "featured-location-sliema",
       "query": "Sliema Malta neighborhood and services",
       "triedQueries": [
         "Sliema Malta neighborhood and services",
-        "Sliema malta malta",
-        "malta city street architecture"
+        "sliema Malta streets cityscape",
+        "sliema Malta urban architecture"
       ],
       "alt": "Sliema service locality in Malta",
       "photographer": "Andreas Figurski",
@@ -2236,15 +2738,19 @@
       "photoUrl": "https://www.pexels.com/photo/panoramic-view-of-sliema-with-rainbow-30342887/",
       "fallback": false,
       "status": "selected",
-      "score": 68,
+      "intentClass": "locality",
+      "sourceMode": "direct",
+      "score": 82,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:sliema",
         "mustInclude:malta",
+        "location:sliema",
+        "location:malta",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:47:04.522Z",
+      "lastCheckedAt": "2026-02-22T02:02:24.310Z",
       "variants": [
         {
           "width": 640,
@@ -2264,17 +2770,15 @@
           "jpg": "/images/pexels/featured-location-sliema/featured-location-sliema-867.jpg",
           "webp": "/images/pexels/featured-location-sliema/featured-location-sliema-867.webp"
         }
-      ],
-      "intentClass": "locality",
-      "sourceMode": "direct"
+      ]
     },
     "featured-location-valletta": {
       "id": "featured-location-valletta",
       "query": "Valletta Malta neighborhood and services",
       "triedQueries": [
         "Valletta Malta neighborhood and services",
-        "Valletta malta malta",
-        "malta city street architecture"
+        "valletta Malta streets cityscape",
+        "valletta Malta urban architecture"
       ],
       "alt": "Valletta service locality in Malta",
       "photographer": "Polina ⠀",
@@ -2282,15 +2786,19 @@
       "photoUrl": "https://www.pexels.com/photo/aerial-view-of-city-buildings-7664714/",
       "fallback": false,
       "status": "selected",
-      "score": 68,
+      "intentClass": "locality",
+      "sourceMode": "direct",
+      "score": 82,
       "selectedFrom": 1,
       "reasons": [
         "mustInclude:valletta",
         "mustInclude:malta",
+        "location:valletta",
+        "location:malta",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:47:04.830Z",
+      "lastCheckedAt": "2026-02-22T02:02:24.506Z",
       "variants": [
         {
           "width": 640,
@@ -2310,17 +2818,15 @@
           "jpg": "/images/pexels/featured-location-valletta/featured-location-valletta-867.jpg",
           "webp": "/images/pexels/featured-location-valletta/featured-location-valletta-867.webp"
         }
-      ],
-      "intentClass": "locality",
-      "sourceMode": "direct"
+      ]
     },
     "featured-location-st-julians": {
       "id": "featured-location-st-julians",
       "query": "St Julian's Malta neighborhood and services",
       "triedQueries": [
         "St Julian's Malta neighborhood and services",
-        "St Julian's malta malta",
-        "malta city street architecture"
+        "st Malta streets cityscape",
+        "st Malta urban architecture"
       ],
       "alt": "St Julian's service locality in Malta",
       "photographer": "Matthew Padilla",
@@ -2328,15 +2834,21 @@
       "photoUrl": "https://www.pexels.com/photo/aerial-view-of-st-julian-s-malta-at-dusk-32439377/",
       "fallback": false,
       "status": "selected",
-      "score": 46,
+      "intentClass": "locality",
+      "sourceMode": "direct",
+      "score": 73,
       "selectedFrom": 1,
       "reasons": [
         "missing:st julian's",
         "mustInclude:malta",
+        "location:st",
+        "location:julian",
+        "location:s",
+        "location:malta",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:47:04.999Z",
+      "lastCheckedAt": "2026-02-22T02:02:24.686Z",
       "variants": [
         {
           "width": 640,
@@ -2356,17 +2868,15 @@
           "jpg": "/images/pexels/featured-location-st-julians/featured-location-st-julians-862.jpg",
           "webp": "/images/pexels/featured-location-st-julians/featured-location-st-julians-862.webp"
         }
-      ],
-      "intentClass": "locality",
-      "sourceMode": "direct"
+      ]
     },
     "featured-location-birkirkara": {
       "id": "featured-location-birkirkara",
       "query": "Birkirkara Malta neighborhood and services",
       "triedQueries": [
         "Birkirkara Malta neighborhood and services",
-        "Birkirkara malta malta",
-        "malta city street architecture"
+        "birkirkara Malta streets cityscape",
+        "birkirkara Malta urban architecture"
       ],
       "alt": "Birkirkara service locality in Malta",
       "photographer": "Tom Fisk",
@@ -2374,15 +2884,18 @@
       "photoUrl": "https://www.pexels.com/photo/illuminated-dome-of-the-basilica-in-malta-30560182/",
       "fallback": false,
       "status": "selected",
-      "score": 46,
+      "intentClass": "locality",
+      "sourceMode": "direct",
+      "score": 52,
       "selectedFrom": 1,
       "reasons": [
         "missing:birkirkara",
         "mustInclude:malta",
+        "location:malta",
         "landscape-fit",
         "rank:1"
       ],
-      "lastCheckedAt": "2026-02-22T01:47:05.780Z",
+      "lastCheckedAt": "2026-02-22T02:02:24.835Z",
       "variants": [
         {
           "width": 640,
@@ -2402,9 +2915,7 @@
           "jpg": "/images/pexels/featured-location-birkirkara/featured-location-birkirkara-940.jpg",
           "webp": "/images/pexels/featured-location-birkirkara/featured-location-birkirkara-940.webp"
         }
-      ],
-      "intentClass": "locality",
-      "sourceMode": "direct"
+      ]
     }
   }
 }
