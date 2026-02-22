@@ -4,7 +4,18 @@ import manifest from "../src/data/pexels-image-manifest.json" with { type: "json
 
 const rootDir = process.cwd();
 const publicDir = path.join(rootDir, "public");
-const strict = process.env.CI === "true" || process.env.IMAGE_QUALITY_STRICT === "true";
+const branch = process.env.CF_PAGES_BRANCH || process.env.CLOUDFLARE_PAGES_BRANCH || "";
+const inCi = process.env.CI === "true";
+const isMainBranch = branch === "main";
+const explicitStrict = process.env.IMAGE_QUALITY_STRICT === "true";
+const explicitFailOnWarn = process.env.IMAGE_QUALITY_FAIL_ON_WARN;
+
+const strict =
+  explicitFailOnWarn === "true"
+    ? true
+    : explicitFailOnWarn === "false"
+      ? false
+      : explicitStrict || (inCi && isMainBranch);
 
 const minSelectedCoverage = Number(process.env.PEXELS_MIN_SELECTED_COVERAGE || 0.9);
 const minHomeSelectedCoverage = Number(process.env.PEXELS_MIN_HOME_SELECTED_COVERAGE || 0.95);

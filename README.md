@@ -73,6 +73,24 @@ npm run images:sync -- --all
   - `PUBLIC_CF_BEACON_TOKEN=<optional-token>`
   - `PUBLIC_PLAUSIBLE_DOMAIN=<optional-domain>`
 
+### Preview vs Production Image Gate Policy
+
+`images:validate` is strict only on production by default:
+
+- **Production (main):** strict in CI (fails build on coverage warnings)
+- **Preview branches:** warnings are reported, but build does not fail
+
+Environment controls:
+
+- `IMAGE_QUALITY_STRICT=true` → force strict mode
+- `IMAGE_QUALITY_FAIL_ON_WARN=true` → hard fail on warnings (highest priority)
+- `IMAGE_QUALITY_FAIL_ON_WARN=false` → never fail on warnings (emergency override)
+
+Recommended Cloudflare setup:
+
+- **Production env:** `IMAGE_QUALITY_STRICT=true`
+- **Preview env:** `IMAGE_QUALITY_STRICT=false`
+
 ## Production Image Refresh Runbook
 
 1. Set `PEXELS_API_KEY` locally.
