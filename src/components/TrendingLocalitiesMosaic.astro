@@ -1,0 +1,45 @@
+---
+import type { LocalPexelsImage } from "@/lib/pexelsImagePipeline";
+import { toPictureData } from "@/lib/pexelsImagePipeline";
+
+interface MosaicItem {
+  title: string;
+  subtitle: string;
+  href: string;
+  image: LocalPexelsImage;
+}
+
+interface Props {
+  title: string;
+  seeAllHref: string;
+  items: MosaicItem[];
+}
+
+const { title, seeAllHref, items } = Astro.props as Props;
+---
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>{title}</h2>
+      <a class="meta" href={seeAllHref}>See all</a>
+    </div>
+    <div class="mosaic-grid">
+      {items.map((item) => {
+        const image = toPictureData(item.image);
+        return (
+          <a class="mosaic-tile" href={item.href}>
+            <picture>
+              <source type="image/webp" srcset={image.webpSrcset} />
+              <source type="image/jpeg" srcset={image.jpgSrcset} />
+              <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" />
+            </picture>
+            <span class="mosaic-overlay">
+              <strong>{item.title}</strong>
+              <small>{item.subtitle}</small>
+            </span>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</section>

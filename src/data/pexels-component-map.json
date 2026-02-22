@@ -1,0 +1,147 @@
+{
+  "homeIconStrip": [
+    {
+      "id": "home-icon-plumbers",
+      "title": "Plumbers",
+      "meta": "Guides + hubs",
+      "href": "/categories/plumbers/"
+    },
+    {
+      "id": "home-icon-electricians",
+      "title": "Electricians",
+      "meta": "Guides + hubs",
+      "href": "/categories/electricians/"
+    },
+    {
+      "id": "home-icon-cleaning",
+      "title": "Cleaning",
+      "meta": "Guides + hubs",
+      "href": "/categories/cleaning-services/"
+    },
+    {
+      "id": "home-icon-movers",
+      "title": "Movers",
+      "meta": "Guides + hubs",
+      "href": "/categories/movers/"
+    },
+    {
+      "id": "home-icon-locksmiths",
+      "title": "Locksmiths",
+      "meta": "Guides + hubs",
+      "href": "/categories/locksmiths/"
+    },
+    {
+      "id": "home-icon-it-support",
+      "title": "IT Support",
+      "meta": "Guides + hubs",
+      "href": "/categories/it-support/"
+    }
+  ],
+  "homeFeatured": [
+    {
+      "id": "home-feature-plumbers-sliema",
+      "title": "Plumbers for urgent repairs in Sliema",
+      "locality": "Sliema, Malta",
+      "meta": "Guide + comparison",
+      "href": "/categories/plumbers/sliema/",
+      "ctaLabel": "Open hub"
+    },
+    {
+      "id": "home-feature-electricians-valletta",
+      "title": "Electricians in Valletta for home and retail",
+      "locality": "Valletta, Malta",
+      "meta": "Guide + comparison",
+      "href": "/categories/electricians/valletta/",
+      "ctaLabel": "Open hub"
+    },
+    {
+      "id": "home-feature-cleaning-st-julians",
+      "title": "Cleaning services around St Julian's",
+      "locality": "St Julian's, Malta",
+      "meta": "Guide + comparison",
+      "href": "/categories/cleaning-services/st-julians/",
+      "ctaLabel": "Open hub"
+    },
+    {
+      "id": "home-feature-hvac-birkirkara",
+      "title": "HVAC technicians serving Birkirkara",
+      "locality": "Birkirkara, Malta",
+      "meta": "Guide + comparison",
+      "href": "/categories/hvac-technicians/birkirkara/",
+      "ctaLabel": "Open hub"
+    }
+  ],
+  "homeMosaic": [
+    {
+      "id": "home-mosaic-valletta",
+      "title": "Valletta",
+      "subtitle": "Historic core",
+      "href": "/locations/valletta/"
+    },
+    {
+      "id": "home-mosaic-sliema",
+      "title": "Sliema",
+      "subtitle": "Residential + retail",
+      "href": "/locations/sliema/"
+    },
+    {
+      "id": "home-mosaic-st-julians",
+      "title": "St Julian's",
+      "subtitle": "Hospitality area",
+      "href": "/locations/st-julians/"
+    },
+    {
+      "id": "home-mosaic-birkirkara",
+      "title": "Birkirkara",
+      "subtitle": "Central locality",
+      "href": "/locations/birkirkara/"
+    },
+    {
+      "id": "home-mosaic-mosta",
+      "title": "Mosta",
+      "subtitle": "North-central hub",
+      "href": "/locations/mosta/"
+    },
+    {
+      "id": "home-mosaic-gozo",
+      "title": "Victoria, Gozo",
+      "subtitle": "Island services",
+      "href": "/locations/victoria-gozo/"
+    }
+  ],
+  "queryTemplates": {
+    "categoryHero": "{category} services Malta professional work",
+    "categoryTileOne": "{category} tools close up Malta",
+    "categoryTileTwo": "{category} technician at work Malta"
+  },
+  "queries": {
+    "home-icon-plumbers": "plumber tools service vehicle",
+    "home-icon-electricians": "electrician toolkit and wiring",
+    "home-icon-cleaning": "cleaning service supplies and gloves",
+    "home-icon-movers": "moving boxes home relocation",
+    "home-icon-locksmiths": "locksmith tools and key cutting",
+    "home-icon-it-support": "it technician laptop support",
+    "home-feature-plumbers-sliema": "plumber repairing sink in apartment",
+    "home-feature-electricians-valletta": "electrician checking electrical panel",
+    "home-feature-cleaning-st-julians": "professional cleaner working indoors",
+    "home-feature-hvac-birkirkara": "air conditioning technician maintenance",
+    "home-mosaic-valletta": "Valletta Malta architecture street",
+    "home-mosaic-sliema": "Sliema Malta seafront buildings",
+    "home-mosaic-st-julians": "St Julians Malta bay view",
+    "home-mosaic-birkirkara": "Malta residential neighborhood street",
+    "home-mosaic-mosta": "Mosta Malta dome cityscape",
+    "home-mosaic-gozo": "Victoria Gozo Malta old town",
+    "guide-plumbers": "plumbing repair checklist workbench",
+    "guide-electricians": "electrical safety inspection tools",
+    "guide-cleaning-services": "cleaning service checklist and tools",
+    "guide-painters": "professional house painter roller",
+    "guide-pest-control": "pest control technician inspection",
+    "guide-hvac-technicians": "hvac service inspection equipment",
+    "guide-roofing-contractors": "roof repair contractor safety harness",
+    "guide-locksmiths": "locksmith replacing door lock",
+    "guide-movers": "home moving team carrying boxes",
+    "guide-photographers": "photographer camera setup portrait",
+    "guide-wedding-planners": "event planner organizing wedding table",
+    "guide-it-support": "it support specialist office diagnostics"
+  }
+}

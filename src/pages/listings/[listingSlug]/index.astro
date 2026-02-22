@@ -3,6 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import ListingCard from "@/components/ListingCard.astro";
 import { getListings, getListingBySlug, getCategoryBySlug, getLocationBySlug } from "@/lib/data";
+import { getPexelsImage, toPictureData } from "@/lib/pexelsImagePipeline";
 import { buildSeo, clampMeta } from "@/lib/seo";
 import { localBusinessSchema } from "@/lib/schema";
 
@@ -25,6 +26,9 @@ const similarListings = getListings()
       candidate.categorySlugs.some((slug) => listing.categorySlugs.includes(slug))
   )
   .slice(0, 6);
+const listingImage = toPictureData(
+  getPexelsImage(`category-${listing.categorySlugs[0] || "plumbers"}-hero`, `${listing.name} service visual in Malta`)
+);
 
 const seo = buildSeo({
   path: `/listings/${listing.slug}/`,
@@ -50,6 +54,18 @@ const breadcrumbs = [
         <p class="meta">
           This listing is independently compiled. We recommend confirming details directly with the provider.
         </p>
+        <figure class="guide-hero-media mt-sm">
+          <picture>
+            <source type="image/webp" srcset={listingImage.webpSrcset} />
+            <source type="image/jpeg" srcset={listingImage.jpgSrcset} />
+            <img src={listingImage.src} alt={listingImage.alt} width={listingImage.width} height={listingImage.height} />
+          </picture>
+          {listingImage.photographer && listingImage.photographerUrl && (
+            <figcaption class="meta">
+              Photo by <a href={listingImage.photographerUrl} rel="noopener nofollow" target="_blank">{listingImage.photographer}</a> on Pexels
+            </figcaption>
+          )}
+        </figure>
 
         <div>
           {categories.map((category) => (

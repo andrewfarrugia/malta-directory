@@ -28,6 +28,14 @@ npm install
 npm run dev
 ```
 
+Create a local `.env` file:
+
+```env
+PEXELS_API_KEY=your_key_here
+# Optional: force placeholder-only builds
+# PEXELS_CACHE_WRITE=false
+```
+
 ## Build
 
 ```bash
@@ -35,12 +43,16 @@ npm run build
 npm run seo:validate
 ```
 
+Build runs `npm run images:sync` before `astro build` to download/update local Pexels assets in `public/images/pexels/` and regenerate `src/data/pexels-image-manifest.json`.
+
 ## Cloudflare Pages
 
 - Build command: `npm run build`
 - Output directory: `dist`
 - Environment variables:
   - `SITE_URL=https://maltaservicehub.com`
+  - `PEXELS_API_KEY=<required-for-build-time-image-fetch>`
+  - `PEXELS_CACHE_WRITE=false` (optional if you want to skip remote image refresh in CI)
   - `PUBLIC_ANALYTICS_PROVIDER=cloudflare`
   - `PUBLIC_CF_BEACON_TOKEN=<optional-token>`
   - `PUBLIC_PLAUSIBLE_DOMAIN=<optional-domain>`

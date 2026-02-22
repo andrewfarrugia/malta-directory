@@ -1,0 +1,51 @@
+---
+import type { LocalPexelsImage } from "@/lib/pexelsImagePipeline";
+import { toPictureData } from "@/lib/pexelsImagePipeline";
+
+interface EditorialArticleItem {
+  title: string;
+  href: string;
+  date: string;
+  author: string;
+  image: LocalPexelsImage;
+}
+
+interface Props {
+  title: string;
+  seeAllHref: string;
+  items: EditorialArticleItem[];
+}
+
+const { title, seeAllHref, items } = Astro.props as Props;
+---
+<section class="section section--muted">
+  <div class="container">
+    <div class="section-head">
+      <h2>{title}</h2>
+      <a class="meta" href={seeAllHref}>See all</a>
+    </div>
+    <div class="editorial-grid">
+      {items.map((item) => {
+        const image = toPictureData(item.image);
+        return (
+          <article class="card editorial-card">
+            <a href={item.href} class="editorial-media">
+              <picture>
+                <source type="image/webp" srcset={image.webpSrcset} />
+                <source type="image/jpeg" srcset={image.jpgSrcset} />
+                <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" />
+              </picture>
+            </a>
+            <p class="meta">{new Date(item.date).toLocaleDateString("en-MT")} · {item.author}</p>
+            <h3><a href={item.href}>{item.title}</a></h3>
+            {image.photographer && image.photographerUrl && (
+              <p class="meta featured-attribution">
+                Photo by <a href={image.photographerUrl} rel="noopener nofollow" target="_blank">{image.photographer}</a> on Pexels
+              </p>
+            )}
+          </article>
+        );
+      })}
+    </div>
+  </div>
+</section>

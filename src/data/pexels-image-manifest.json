@@ -1,0 +1,957 @@
+{
+  "generatedAt": "2026-02-21T23:06:29.233Z",
+  "images": {
+    "home-icon-plumbers": {
+      "id": "home-icon-plumbers",
+      "query": "plumber tools service vehicle",
+      "alt": "Plumbers service support in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-icon-electricians": {
+      "id": "home-icon-electricians",
+      "query": "electrician toolkit and wiring",
+      "alt": "Electricians service support in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-icon-cleaning": {
+      "id": "home-icon-cleaning",
+      "query": "cleaning service supplies and gloves",
+      "alt": "Cleaning service support in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-icon-movers": {
+      "id": "home-icon-movers",
+      "query": "moving boxes home relocation",
+      "alt": "Movers service support in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-icon-locksmiths": {
+      "id": "home-icon-locksmiths",
+      "query": "locksmith tools and key cutting",
+      "alt": "Locksmiths service support in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-icon-it-support": {
+      "id": "home-icon-it-support",
+      "query": "it technician laptop support",
+      "alt": "IT Support service support in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-feature-plumbers-sliema": {
+      "id": "home-feature-plumbers-sliema",
+      "query": "plumber repairing sink in apartment",
+      "alt": "Plumbers for urgent repairs in Sliema in Sliema, Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-feature-electricians-valletta": {
+      "id": "home-feature-electricians-valletta",
+      "query": "electrician checking electrical panel",
+      "alt": "Electricians in Valletta for home and retail in Valletta, Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-feature-cleaning-st-julians": {
+      "id": "home-feature-cleaning-st-julians",
+      "query": "professional cleaner working indoors",
+      "alt": "Cleaning services around St Julian's in St Julian's, Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-feature-hvac-birkirkara": {
+      "id": "home-feature-hvac-birkirkara",
+      "query": "air conditioning technician maintenance",
+      "alt": "HVAC technicians serving Birkirkara in Birkirkara, Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-mosaic-valletta": {
+      "id": "home-mosaic-valletta",
+      "query": "Valletta Malta architecture street",
+      "alt": "Valletta locality context in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-mosaic-sliema": {
+      "id": "home-mosaic-sliema",
+      "query": "Sliema Malta seafront buildings",
+      "alt": "Sliema locality context in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-mosaic-st-julians": {
+      "id": "home-mosaic-st-julians",
+      "query": "St Julians Malta bay view",
+      "alt": "St Julian's locality context in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-mosaic-birkirkara": {
+      "id": "home-mosaic-birkirkara",
+      "query": "Malta residential neighborhood street",
+      "alt": "Birkirkara locality context in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-mosaic-mosta": {
+      "id": "home-mosaic-mosta",
+      "query": "Mosta Malta dome cityscape",
+      "alt": "Mosta locality context in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "home-mosaic-gozo": {
+      "id": "home-mosaic-gozo",
+      "query": "Victoria Gozo Malta old town",
+      "alt": "Victoria, Gozo locality context in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-plumbers-hero": {
+      "id": "category-plumbers-hero",
+      "query": "plumber services Malta professional work",
+      "alt": "Plumbers service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-plumbers-tile-1": {
+      "id": "category-plumbers-tile-1",
+      "query": "plumber tools close up Malta",
+      "alt": "Plumber equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-plumbers-tile-2": {
+      "id": "category-plumbers-tile-2",
+      "query": "plumber technician at work Malta",
+      "alt": "Plumber on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-electricians-hero": {
+      "id": "category-electricians-hero",
+      "query": "electrician services Malta professional work",
+      "alt": "Electricians service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-electricians-tile-1": {
+      "id": "category-electricians-tile-1",
+      "query": "electrician tools close up Malta",
+      "alt": "Electrician equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-electricians-tile-2": {
+      "id": "category-electricians-tile-2",
+      "query": "electrician technician at work Malta",
+      "alt": "Electrician on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-cleaning-services-hero": {
+      "id": "category-cleaning-services-hero",
+      "query": "cleaning service services Malta professional work",
+      "alt": "Cleaning Services service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-cleaning-services-tile-1": {
+      "id": "category-cleaning-services-tile-1",
+      "query": "cleaning service tools close up Malta",
+      "alt": "Cleaning Service equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-cleaning-services-tile-2": {
+      "id": "category-cleaning-services-tile-2",
+      "query": "cleaning service technician at work Malta",
+      "alt": "Cleaning Service on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-painters-hero": {
+      "id": "category-painters-hero",
+      "query": "painter services Malta professional work",
+      "alt": "Painters service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-painters-tile-1": {
+      "id": "category-painters-tile-1",
+      "query": "painter tools close up Malta",
+      "alt": "Painter equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-painters-tile-2": {
+      "id": "category-painters-tile-2",
+      "query": "painter technician at work Malta",
+      "alt": "Painter on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-pest-control-hero": {
+      "id": "category-pest-control-hero",
+      "query": "pest control specialist services Malta professional work",
+      "alt": "Pest Control Services service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-pest-control-tile-1": {
+      "id": "category-pest-control-tile-1",
+      "query": "pest control specialist tools close up Malta",
+      "alt": "Pest Control Specialist equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-pest-control-tile-2": {
+      "id": "category-pest-control-tile-2",
+      "query": "pest control specialist technician at work Malta",
+      "alt": "Pest Control Specialist on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-hvac-technicians-hero": {
+      "id": "category-hvac-technicians-hero",
+      "query": "hvac technician services Malta professional work",
+      "alt": "HVAC Technicians service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-hvac-technicians-tile-1": {
+      "id": "category-hvac-technicians-tile-1",
+      "query": "hvac technician tools close up Malta",
+      "alt": "HVAC Technician equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-hvac-technicians-tile-2": {
+      "id": "category-hvac-technicians-tile-2",
+      "query": "hvac technician technician at work Malta",
+      "alt": "HVAC Technician on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-roofing-contractors-hero": {
+      "id": "category-roofing-contractors-hero",
+      "query": "roofing contractor services Malta professional work",
+      "alt": "Roofing Contractors service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-roofing-contractors-tile-1": {
+      "id": "category-roofing-contractors-tile-1",
+      "query": "roofing contractor tools close up Malta",
+      "alt": "Roofing Contractor equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-roofing-contractors-tile-2": {
+      "id": "category-roofing-contractors-tile-2",
+      "query": "roofing contractor technician at work Malta",
+      "alt": "Roofing Contractor on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-locksmiths-hero": {
+      "id": "category-locksmiths-hero",
+      "query": "locksmith services Malta professional work",
+      "alt": "Locksmiths service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-locksmiths-tile-1": {
+      "id": "category-locksmiths-tile-1",
+      "query": "locksmith tools close up Malta",
+      "alt": "Locksmith equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-locksmiths-tile-2": {
+      "id": "category-locksmiths-tile-2",
+      "query": "locksmith technician at work Malta",
+      "alt": "Locksmith on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-movers-hero": {
+      "id": "category-movers-hero",
+      "query": "mover services Malta professional work",
+      "alt": "Movers service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-movers-tile-1": {
+      "id": "category-movers-tile-1",
+      "query": "mover tools close up Malta",
+      "alt": "Mover equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-movers-tile-2": {
+      "id": "category-movers-tile-2",
+      "query": "mover technician at work Malta",
+      "alt": "Mover on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-photographers-hero": {
+      "id": "category-photographers-hero",
+      "query": "photographer services Malta professional work",
+      "alt": "Photographers service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-photographers-tile-1": {
+      "id": "category-photographers-tile-1",
+      "query": "photographer tools close up Malta",
+      "alt": "Photographer equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-photographers-tile-2": {
+      "id": "category-photographers-tile-2",
+      "query": "photographer technician at work Malta",
+      "alt": "Photographer on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-wedding-planners-hero": {
+      "id": "category-wedding-planners-hero",
+      "query": "wedding planner services Malta professional work",
+      "alt": "Wedding Planners service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-wedding-planners-tile-1": {
+      "id": "category-wedding-planners-tile-1",
+      "query": "wedding planner tools close up Malta",
+      "alt": "Wedding Planner equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-wedding-planners-tile-2": {
+      "id": "category-wedding-planners-tile-2",
+      "query": "wedding planner technician at work Malta",
+      "alt": "Wedding Planner on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-it-support-hero": {
+      "id": "category-it-support-hero",
+      "query": "it support provider services Malta professional work",
+      "alt": "IT Support Providers service work in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-it-support-tile-1": {
+      "id": "category-it-support-tile-1",
+      "query": "it support provider tools close up Malta",
+      "alt": "IT Support Provider equipment and setup in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "category-it-support-tile-2": {
+      "id": "category-it-support-tile-2",
+      "query": "it support provider technician at work Malta",
+      "alt": "IT Support Provider on-site service in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-plumbers": {
+      "id": "guide-plumbers",
+      "query": "plumbing repair checklist workbench",
+      "alt": "Plumbers guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-electricians": {
+      "id": "guide-electricians",
+      "query": "electrical safety inspection tools",
+      "alt": "Electricians guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-cleaning-services": {
+      "id": "guide-cleaning-services",
+      "query": "cleaning service checklist and tools",
+      "alt": "Cleaning Services guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-painters": {
+      "id": "guide-painters",
+      "query": "professional house painter roller",
+      "alt": "Painters guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-pest-control": {
+      "id": "guide-pest-control",
+      "query": "pest control technician inspection",
+      "alt": "Pest Control Services guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-hvac-technicians": {
+      "id": "guide-hvac-technicians",
+      "query": "hvac service inspection equipment",
+      "alt": "HVAC Technicians guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-roofing-contractors": {
+      "id": "guide-roofing-contractors",
+      "query": "roof repair contractor safety harness",
+      "alt": "Roofing Contractors guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-locksmiths": {
+      "id": "guide-locksmiths",
+      "query": "locksmith replacing door lock",
+      "alt": "Locksmiths guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-movers": {
+      "id": "guide-movers",
+      "query": "home moving team carrying boxes",
+      "alt": "Movers guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-photographers": {
+      "id": "guide-photographers",
+      "query": "photographer camera setup portrait",
+      "alt": "Photographers guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-wedding-planners": {
+      "id": "guide-wedding-planners",
+      "query": "event planner organizing wedding table",
+      "alt": "Wedding Planners guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "guide-it-support": {
+      "id": "guide-it-support",
+      "query": "it support specialist office diagnostics",
+      "alt": "IT Support Providers guide visual in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "featured-location-sliema": {
+      "id": "featured-location-sliema",
+      "query": "Sliema Malta neighborhood and services",
+      "alt": "Sliema service locality in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "featured-location-valletta": {
+      "id": "featured-location-valletta",
+      "query": "Valletta Malta neighborhood and services",
+      "alt": "Valletta service locality in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "featured-location-st-julians": {
+      "id": "featured-location-st-julians",
+      "query": "St Julian's Malta neighborhood and services",
+      "alt": "St Julian's service locality in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    },
+    "featured-location-birkirkara": {
+      "id": "featured-location-birkirkara",
+      "query": "Birkirkara Malta neighborhood and services",
+      "alt": "Birkirkara service locality in Malta",
+      "fallback": true,
+      "variants": [
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/images/placeholder.jpg",
+          "jpg": "/images/placeholder.jpg"
+        }
+      ]
+    }
+  }
+}

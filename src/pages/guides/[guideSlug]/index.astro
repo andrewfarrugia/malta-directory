@@ -5,6 +5,7 @@ import RelatedLinks from "@/components/RelatedLinks.astro";
 import { render } from "astro:content";
 import { getGuides } from "@/lib/data";
 import { getCategoryBySlug, getLocationBySlug } from "@/lib/data";
+import { getPexelsImage, toPictureData } from "@/lib/pexelsImagePipeline";
 import { buildSeo, clampMeta } from "@/lib/seo";
 import { estimateReadTime } from "@/lib/utils";
 
@@ -52,6 +53,14 @@ const relatedLocations = (guide.data.locationSlugs || [])
   }));
 
 const readTime = estimateReadTime(guide.body);
+const primaryCategorySlug = guide.data.categorySlugs[0] || "local-services";
+const guideHero = toPictureData(getPexelsImage(`guide-${primaryCategorySlug}`, `${guide.data.title} in Malta`));
+const guidePickOne = toPictureData(
+  getPexelsImage(`category-${primaryCategorySlug}-tile-1`, `${guide.data.title} visual context in Malta`)
+);
+const guidePickTwo = toPictureData(
+  getPexelsImage(`category-${primaryCategorySlug}-tile-2`, `${guide.data.title} service context in Malta`)
+);
 ---
 <BaseLayout seo={seo} breadcrumbs={breadcrumbs}>
   <main class="section">
@@ -62,7 +71,34 @@ const readTime = estimateReadTime(guide.body);
         <p class="meta">
           Updated {new Date(guide.data.dateUpdated).toLocaleDateString("en-MT")} · {readTime} min read
         </p>
+        <figure class="guide-hero-media mt-sm">
+          <picture>
+            <source type="image/webp" srcset={guideHero.webpSrcset} />
+            <source type="image/jpeg" srcset={guideHero.jpgSrcset} />
+            <img src={guideHero.src} alt={guideHero.alt} width={guideHero.width} height={guideHero.height} />
+          </picture>
+          {guideHero.photographer && guideHero.photographerUrl && (
+            <figcaption class="meta">
+              Photo by <a href={guideHero.photographerUrl} rel="noopener nofollow" target="_blank">{guideHero.photographer}</a> on Pexels
+            </figcaption>
+          )}
+        </figure>
         <Content />
+
+        <section class="mt-sm">
+          <h2>Related visual picks</h2>
+          <div class="guide-visual-picks">
+            {[guidePickOne, guidePickTwo].map((image) => (
+              <figure>
+                <picture>
+                  <source type="image/webp" srcset={image.webpSrcset} />
+                  <source type="image/jpeg" srcset={image.jpgSrcset} />
+                  <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" />
+                </picture>
+              </figure>
+            ))}
+          </div>
+        </section>
 
         <section class="card mt-sm">
           <h2>Author</h2>

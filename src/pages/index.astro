@@ -2,12 +2,41 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import HubCard from "@/components/HubCard.astro";
 import GuideCard from "@/components/GuideCard.astro";
+import FeatureIconStrip from "@/components/FeatureIconStrip.astro";
+import FeaturedServiceCards from "@/components/FeaturedServiceCards.astro";
+import TrendingLocalitiesMosaic from "@/components/TrendingLocalitiesMosaic.astro";
+import EditorialArticleCards from "@/components/EditorialArticleCards.astro";
 import { getTopCategories, getTopLocations, getGuides } from "@/lib/data";
 import { buildSeo, clampMeta } from "@/lib/seo";
+import { getPexelsComponentMap, getPexelsImage } from "@/lib/pexelsImagePipeline";
 
 const topCategories = getTopCategories(12);
 const topLocations = getTopLocations(12);
 const guides = (await getGuides()).slice(0, 10);
+const map = getPexelsComponentMap();
+
+const iconStripItems = map.homeIconStrip;
+
+const featuredItems = map.homeFeatured.map((item) => ({
+  ...item,
+  image: getPexelsImage(item.id, `${item.title} in Malta`)
+}));
+
+const mosaicItems = map.homeMosaic.map((item) => ({
+  ...item,
+  image: getPexelsImage(item.id, `${item.title} locality in Malta`)
+}));
+
+const editorialItems = guides.slice(0, 3).map((guide) => {
+  const primaryCategory = guide.data.categorySlugs[0] || "local-services";
+  return {
+    title: guide.data.title,
+    href: `/guides/${guide.slug}/`,
+    date: guide.data.datePublished.toISOString(),
+    author: guide.data.author,
+    image: getPexelsImage(`guide-${primaryCategory}`, `${guide.data.title} in Malta`)
+  };
+});
 
 const seo = buildSeo({
   path: "/",
@@ -37,6 +66,11 @@ const seo = buildSeo({
         </div>
       </div>
     </section>
+
+    <FeatureIconStrip title="Popular services to browse" seeAllHref="/categories/" items={iconStripItems} />
+    <FeaturedServiceCards title="Featured locality hubs" items={featuredItems} />
+    <TrendingLocalitiesMosaic title="Trending localities" seeAllHref="/locations/" items={mosaicItems} />
+    <EditorialArticleCards title="Latest practical guides" seeAllHref="/guides/" items={editorialItems} />
 
     <section class="section">
       <div class="container">

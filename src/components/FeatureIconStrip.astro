@@ -1,0 +1,32 @@
+---
+interface FeatureIconItem {
+  title: string;
+  meta: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  seeAllHref: string;
+  items: FeatureIconItem[];
+}
+
+const { title, seeAllHref, items } = Astro.props as Props;
+---
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>{title}</h2>
+      <a class="meta" href={seeAllHref}>See all</a>
+    </div>
+    <div class="feature-icon-strip">
+      {items.map((item) => (
+        <a class="feature-icon-card" href={item.href}>
+          <span class="feature-icon-dot" aria-hidden="true">{item.title.charAt(0)}</span>
+          <strong>{item.title}</strong>
+          <span class="meta">{item.meta}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

@@ -10,6 +10,7 @@ import {
   getTopLocations,
   getGuidesByCategory
 } from "@/lib/data";
+import { getPexelsImages, toPictureData } from "@/lib/pexelsImagePipeline";
 import { isQualifiedCombo } from "@/lib/combo";
 import { buildSeo, clampMeta } from "@/lib/seo";
 import { faqSchema } from "@/lib/schema";
@@ -25,6 +26,11 @@ if (!category) {
 
 const topLocations = getTopLocations(12);
 const guides = await getGuidesByCategory(category.slug, 6);
+const visualRail = getPexelsImages([
+  `category-${category.slug}-hero`,
+  `category-${category.slug}-tile-1`,
+  `category-${category.slug}-tile-2`
+]).map(toPictureData);
 
 const seo = buildSeo({
   path: `/categories/${category.slug}/`,
@@ -57,6 +63,22 @@ const relatedGuideLinks = guides.map((guide) => ({
       <div class="container prose">
         <Breadcrumbs items={breadcrumbs} />
         <h1>{category.pluralName} in Malta</h1>
+        <div class="visual-rail mt-sm">
+          {visualRail.map((image) => (
+            <figure>
+              <picture>
+                <source type="image/webp" srcset={image.webpSrcset} />
+                <source type="image/jpeg" srcset={image.jpgSrcset} />
+                <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" />
+              </picture>
+            </figure>
+          ))}
+        </div>
+        {visualRail[0]?.photographer && visualRail[0]?.photographerUrl && (
+          <p class="meta mt-sm">
+            Photo by <a href={visualRail[0].photographerUrl} target="_blank" rel="noopener nofollow">{visualRail[0].photographer}</a> on Pexels
+          </p>
+        )}
         <p class="lead">{category.intro}</p>
         <p>
           Malta Service Hub helps you compare providers with practical criteria, not just ranking position. For this category, focus on service scope, response times, and clear cost breakdowns before you commit.
@@ -73,6 +95,20 @@ const relatedGuideLinks = guides.map((guide) => ({
     </section>
 
     <RelatedLinks title="Top areas in Malta" links={locationLinks.slice(0, 12)} />
+
+    <section class="section section--muted">
+      <div class="container">
+        <h2>Local highlights</h2>
+        <div class="highlights-grid">
+          {locationLinks.slice(0, 3).map((item) => (
+            <article class="highlight-card">
+              <h3><a href={item.href}>{item.title}</a></h3>
+              <p class="meta">Locality-focused comparison guidance and internal links.</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
 
     <section class="section">
       <div class="container">
