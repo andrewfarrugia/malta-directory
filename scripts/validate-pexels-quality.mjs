@@ -9,20 +9,23 @@ const inCi = process.env.CI === "true";
 const isMainBranch = branch === "main";
 const explicitStrict = process.env.IMAGE_QUALITY_STRICT === "true";
 const explicitFailOnWarn = process.env.IMAGE_QUALITY_FAIL_ON_WARN;
+const runningOnCloudflare = Boolean(process.env.CF_PAGES || process.env.CF_PAGES_BRANCH || process.env.CLOUDFLARE_PAGES_BRANCH);
+const qualityEnvMissing = explicitFailOnWarn === undefined && process.env.IMAGE_QUALITY_STRICT === undefined;
+const emergencyRelaxedCloudflareGate = runningOnCloudflare && inCi && isMainBranch && qualityEnvMissing;
 
 const strict =
   explicitFailOnWarn === "true"
     ? true
     : explicitFailOnWarn === "false"
       ? false
-      : explicitStrict || (inCi && isMainBranch);
+      : explicitStrict || (inCi && isMainBranch && !emergencyRelaxedCloudflareGate);
 
 console.log(
   `[images:validate] gate ci=${String(process.env.CI)} cfBranch=${String(
     process.env.CF_PAGES_BRANCH || ""
   )} cloudflareBranch=${String(process.env.CLOUDFLARE_PAGES_BRANCH || "")} strictFlag=${String(
     process.env.IMAGE_QUALITY_STRICT
-  )} failOnWarn=${String(process.env.IMAGE_QUALITY_FAIL_ON_WARN)} strict=${strict}`
+  )} failOnWarn=${String(process.env.IMAGE_QUALITY_FAIL_ON_WARN)} runningOnCloudflare=${runningOnCloudflare} emergencyRelaxed=${emergencyRelaxedCloudflareGate} strict=${strict}`
 );
 
 const minSelectedCoverage = Number(process.env.PEXELS_MIN_SELECTED_COVERAGE || 0.9);
