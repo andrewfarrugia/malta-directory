@@ -31,7 +31,7 @@ const { title, seeAllHref, items } = Astro.props as Props;
           <article class="card editorial-card">
             <a href={item.href} class="editorial-media">
               <picture>
-                <source type="image/webp" srcset={image.webpSrcset} />
+                {image.hasWebp && <source type="image/webp" srcset={image.webpSrcset} />}
                 <source type="image/jpeg" srcset={image.jpgSrcset} />
                 <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" />
               </picture>

@@ -44,6 +44,21 @@ npm run seo:validate
 ```
 
 Build runs `npm run images:sync` before `astro build` to download/update local Pexels assets in `public/images/pexels/` and regenerate `src/data/pexels-image-manifest.json`.
+By default, image sync runs in **missing-only mode** (only unfilled/broken slots are fetched).
+Build also runs `npm run images:validate` and will block in CI/strict mode when selected image coverage is too low.
+
+Useful image sync modes:
+
+```bash
+# default: fetch only missing/unusable slots
+npm run images:sync
+
+# force full refresh for all slots
+npm run images:sync -- --refresh
+
+# reprocess all slots without refresh flag semantics
+npm run images:sync -- --all
+```
 
 ## Cloudflare Pages
 
@@ -53,9 +68,20 @@ Build runs `npm run images:sync` before `astro build` to download/update local P
   - `SITE_URL=https://maltaservicehub.com`
   - `PEXELS_API_KEY=<required-for-build-time-image-fetch>`
   - `PEXELS_CACHE_WRITE=false` (optional if you want to skip remote image refresh in CI)
+  - `IMAGE_QUALITY_STRICT=true` (recommended in production CI)
   - `PUBLIC_ANALYTICS_PROVIDER=cloudflare`
   - `PUBLIC_CF_BEACON_TOKEN=<optional-token>`
   - `PUBLIC_PLAUSIBLE_DOMAIN=<optional-domain>`
+
+## Production Image Refresh Runbook
+
+1. Set `PEXELS_API_KEY` locally.
+2. Run `npm run images:sync` (or `--refresh` for full recuration).
+3. Run `npm run images:validate`.
+4. Run `npm run build`.
+5. Commit updated local image assets and manifest:
+   - `public/images/pexels/**`
+   - `src/data/pexels-image-manifest.json`
 
 ## Data Model
 

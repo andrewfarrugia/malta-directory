@@ -56,7 +56,7 @@ const breadcrumbs = [
         </p>
         <figure class="guide-hero-media mt-sm">
           <picture>
-            <source type="image/webp" srcset={listingImage.webpSrcset} />
+            {listingImage.hasWebp && <source type="image/webp" srcset={listingImage.webpSrcset} />}
             <source type="image/jpeg" srcset={listingImage.jpgSrcset} />
             <img src={listingImage.src} alt={listingImage.alt} width={listingImage.width} height={listingImage.height} />
           </picture>

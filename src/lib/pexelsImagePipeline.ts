@@ -16,6 +16,11 @@ export interface LocalPexelsImage {
   photographerUrl?: string;
   photoUrl?: string;
   fallback: boolean;
+  status?: "selected" | "fallback";
+  score?: number;
+  selectedFrom?: number;
+  reasons?: string[];
+  lastCheckedAt?: string;
   variants: LocalPexelsVariant[];
 }
 
@@ -50,12 +55,14 @@ export const getPexelsImages = (ids: string[]) => ids.map((id) => getPexelsImage
 export const toPictureData = (image: LocalPexelsImage) => {
   const variants = [...image.variants].sort((a, b) => a.width - b.width);
   const largest = variants[variants.length - 1] || placeholderVariant;
-  const webpSrcset = variants.map((item) => `${item.webp} ${item.width}w`).join(", ");
+  const hasWebp = !image.fallback && variants.some((item) => item.webp.endsWith(".webp"));
+  const webpSrcset = hasWebp ? variants.map((item) => `${item.webp} ${item.width}w`).join(", ") : "";
   const jpgSrcset = variants.map((item) => `${item.jpg} ${item.width}w`).join(", ");
   return {
     alt: image.alt,
     width: largest.width,
     height: largest.height,
+    hasWebp,
     webpSrcset,
     jpgSrcset,
     src: largest.jpg,

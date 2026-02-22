@@ -6,6 +6,8 @@ import locations from "../src/data/locations.json" with { type: "json" };
 
 const strictMode = process.argv.includes("--strict");
 const refreshMode = process.argv.includes("--refresh");
+const fullSyncMode = process.argv.includes("--all");
+const missingOnlyMode = !refreshMode && !fullSyncMode;
 const apiKey = process.env.PEXELS_API_KEY;
 const allowRemoteSync = process.env.PEXELS_CACHE_WRITE !== "false";
 
@@ -18,6 +20,12 @@ const placeholderPath = "/images/placeholder.jpg";
 const targetWidths = [640, 960, 1280];
 const jpgQuality = 78;
 const webpQuality = 75;
+const minScoreByIntent = {
+  service: 48,
+  locality: 44,
+  guide: 42
+};
+const perPage = 10;
 
 const readManifest = async () => {
   try {
@@ -29,70 +37,134 @@ const readManifest = async () => {
   }
 };
 
+const slugToWords = (value) => value.replaceAll("-", " ").toLowerCase().trim();
+const tokenize = (value) =>
+  (value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .split(/\s+/)
+    .filter(Boolean);
+const asStringArray = (value) => (Array.isArray(value) ? value.filter(Boolean) : value ? [value] : []);
+
+const normalizeToken = (token) => token.toLowerCase().replace(/[^a-z0-9]/g, "");
+const singularize = (token) => token.replace(/s$/, "");
+const pluralize = (token) => (token.endsWith("s") ? token : `${token}s`);
+const tokenVariants = (token) => {
+  const normalized = normalizeToken(token);
+  if (!normalized) return [];
+  const variants = new Set([normalized, singularize(normalized), pluralize(normalized)]);
+  if (normalized === "technician") variants.add("worker");
+  if (normalized === "service") variants.add("services");
+  return [...variants];
+};
+const hasTokenMatch = (haystackSet, token) => tokenVariants(token).some((variant) => haystackSet.has(variant));
+
 const getLocationName = (slug) => locations.find((location) => location.slug === slug)?.name || slug;
 
+const fillTemplate = (template, values) =>
+  template
+    .replaceAll("{category}", values.category || "")
+    .replaceAll("{categorySingular}", values.categorySingular || "")
+    .replaceAll("{categoryPlural}", values.categoryPlural || "")
+    .replaceAll("{location}", values.location || "");
+
 const getSlots = () => {
-  const homeSlots = [
-    ...componentMap.homeIconStrip.map((item) => ({
-      id: item.id,
-      query: componentMap.queries[item.id],
-      alt: `${item.title} service support in Malta`
-    })),
-    ...componentMap.homeFeatured.map((item) => ({
-      id: item.id,
-      query: componentMap.queries[item.id],
-      alt: `${item.title} in ${item.locality}`
-    })),
-    ...componentMap.homeMosaic.map((item) => ({
-      id: item.id,
-      query: componentMap.queries[item.id],
-      alt: `${item.title} locality context in Malta`
-    }))
-  ];
+  const slots = [];
 
-  const categorySlots = categories.flatMap((category) => [
-    {
+  for (const item of componentMap.homeIconStrip) {
+    slots.push({
+      id: item.id,
+      queries: asStringArray(componentMap.queries[item.id]),
+      intent: componentMap.slotIntents[item.id],
+      alt: componentMap.slotIntents[item.id]?.altTemplate || `${item.title} service support in Malta`
+    });
+  }
+
+  for (const item of componentMap.homeFeatured) {
+    slots.push({
+      id: item.id,
+      queries: asStringArray(componentMap.queries[item.id]),
+      intent: componentMap.slotIntents[item.id],
+      alt: componentMap.slotIntents[item.id]?.altTemplate || `${item.title} in ${item.locality}`
+    });
+  }
+
+  for (const item of componentMap.homeMosaic) {
+    slots.push({
+      id: item.id,
+      queries: asStringArray(componentMap.queries[item.id]),
+      intent: componentMap.slotIntents[item.id],
+      alt: componentMap.slotIntents[item.id]?.altTemplate || `${item.title} locality context in Malta`
+    });
+  }
+
+  for (const category of categories) {
+    const values = {
+      category: category.singularName.toLowerCase(),
+      categorySingular: category.singularName,
+      categoryPlural: category.pluralName
+    };
+    slots.push({
       id: `category-${category.slug}-hero`,
-      query: componentMap.queryTemplates.categoryHero.replace("{category}", category.singularName.toLowerCase()),
-      alt: `${category.pluralName} service work in Malta`
-    },
-    {
+      queries: asStringArray(fillTemplate(componentMap.queryTemplates.categoryHero, values)),
+      intent: {
+        ...componentMap.intentTemplates.categoryHero,
+        mustInclude: componentMap.intentTemplates.categoryHero.mustInclude.map((token) => fillTemplate(token, values))
+      },
+      alt: fillTemplate(componentMap.intentTemplates.categoryHero.altTemplate, values)
+    });
+    slots.push({
       id: `category-${category.slug}-tile-1`,
-      query: componentMap.queryTemplates.categoryTileOne.replace("{category}", category.singularName.toLowerCase()),
-      alt: `${category.singularName} equipment and setup in Malta`
-    },
-    {
+      queries: asStringArray(fillTemplate(componentMap.queryTemplates.categoryTileOne, values)),
+      intent: {
+        ...componentMap.intentTemplates.categoryTileOne,
+        mustInclude: componentMap.intentTemplates.categoryTileOne.mustInclude.map((token) => fillTemplate(token, values))
+      },
+      alt: fillTemplate(componentMap.intentTemplates.categoryTileOne.altTemplate, values)
+    });
+    slots.push({
       id: `category-${category.slug}-tile-2`,
-      query: componentMap.queryTemplates.categoryTileTwo.replace("{category}", category.singularName.toLowerCase()),
-      alt: `${category.singularName} on-site service in Malta`
-    }
-  ]);
+      queries: asStringArray(fillTemplate(componentMap.queryTemplates.categoryTileTwo, values)),
+      intent: {
+        ...componentMap.intentTemplates.categoryTileTwo,
+        mustInclude: componentMap.intentTemplates.categoryTileTwo.mustInclude.map((token) => fillTemplate(token, values))
+      },
+      alt: fillTemplate(componentMap.intentTemplates.categoryTileTwo.altTemplate, values)
+    });
+    slots.push({
+      id: `guide-${category.slug}`,
+      queries: asStringArray(
+        componentMap.queries[`guide-${category.slug}`] || `${category.singularName} guidance Malta`
+      ),
+      intent: {
+        ...componentMap.intentTemplates.guide,
+        mustInclude: componentMap.intentTemplates.guide.mustInclude.map((token) => fillTemplate(token, values))
+      },
+      alt: fillTemplate(componentMap.intentTemplates.guide.altTemplate, values)
+    });
+  }
 
-  const guideSlots = categories.map((category) => ({
-    id: `guide-${category.slug}`,
-    query: componentMap.queries[`guide-${category.slug}`] || `${category.singularName} guidance Malta`,
-    alt: `${category.pluralName} guide visual in Malta`
-  }));
-
-  const locationFeatured = componentMap.homeFeatured.map((item) => {
+  for (const item of componentMap.homeFeatured) {
     const hrefParts = item.href.split("/").filter(Boolean);
     const locationSlug = hrefParts[2] || "malta";
     const locationName = getLocationName(locationSlug);
-    return {
+    slots.push({
       id: `featured-location-${locationSlug}`,
-      query: `${locationName} Malta neighborhood and services`,
-      alt: `${locationName} service locality in Malta`
-    };
-  });
+      queries: asStringArray(`${locationName} Malta neighborhood and services`),
+      intent: {
+        ...componentMap.intentTemplates.featuredLocation,
+        mustInclude: componentMap.intentTemplates.featuredLocation.mustInclude.map((token) =>
+          fillTemplate(token, { location: locationName })
+        )
+      },
+      alt: fillTemplate(componentMap.intentTemplates.featuredLocation.altTemplate, { location: locationName })
+    });
+  }
 
-  return [...homeSlots, ...categorySlots, ...guideSlots, ...locationFeatured];
-};
-
-const uniqueById = (items) => {
   const seen = new Set();
-  return items.filter((item) => {
-    if (seen.has(item.id)) return false;
-    seen.add(item.id);
+  return slots.filter((slot) => {
+    if (seen.has(slot.id)) return false;
+    seen.add(slot.id);
     return true;
   });
 };
@@ -116,76 +188,186 @@ const importSharp = async () => {
 };
 
 const toPexelsUrl = (query) =>
-  `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=3&orientation=landscape`;
+  `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=${perPage}&orientation=landscape`;
 
-const fetchPexelsPhoto = async (query) => {
-  if (!apiKey) return null;
+const fetchPexelsPhotos = async (query) => {
+  if (!apiKey) return [];
   try {
     const response = await fetch(toPexelsUrl(query), {
       headers: { Authorization: apiKey }
     });
-    if (!response.ok) return null;
+    if (!response.ok) return [];
     const data = await response.json();
-    const photo = Array.isArray(data.photos) ? data.photos[0] : null;
-    if (!photo || !photo.src) return null;
-    const src = photo.src.large || photo.src.medium || photo.src.original;
-    if (!src) return null;
-    return {
-      src,
-      width: photo.width,
-      height: photo.height,
-      photographer: photo.photographer,
-      photographerUrl: photo.photographer_url,
-      photoUrl: photo.url
-    };
+    const photos = Array.isArray(data.photos) ? data.photos : [];
+    return photos
+      .map((photo, index) => ({
+        rank: index + 1,
+        src: photo?.src?.large || photo?.src?.medium || photo?.src?.original || "",
+        alt: photo?.alt || "",
+        width: photo?.width || 0,
+        height: photo?.height || 0,
+        photographer: photo?.photographer || "",
+        photographerUrl: photo?.photographer_url || "",
+        photoUrl: photo?.url || ""
+      }))
+      .filter((photo) => Boolean(photo.src));
   } catch {
-    return null;
+    return [];
   }
+};
+
+const scoreCandidate = (slot, candidate) => {
+  const reasons = [];
+  let score = 0;
+  const haystackTokens = tokenize(`${candidate.alt} ${candidate.photoUrl} ${candidate.photographerUrl} ${candidate.photographer}`);
+  const haystack = new Set(haystackTokens.map(normalizeToken).filter(Boolean));
+
+  const required = (slot.intent?.mustInclude || []).map((token) => token.toLowerCase()).filter(Boolean);
+  const banned = (slot.intent?.mustNotInclude || []).map((token) => token.toLowerCase()).filter(Boolean);
+  const locationContext = slot.intent?.locationContext ? tokenize(slot.intent.locationContext) : [];
+
+  for (const token of required) {
+    if (hasTokenMatch(haystack, token)) {
+      score += 14;
+      reasons.push(`mustInclude:${token}`);
+    } else {
+      score -= 8;
+      reasons.push(`missing:${token}`);
+    }
+  }
+
+  for (const token of banned) {
+    if (hasTokenMatch(haystack, token)) {
+      score -= 25;
+      reasons.push(`mustNotInclude:${token}`);
+    }
+  }
+
+  for (const token of locationContext) {
+    if (hasTokenMatch(haystack, token)) {
+      score += 6;
+      reasons.push(`location:${token}`);
+    }
+  }
+
+  const ratio = candidate.width > 0 && candidate.height > 0 ? candidate.width / candidate.height : 1.5;
+  if (ratio >= 1.2 && ratio <= 2.1) {
+    score += 18;
+    reasons.push("landscape-fit");
+  } else {
+    score -= 12;
+    reasons.push("poor-aspect-fit");
+  }
+
+  score += Math.max(0, 24 - candidate.rank * 2);
+  reasons.push(`rank:${candidate.rank}`);
+
+  return { score: Math.max(0, Math.min(100, score)), reasons };
+};
+
+const getIntentThreshold = (slot) => {
+  const intentType = slot.intent?.intentType || "service";
+  return minScoreByIntent[intentType] ?? 45;
+};
+
+const buildQueryCandidates = (slot) => {
+  const uniqueQueries = new Set(asStringArray(slot.queries).map((q) => q.trim()).filter(Boolean));
+  const mustInclude = asStringArray(slot.intent?.mustInclude).join(" ").trim();
+
+  if (mustInclude) {
+    uniqueQueries.add(`${mustInclude} malta`.replace(/\s+/g, " ").trim());
+  }
+
+  const intentType = slot.intent?.intentType || "service";
+  if (intentType === "service") uniqueQueries.add("home service technician tools malta");
+  if (intentType === "locality") uniqueQueries.add("malta city street architecture");
+  if (intentType === "guide") uniqueQueries.add("professional service checklist tools");
+
+  return [...uniqueQueries].slice(0, 3);
+};
+
+const selectBestCandidate = (slot, candidates) => {
+  const ranked = candidates
+    .map((candidate) => {
+      const scored = scoreCandidate(slot, candidate);
+      return { ...candidate, ...scored };
+    })
+    .sort((a, b) => b.score - a.score);
+
+  const selected = ranked[0];
+  if (!selected || selected.score < getIntentThreshold(slot)) return null;
+  return selected;
 };
 
 const ensureDir = async (dirPath) => {
   await fs.mkdir(dirPath, { recursive: true });
 };
 
-const syncSlot = async ({ slot, sharp, existingEntry }) => {
-  const fallbackEntry = {
-    id: slot.id,
-    query: slot.query,
-    alt: slot.alt,
-    fallback: true,
-    variants: [
-      {
-        width: 1200,
-        height: 800,
-        webp: placeholderPath,
-        jpg: placeholderPath
-      }
-    ]
-  };
+const buildFallbackEntry = (slot, reason) => ({
+  id: slot.id,
+  query: slot.queries?.[0] || "",
+  triedQueries: buildQueryCandidates(slot),
+  alt: slot.alt,
+  fallback: true,
+  status: "fallback",
+  score: 0,
+  selectedFrom: 0,
+  reasons: [reason],
+  lastCheckedAt: new Date().toISOString(),
+  variants: [
+    {
+      width: 1200,
+      height: 800,
+      webp: placeholderPath,
+      jpg: placeholderPath
+    }
+  ]
+});
 
-  if (!refreshMode && existingEntry?.variants?.every((variant) => !variant.jpg.startsWith("/images/placeholder"))) {
-    const allFilesPresent = await Promise.all(
+const syncSlot = async ({ slot, sharp, existingEntry }) => {
+  if (
+    missingOnlyMode &&
+    existingEntry &&
+    existingEntry.status === "selected" &&
+    existingEntry.variants?.length > 0 &&
+    existingEntry.variants.every((variant) => variant.jpg.startsWith("/images/pexels/"))
+  ) {
+    const present = await Promise.all(
       existingEntry.variants.flatMap((variant) => [
-        fileExists(path.join(publicDir, variant.webp.replace(/^\//, ""))),
-        fileExists(path.join(publicDir, variant.jpg.replace(/^\//, "")))
+        fileExists(path.join(publicDir, variant.jpg.replace(/^\//, ""))),
+        fileExists(path.join(publicDir, variant.webp.replace(/^\//, "")))
       ])
     );
-    if (allFilesPresent.every(Boolean)) {
-      return existingEntry;
-    }
+    if (present.every(Boolean)) return existingEntry;
   }
 
   if (!allowRemoteSync) {
-    return existingEntry || fallbackEntry;
+    return existingEntry || buildFallbackEntry(slot, "remote-sync-disabled");
   }
 
-  const photo = await fetchPexelsPhoto(slot.query);
-  if (!photo || !sharp) return fallbackEntry;
+  if (!sharp) {
+    return buildFallbackEntry(slot, "sharp-unavailable");
+  }
+
+  const queries = buildQueryCandidates(slot);
+  let best = null;
+  let selectedQuery = "";
+  for (const query of queries) {
+    const candidates = await fetchPexelsPhotos(query);
+    best = selectBestCandidate(slot, candidates);
+    if (best) {
+      selectedQuery = query;
+      break;
+    }
+  }
+  if (!best) {
+    return buildFallbackEntry(slot, apiKey ? "no-candidate-over-threshold" : "missing-api-key");
+  }
 
   try {
-    const imageResponse = await fetch(photo.src);
-    if (!imageResponse.ok) return fallbackEntry;
-    const inputBuffer = Buffer.from(await imageResponse.arrayBuffer());
+    const response = await fetch(best.src);
+    if (!response.ok) return buildFallbackEntry(slot, "image-download-failed");
+    const inputBuffer = Buffer.from(await response.arrayBuffer());
     const baseImage = sharp(inputBuffer);
     const metadata = await baseImage.metadata();
     const slotDir = path.join(pexelsDir, slot.id);
@@ -197,15 +379,15 @@ const syncSlot = async ({ slot, sharp, existingEntry }) => {
       const resized = baseImage.clone().resize({ width: effectiveWidth, withoutEnlargement: true });
       const jpgBuffer = await resized.clone().jpeg({ quality: jpgQuality }).toBuffer();
       const webpBuffer = await resized.clone().webp({ quality: webpQuality }).toBuffer();
-      const resizedMeta = await sharp(jpgBuffer).metadata();
+      const meta = await sharp(jpgBuffer).metadata();
       const fileBase = `${slot.id}-${effectiveWidth}`;
       const jpgRelative = `/images/pexels/${slot.id}/${fileBase}.jpg`;
       const webpRelative = `/images/pexels/${slot.id}/${fileBase}.webp`;
       await fs.writeFile(path.join(publicDir, jpgRelative.replace(/^\//, "")), jpgBuffer);
       await fs.writeFile(path.join(publicDir, webpRelative.replace(/^\//, "")), webpBuffer);
       variants.push({
-        width: resizedMeta.width || effectiveWidth,
-        height: resizedMeta.height || Math.round((effectiveWidth * 2) / 3),
+        width: meta.width || effectiveWidth,
+        height: meta.height || Math.round((effectiveWidth * 2) / 3),
         jpg: jpgRelative,
         webp: webpRelative
       });
@@ -213,32 +395,40 @@ const syncSlot = async ({ slot, sharp, existingEntry }) => {
 
     return {
       id: slot.id,
-      query: slot.query,
+      query: selectedQuery || slot.queries[0] || "",
+      triedQueries: queries,
       alt: slot.alt,
-      photographer: photo.photographer,
-      photographerUrl: photo.photographerUrl,
-      photoUrl: photo.photoUrl,
+      photographer: best.photographer,
+      photographerUrl: best.photographerUrl,
+      photoUrl: best.photoUrl,
       fallback: false,
+      status: "selected",
+      score: best.score,
+      selectedFrom: best.rank,
+      reasons: best.reasons,
+      lastCheckedAt: new Date().toISOString(),
       variants
     };
   } catch {
-    return fallbackEntry;
+    return buildFallbackEntry(slot, "processing-failed");
   }
 };
 
 const main = async () => {
   const sharp = await importSharp();
   const manifest = await readManifest();
-  const slots = uniqueById(getSlots());
+  const slots = getSlots();
   await ensureDir(pexelsDir);
 
   const images = { ...(manifest.images || {}) };
-  const failures = [];
+  let fallbackCount = 0;
+  let selectedCount = 0;
 
   for (const slot of slots) {
     const entry = await syncSlot({ slot, sharp, existingEntry: images[slot.id] });
     images[slot.id] = entry;
-    if (entry.fallback) failures.push(slot.id);
+    if (entry.fallback) fallbackCount += 1;
+    else selectedCount += 1;
   }
 
   const nextManifest = {
@@ -247,14 +437,10 @@ const main = async () => {
   };
 
   await fs.writeFile(manifestPath, `${JSON.stringify(nextManifest, null, 2)}\n`, "utf8");
+  console.log(`[pexels] selected=${selectedCount} fallback=${fallbackCount} total=${slots.length}`);
 
-  if (failures.length > 0) {
-    console.warn(`[pexels] fallback used for ${failures.length} slots`);
-  }
-
-  if ((failures.length > 0 && strictMode) || !sharp) {
-    if (!sharp) console.warn("[pexels] sharp not available; placeholder fallback used");
-    if (strictMode) process.exit(1);
+  if (strictMode && fallbackCount > 0) {
+    process.exit(1);
   }
 };
 

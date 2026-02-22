@@ -73,7 +73,7 @@ const guidePickTwo = toPictureData(
         </p>
         <figure class="guide-hero-media mt-sm">
           <picture>
-            <source type="image/webp" srcset={guideHero.webpSrcset} />
+            {guideHero.hasWebp && <source type="image/webp" srcset={guideHero.webpSrcset} />}
             <source type="image/jpeg" srcset={guideHero.jpgSrcset} />
             <img src={guideHero.src} alt={guideHero.alt} width={guideHero.width} height={guideHero.height} />
           </picture>
@@ -91,7 +91,7 @@ const guidePickTwo = toPictureData(
             {[guidePickOne, guidePickTwo].map((image) => (
               <figure>
                 <picture>
-                  <source type="image/webp" srcset={image.webpSrcset} />
+                  {image.hasWebp && <source type="image/webp" srcset={image.webpSrcset} />}
                   <source type="image/jpeg" srcset={image.jpgSrcset} />
                   <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" />
                 </picture>

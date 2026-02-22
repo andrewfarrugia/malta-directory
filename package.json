@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "astro dev",
     "images:sync": "node ./scripts/sync-pexels-images.mjs",
-    "build": "npm run images:sync && astro build",
+    "images:sync:refresh": "node ./scripts/sync-pexels-images.mjs --refresh",
+    "images:sync:all": "node ./scripts/sync-pexels-images.mjs --all",
+    "images:validate": "node ./scripts/validate-pexels-quality.mjs",
+    "build": "npm run images:sync && npm run images:validate && astro build",
     "preview": "astro preview",
     "check": "astro check",
     "seo:validate": "node ./scripts/validate-seo.mjs"

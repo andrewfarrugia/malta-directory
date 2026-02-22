@@ -143,5 +143,263 @@
     "guide-photographers": "photographer camera setup portrait",
     "guide-wedding-planners": "event planner organizing wedding table",
     "guide-it-support": "it support specialist office diagnostics"
+  },
+  "intentTemplates": {
+    "categoryHero": {
+      "intentType": "service",
+      "mustInclude": [
+        "{category}",
+        "service",
+        "malta"
+      ],
+      "mustNotInclude": [
+        "tour",
+        "cruise",
+        "beach"
+      ],
+      "altTemplate": "{categoryPlural} service work in Malta"
+    },
+    "categoryTileOne": {
+      "intentType": "service",
+      "mustInclude": [
+        "{category}",
+        "tools"
+      ],
+      "mustNotInclude": [
+        "tour"
+      ],
+      "altTemplate": "{categorySingular} equipment and setup in Malta"
+    },
+    "categoryTileTwo": {
+      "intentType": "service",
+      "mustInclude": [
+        "{category}",
+        "technician"
+      ],
+      "mustNotInclude": [
+        "tour"
+      ],
+      "altTemplate": "{categorySingular} on-site service in Malta"
+    },
+    "guide": {
+      "intentType": "guide",
+      "mustInclude": [
+        "{category}",
+        "professional"
+      ],
+      "mustNotInclude": [
+        "tourist"
+      ],
+      "altTemplate": "{categoryPlural} guide visual in Malta"
+    },
+    "featuredLocation": {
+      "intentType": "locality",
+      "mustInclude": [
+        "{location}",
+        "malta"
+      ],
+      "mustNotInclude": [
+        "tour bus"
+      ],
+      "altTemplate": "{location} service locality in Malta"
+    }
+  },
+  "slotIntents": {
+    "home-icon-plumbers": {
+      "intentType": "service",
+      "mustInclude": [
+        "plumbers"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "Plumbers service support in Malta"
+    },
+    "home-icon-electricians": {
+      "intentType": "service",
+      "mustInclude": [
+        "electricians"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "Electricians service support in Malta"
+    },
+    "home-icon-cleaning": {
+      "intentType": "service",
+      "mustInclude": [
+        "cleaning"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "Cleaning service support in Malta"
+    },
+    "home-icon-movers": {
+      "intentType": "service",
+      "mustInclude": [
+        "movers"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "Movers service support in Malta"
+    },
+    "home-icon-locksmiths": {
+      "intentType": "service",
+      "mustInclude": [
+        "locksmiths"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "Locksmiths service support in Malta"
+    },
+    "home-icon-it-support": {
+      "intentType": "service",
+      "mustInclude": [
+        "it"
+      ],
+      "mustNotInclude": [
+        "beach",
+        "tourist",
+        "cruise"
+      ],
+      "altTemplate": "IT Support service support in Malta"
+    },
+    "home-feature-plumbers-sliema": {
+      "intentType": "service",
+      "locationContext": "Sliema, Malta",
+      "mustInclude": [
+        "service",
+        "plumbers"
+      ],
+      "mustNotInclude": [
+        "resort",
+        "tour"
+      ],
+      "altTemplate": "Plumbers for urgent repairs in Sliema in Sliema, Malta"
+    },
+    "home-feature-electricians-valletta": {
+      "intentType": "service",
+      "locationContext": "Valletta, Malta",
+      "mustInclude": [
+        "service",
+        "electricians"
+      ],
+      "mustNotInclude": [
+        "resort",
+        "tour"
+      ],
+      "altTemplate": "Electricians in Valletta for home and retail in Valletta, Malta"
+    },
+    "home-feature-cleaning-st-julians": {
+      "intentType": "service",
+      "locationContext": "St Julian's, Malta",
+      "mustInclude": [
+        "service",
+        "cleaning"
+      ],
+      "mustNotInclude": [
+        "resort",
+        "tour"
+      ],
+      "altTemplate": "Cleaning services around St Julian's in St Julian's, Malta"
+    },
+    "home-feature-hvac-birkirkara": {
+      "intentType": "service",
+      "locationContext": "Birkirkara, Malta",
+      "mustInclude": [
+        "service",
+        "hvac"
+      ],
+      "mustNotInclude": [
+        "resort",
+        "tour"
+      ],
+      "altTemplate": "HVAC technicians serving Birkirkara in Birkirkara, Malta"
+    },
+    "home-mosaic-valletta": {
+      "intentType": "locality",
+      "locationContext": "Valletta",
+      "mustInclude": [
+        "malta",
+        "valletta"
+      ],
+      "mustNotInclude": [
+        "indoor closeup"
+      ],
+      "altTemplate": "Valletta locality context in Malta"
+    },
+    "home-mosaic-sliema": {
+      "intentType": "locality",
+      "locationContext": "Sliema",
+      "mustInclude": [
+        "malta",
+        "sliema"
+      ],
+      "mustNotInclude": [
+        "indoor closeup"
+      ],
+      "altTemplate": "Sliema locality context in Malta"
+    },
+    "home-mosaic-st-julians": {
+      "intentType": "locality",
+      "locationContext": "St Julian's",
+      "mustInclude": [
+        "malta",
+        "st julian's"
+      ],
+      "mustNotInclude": [
+        "indoor closeup"
+      ],
+      "altTemplate": "St Julian's locality context in Malta"
+    },
+    "home-mosaic-birkirkara": {
+      "intentType": "locality",
+      "locationContext": "Birkirkara",
+      "mustInclude": [
+        "malta",
+        "birkirkara"
+      ],
+      "mustNotInclude": [
+        "indoor closeup"
+      ],
+      "altTemplate": "Birkirkara locality context in Malta"
+    },
+    "home-mosaic-mosta": {
+      "intentType": "locality",
+      "locationContext": "Mosta",
+      "mustInclude": [
+        "malta",
+        "mosta"
+      ],
+      "mustNotInclude": [
+        "indoor closeup"
+      ],
+      "altTemplate": "Mosta locality context in Malta"
+    },
+    "home-mosaic-gozo": {
+      "intentType": "locality",
+      "locationContext": "Victoria, Gozo",
+      "mustInclude": [
+        "malta",
+        "victoria"
+      ],
+      "mustNotInclude": [
+        "indoor closeup"
+      ],
+      "altTemplate": "Victoria, Gozo locality context in Malta"
+    }
   }
 }
