@@ -17,6 +17,14 @@ const strict =
       ? false
       : explicitStrict || (inCi && isMainBranch);
 
+console.log(
+  `[images:validate] gate ci=${String(process.env.CI)} cfBranch=${String(
+    process.env.CF_PAGES_BRANCH || ""
+  )} cloudflareBranch=${String(process.env.CLOUDFLARE_PAGES_BRANCH || "")} strictFlag=${String(
+    process.env.IMAGE_QUALITY_STRICT
+  )} failOnWarn=${String(process.env.IMAGE_QUALITY_FAIL_ON_WARN)} strict=${strict}`
+);
+
 const minSelectedCoverage = Number(process.env.PEXELS_MIN_SELECTED_COVERAGE || 0.9);
 const minHomeSelectedCoverage = Number(process.env.PEXELS_MIN_HOME_SELECTED_COVERAGE || 0.95);
 const minServiceSelectedCoverage = Number(process.env.PEXELS_MIN_SERVICE_SELECTED_COVERAGE || 0.9);
