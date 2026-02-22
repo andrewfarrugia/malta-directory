@@ -50,50 +50,85 @@ const seo = buildSeo({
 });
 ---
 <BaseLayout seo={seo}>
-  <main>
-    <PageMastheadMedia
-      kicker="Independent Malta directory"
-      title="Find trusted local service pathways across Malta"
-      description="Navigate categories, localities, and practical buying guides through a clearer, more visual discovery journey."
-      image={getPexelsImage("featured-location-valletta", "Valletta locality context in Malta")}
-      actions={[
-        { href: "/categories/", label: "Browse categories" },
-        { href: "/locations/", label: "Explore locations", variant: "secondary" }
-      ]}
-    />
+  <main class="home-shell">
+    <section class="home-block home-block--hero">
+      <PageMastheadMedia
+        kicker="Independent Malta directory"
+        title="Browse everything."
+        description="Find trusted local service pathways across Malta with visual hubs, practical guides, and locality-first comparison journeys."
+        image={getPexelsImage("featured-location-valletta", "Valletta locality context in Malta")}
+        actions={[
+          { href: "/categories/", label: "Browse categories" },
+          { href: "/locations/", label: "Explore locations", variant: "secondary" }
+        ]}
+      />
+    </section>
 
-    <section class="section hero--compact">
+    <section class="home-block home-block--kpi">
       <div class="container">
         <div class="kpi-list">
-          <div class="kpi-item"><strong>12</strong><br />Service categories</div>
-          <div class="kpi-item"><strong>12</strong><br />Malta localities</div>
-          <div class="kpi-item"><strong>34+</strong><br />Editorial guides</div>
-          <div class="kpi-item"><strong>Independent</strong><br />Directory research</div>
+          <div class="kpi-item"><strong>12</strong><span>Service categories</span></div>
+          <div class="kpi-item"><strong>12</strong><span>Malta localities</span></div>
+          <div class="kpi-item"><strong>34+</strong><span>Editorial guides</span></div>
+          <div class="kpi-item"><strong>Independent</strong><span>Directory research</span></div>
         </div>
       </div>
     </section>
 
-    <FeatureIconStrip title="Popular services to browse" seeAllHref="/categories/" items={iconStripItems} />
-    <FeaturedServiceCards title="Featured locality hubs" items={featuredItems} />
-    <TrendingLocalitiesMosaic title="Trending localities" seeAllHref="/locations/" items={mosaicItems} />
+    <section class="home-block home-block--centered">
+      <div class="container home-lead-copy">
+        <h2>We've cracked the code.</h2>
+        <p class="prose">
+          We publish independent informational content with locality context and practical comparison guidance. Combined locality pages are only published when they pass editorial utility thresholds.
+        </p>
+      </div>
+    </section>
 
-    <ContextRail
-      title="Jump directly into high-demand hubs"
-      items={topCategories.slice(0, 4).map((category) => ({
-        title: `${category.pluralName} in Malta`,
-        href: `/categories/${category.slug}/`,
-        meta: category.synonyms[0] || "Category hub",
-        image: getPexelsImage(`category-${category.slug}-hero`, `${category.pluralName} in Malta`)
-      }))}
-    />
+    <section class="home-block home-block--process">
+      <FeatureIconStrip title="Popular services to browse" seeAllHref="/categories/" items={iconStripItems} />
+    </section>
 
-    <EditorialArticleCards title="Latest practical guides" seeAllHref="/guides/" items={editorialItems} />
-    <TestimonialBand />
+    <section class="home-block home-block--split">
+      <FeaturedServiceCards title="Featured locality hubs" items={featuredItems} />
+    </section>
 
-    <section class="section">
+    <section class="home-block home-block--image-wide">
+      <TrendingLocalitiesMosaic title="Trending localities" seeAllHref="/locations/" items={mosaicItems} />
+    </section>
+
+    <section class="home-block home-block--split-alt">
+      <ContextRail
+        title="See the big picture"
+        items={topCategories.slice(0, 4).map((category) => ({
+          title: `${category.pluralName} in Malta`,
+          href: `/categories/${category.slug}/`,
+          meta: category.synonyms[0] || "Category hub",
+          image: getPexelsImage(`category-${category.slug}-hero`, `${category.pluralName} in Malta`)
+        }))}
+      />
+    </section>
+
+    <section class="home-block home-block--editorial">
+      <EditorialArticleCards title="Latest practical guides" seeAllHref="/guides/" items={editorialItems} />
+    </section>
+
+    <section class="home-block home-block--credibility">
+      <TestimonialBand />
+    </section>
+
+    <section class="home-block home-block--centered home-block--divider">
+      <div class="container home-lead-copy">
+        <h2>Why Choose Area?</h2>
+        <p class="prose">
+          Every page is designed to lead you through decisions with less noise: categories, localities, practical guides, and clear next steps.
+        </p>
+      </div>
+    </section>
+
+    <section class="home-block home-block--cards">
       <div class="container">
         <h2>Top categories</h2>
-        <div class="grid grid--cards">
+        <div class="grid grid--cards home-cards-grid">
           {topCategories.map((category) => (
             <HubCard
               title={`${category.pluralName} in Malta`}
@@ -107,10 +142,10 @@ const seo = buildSeo({
       </div>
     </section>
 
-    <section class="section section--muted">
+    <section class="home-block home-block--cards home-block--muted">
       <div class="container">
         <h2>Top locations</h2>
-        <div class="grid grid--cards">
+        <div class="grid grid--cards home-cards-grid">
           {topLocations.map((location) => (
             <HubCard
               title={`Services in ${location.name}`}
@@ -124,10 +159,10 @@ const seo = buildSeo({
       </div>
     </section>
 
-    <section class="section">
+    <section class="home-block home-block--cards">
       <div class="container">
         <h2>Latest guides</h2>
-        <div class="grid grid--cards">
+        <div class="grid grid--cards home-cards-grid">
           {guides.map((guide) => (
             <GuideCard
               title={guide.data.title}
@@ -141,15 +176,10 @@ const seo = buildSeo({
       </div>
     </section>
 
-    <section class="section section--muted">
-      <div class="container">
-        <h2>How we rank and curate</h2>
-        <p class="prose">
-          We publish independent informational content with locality context and practical comparison guidance. Combined locality pages are only published when they pass editorial utility thresholds. Directory details may change and should always be confirmed directly with providers.
-        </p>
-        <div class="notice">
-          Suggest a business or request an update via <a href="/contact/">our contact page</a>.
-        </div>
+    <section class="home-block home-block--cta">
+      <div class="container home-cta-wrap">
+        <h2>Connect with us</h2>
+        <a class="btn btn--primary" href="/contact/">Start your request</a>
       </div>
     </section>
   </main>
